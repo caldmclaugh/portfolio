@@ -4,58 +4,72 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Caleigh McLaughlin</title>
-    <!-- <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
       <!--nav-->
       <nav class="navbar">
-        <ul>
-          <li class="logo"><img src="images/Logo.svg" alt="Caleigh McLaughlin logo"></li>
-          <li class="about">About</li>
-          <li class="resume">Resume</li>
-          <li class="contact">Contact</li>
-        </ul>
+        <a href="index.html"><img src="images/logo.svg" alt="Caleigh McLaughlin logo"></a>
+        <a href="about.html"><p>About</p></a>
+        <a href="resume.html"><p>Resume</p></a>
+        <a href="index.html#contact"><p>Contact</p></a>
       </nav>
+
       <!-- hero unit -->
       <section class="hero">
-        <ul>
-          <li><h1>Greetings. I'm Caleigh McLaughlin.</h1></li>
-          <li><h4>I'm a junior UX designer living in San Diego. Check out my work and connect with me to learn more.</h4></li>
-          <li><button>Let's connect</button></li>
-        </ul>
+        <h1>Greetings. I'm Caleigh McLaughlin.</h1>
+        <h2>I'm a junior UX designer living in San Diego.</h2>
+        <h2>Check out my work and connect with me to learn more.</h2>
+        <a class="cta" href="index.html#contact">Let's connect</a>
       </section>
-      <!-- other sections below -->
+
+      <!--camelot-->
       <section class="camelot">
-        <ul>
-          <li><img src="images/Camelot logo.svg" alt="Camelot logo"></li>
-          <li><h4>Camelot is a cloud storage solution for users who need to store and send large amounts of data in a secure and simple interface.</h4></li>
-          <li><a href="project.html">See case study</a></li>
-          <img src="images/camelot-dashboard.svg">
-        </ul>
+        <figure>
+          <img src="images/camelot-logo.svg" alt="Camelot logo">
+        </figure>
+        <h2>Camelot is a cloud storage solution for users who need to store and send large amounts of data in a secure and simple interface.</h2>
+        <a class="cta" href="project.html">See case study</a>
+        <figure>
+          <img src="images/camelot-dashboard.svg" alt="Camelot prototype">
+        </figure>
       </section>
+
+      <!---busybus--->
       <section class="busybus">
-        <ul>
-          <li><h2>BusyBus</h2></li>
-          <li><h4>BusyBus is a mobile public transit app that informs riders of ETA's for multiple busses using the same stop.</h4></li>
-          <li><button>See case study</button></li>
-          <img src="images/busybus-mobile.svg">
-        </ul>
+        <h1>BusyBus</h1>
+        <h2>BusyBus is a mobile public transit app that informs riders of ETA's for multiple busses using the same stop.</h2>
+        <a class="cta" href="bbproject.html">See case study</a>
+        <figure>
+          <img src="images/busybus-mobile.svg" alt="BusyBus prototype">
+        </figure>
       </section>
+
+      <!--blocjams-->
       <section class="blocjams">
-        <ul>
-          <li><img src="images/bloc_jams_logo.png" alt="BlocJams logo"></li>
-          <li><h4>BlocJams is a functional music player with displayed information and standard music controls.</h4></li>
-          <li><button>See case study</button></li>
-          <img src="images/blocjams-mockup.svg">
-        </ul>
+        <figure>
+          <img src="images/bloc_jams_logo.png" alt="BlocJams logo">
+        </figure>
+        <h2>BlocJams is a functional music player with displayed information and standard music controls.</h2>
+        <a class="cta" href="bjproject.html">See case study</a>
+        <figure>
+          <img src="images/blocjams-mockup.svg" alt="BlocJams prototype">
+        </figure>
       </section>
+
       <!--footer-->
-      <footer id="connect">
-        <p>Like what you see? I'd love to hear from you!</p>
-        <img src="images/linkedin.svg"><span><img src="images/github.svg"></span><img src="images/email.svg">
+      <footer class="connect">
+        <h2><a id="contact">Like what you see?</a></h2>
+        <h2>I'd love to hear from you!</h2>
+        <figure class="social">
+          <img src="images/linkedin.svg" alt="LinkedIn icon">
+          <img src="images/github.svg" alt="Github icon">
+          <img src="images/email.svg" alt="email icon">
+        </figure>
       </footer>
+
     </div>
   </body>
 </html>
