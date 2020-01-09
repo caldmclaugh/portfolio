@@ -1,0 +1,776 @@
+/********************************************************camelot case study***/
+/*#E3EFFA #FFF7D5*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: linear-gradient(#E2EFFA 50%, #FFF7D5  50%);
+  line-height: 1.75;
+}
+
+/****************************************************************typography***/
+
+h1 {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+  font-size: 3.6rem;
+  font-weight:bold;
+  /* line-height: 5.6rem; */
+}
+
+h2 {
+  font-family: "Montserrat", "Open Sans",sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  /* line-height: 3.9rem; */
+}
+
+h3, ol {
+  text-align: center;
+  font-family: "Montserrat", "Open Sans",sans-serif;
+  font-size: 2rem;
+  font-weight:600;
+  /* line-height: 3.3rem; */
+}
+
+h4, p, li, ul, figcaption {
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  /* line-height: 2.5rem; */
+}
+
+span, figcaption {
+  font-weight: bold;
+}
+
+figcaption {
+  text-align: center;
+}
+
+ul {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+ul > li {
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+
+
+/*****************************************************************structure***/
+
+.cta {
+  background-color: #056BBD;
+  border-radius: 5rem;
+  color: #fff;
+  font-family: "Montserrat","Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2.5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  width: 21rem;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+  ".                  hero                   hero               ."
+  ".                  prob-sol               prob-sol           ."
+  "discovery          discovery              discovery          discovery"
+  "strategy           strategy               strategy           strategy"
+  "info-arch          info-arch              info-arch          info-arch"
+  "visual-design      visual-design          visual-design      visual-design"
+  "conclusion         conclusion             conclusion         conclusion"
+  "more               more                   more               more"
+  "connect            connect                connect            connect";
+  grid-template-columns: 1fr 25% 25% 1fr;
+  justify-content: center;
+  width: 100%;
+}
+
+/**********************************************************************HERO***/
+
+.navbar, .hero, .prob-sol, .discovery, .user-research, .text-strat, .strategy, .comp-analysis, .text-personas, .personas, .text-info,  .user-stories, .list-stories, .user-flows, .wireframes, .mockups, .visual-design, .logo, .typography, .style-guide, .prototypes, .changes, .pref-testing, .conclusion {
+  display: grid;
+}
+
+
+.navbar {
+  align-items: center;
+  background-color: #fff;
+  grid-area: navbar;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.white-wrapper {
+  background-color: #fff;
+  grid-item: white-wrapper;
+}
+
+.white-wrapper > h1 {
+  font-size: 2.4rem;
+}
+
+.hero {
+  grid-area: hero;
+  grid-template-areas:
+  ". camelot-logo ."
+  ". text-hero    ."
+  ". camelot-landing ."
+  ". cta-prototype .";
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 18rem;
+  padding: 10rem;
+  text-align: center;
+}
+
+.camelot-logo {
+  grid-area: camelot-logo;
+  margin: 2.5rem 0;
+}
+
+.text-hero {
+  grid-area: text-hero;
+  margin: 2.5rem 0;
+}
+
+.camelot-landing {
+  grid-area: camelot-landing;
+  margin: 2.5rem 0;
+}
+
+.cta-prototype {
+  margin: 5rem 0;
+}
+                          /***problem/solution***/
+.prob-sol {
+  display: flex;
+  flex-direction: row;
+  grid-area: prob-sol;
+  grid-column-gap: 10rem;
+  grid-template-areas:
+  "problem solution";
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 18rem;
+  text-align: center;
+}
+
+
+.problem {
+  display: grid;
+  grid-area: problem;
+  grid-row-gap: 3rem;
+}
+
+.solution {
+  display: grid;
+  grid-area: solution;
+  grid-row-gap: 3rem;
+}
+
+/*****************************************************************DISCOVERY***/
+
+
+.discovery {
+  grid-area: discovery;
+  grid-template-areas:
+  ".        text-disc    .                .               .  ."
+  ".        .            user-research    user-research   .  .";
+  grid-template-columns: repeat(6, 2fr);
+}
+
+.text-disc {
+  grid-area: text-disc;
+  text-transform: uppercase;
+}
+
+.user-research {
+  grid-area: user-research;
+  margin: 2.5rem 0;
+}
+
+/******************************************************************STRATEGY***/
+
+.strategy {
+  grid-area: strategy;
+  grid-template-areas:
+  ".    text-strat    .                .                .    ."
+  ".    .             comp-analysis    comp-analysis    .    ."
+  ".    .             personas         personas         .    .";
+  grid-template-columns: repeat(6, 2fr);
+}
+
+.text-strat {
+  grid-area: text-strat;
+  text-transform: uppercase;
+  margin: 2.5rem 0;
+}
+
+                         /***competitive analysis***/
+
+.comp-analysis {
+  grid-area: comp-analysis;
+  margin: 2.5rem 0;
+}
+
+
+                            /****user personas***/
+.personas {
+  grid-area: personas;
+  grid-template-areas:
+  ".  .  text-personas     text-personas  . ."
+  ".  .  thomas            danny          . .";
+  grid-template-columns: repeat(6, 2fr);
+}
+
+.text-personas {
+  grid-area: text-personas;
+}
+
+.thomas {
+  grid-area: thomas;
+  margin-right: 3rem;
+}
+
+.danny {
+  grid-area: danny;
+  margin-left: 3rem;
+}
+
+.thomas, .danny {
+  background-color: #fff;
+  border-radius: .5rem;
+  margin-top: 2.5rem;
+  padding: 2.5rem;
+  text-align: center;
+}
+/**************************************************INFORMATION ARCHITECTURE***/
+
+.info-arch {
+  grid-area: info-arch;
+  grid-template-areas:
+  ".   text-info      .              .                 .     ."
+  ".   .              user-stories   user-stories      .     ."
+  ".   .              user-flows     user-flows        .     ."
+  "wireframes   wireframes   wireframes     wireframes     wireframes     wireframes"
+  ".   .              mockups        mockups           .     .";
+  grid-template-columns: repeat(6, 2fr);
+}
+
+.text-info {
+  grid-area: text-info;
+  text-transform: uppercase;
+  margin: 2.5rem 0;
+}
+                             /***user stories***/
+.user-stories {
+  grid-area: user-stories;
+  grid-template-areas:
+  ".    .      stories        stories          .    ."
+  ".    .      list-stories   list-stories     .    .";
+  grid-template-columns: repeat(6, 2fr);
+}
+
+.stories {
+  grid-area: stories;
+}
+
+.list-stories {
+  grid-area: list-stories;
+  border: .1rem solid rgba(0, 0, 0, 0.25);
+  grid-template-areas:
+  "high-pri         high-pri"
+  "new-user         returning-user";
+  grid-template-columns: repeat(2, 6fr);
+  margin-top: 5rem;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.high-pri {
+  grid-area: high-pri;
+  padding-bottom: 2rem;
+}
+
+.new-user {
+  grid-area: new-user;
+  padding-left: : 2rem;
+}
+
+.returning-user {
+  grid-area: returning-user;
+  padding-right: 2rem;
+}
+
+                              /***user flows***/
+.user-flows {
+  grid-area: user-flows;
+  grid-template-areas:
+  ".         .         text-flows text-flows .         ."
+  "sign-up   sign-up   sign-up    sign-up    sign-up   sign-up"
+  "img-flows img-flows img-flows  img-flows  img-flows img-flows";
+  grid-template-columns: repeat(6, 2fr);
+  justify-content: center;
+  padding: 5rem;
+}
+
+.text-flows {
+  grid-area: text-flows;
+  margin: 2.5rem 0;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  grid-area: sign-up;
+  justify-content: center;
+}
+
+.img-flows {
+  display: flex;
+  grid-area: img-flows;
+  grid-template-areas:
+  "sign-in   upload    organize";
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  padding-top: 5rem;
+
+}
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  grid-area:sign-in;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  grid-area: upload;
+  justify-content: center;
+}
+
+.organize {
+  display: flex;
+  flex-direction: column;
+  grid-area: organize;
+}
+                              /***wireframes***/
+.wireframes {
+  grid-area: wireframes;
+  grid-template-areas:
+  ".  .  . text-wireframes text-wireframes text-wireframes  .  .  ."
+  ".  sketch-dash sketch-dash sketch-dash  .  wire-dash  wire-dash wire-dash ."
+  ".  .  .  . cta-wireframes  .  .  .  .";
+  grid-template-columns: 2fr repeat(3, 1fr) 2fr repeat(3,1fr) 2fr;
+  justify-content: center;
+}
+
+.text-wireframes {
+  grid-area: text-wireframes;
+  margin: 2.5rem 0;
+}
+
+.sketch-dash {
+  display: flex;
+  grid-area: sketch-dash;
+}
+
+.wire-dash {
+  display: flex;
+  grid-area: wire-dash;
+}
+
+.cta-wireframes {
+  grid-area: cta-wireframes;
+  margin-top: 5rem;
+  text-align: center;
+}
+                               /***mockups***/
+.mockups {
+  grid-area: mockups;
+  grid-template-areas:
+  ". . . text-mockups text-mockups text-mockups  . . ."
+  ". . . img-wire     img-wire      img-wire     . . ."
+  ". . . .            cta-mockups  .             . . .";
+  grid-template-columns: 2fr repeat(3, 1fr) 2fr repeat(3,1fr) 2fr;
+  justify-items: center;
+}
+
+.text-mockups {
+  grid-area: text-mockups;
+  margin: 2.5rem 0;
+}
+
+.img-wire {
+  display: grid;
+  grid-area: img-wire;
+  grid-column-gap: 3rem;
+  grid-template-areas:
+  "landing-wire    dash-wire"
+  "landing-wire    upload-wire";
+  justify-content: center;
+
+}
+
+.landing-wire {
+  grid-area:landing-wire;
+}
+
+.dash-wire {
+  grid-area: dash-wire;
+}
+
+.upload-wire {
+  grid-area: upload-wire;
+  padding-top: 2.5rem;
+}
+
+.cta-mockups {
+  grid-area: cta-mockups;
+  margin: 2.5rem;
+  text-align: center;
+}
+/*************************************************************VISUAL DESIGN***/
+.visual-design {
+  grid-area: visual-design;
+  grid-template-areas:
+  "text-visual"
+  "logo"
+  "typography"
+  "style-guide"
+  "prototypes"
+  "pref-testing";
+  grid-template-columns:1fr;
+  justify-content: center;
+}
+
+.text-visual {
+  grid-area: text-visual;
+  text-transform: uppercase;
+}
+                                /***logo***/
+.logo {
+  grid-area: logo;
+  grid-template-areas:
+  ". . . .  text-logo-1   text-logo-1   text-logo-1 text-logo-1 . . . ."
+  ". . . camel-sketch  camel-sketch  .  camel-logo  camel-logo  . . . ."
+  ". . . . text-logo-2   text-logo-2   text-logo-2 text-logo-2 . . . ."
+  ". . . castle        castle   .     bw-logo     bw-logo     . . . .";
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.text-logo-1 {
+  grid-area: text-logo-1;
+  margin: 2.5rem 0;
+}
+
+.camel-sketch {
+  grid-area: camel-sketch;
+}
+
+.camel-logo {
+  grid-area: camel-logo;
+}
+
+.text-logo-2 {
+  grid-area: text-logo-2;
+  margin: 2.5rem 0;
+}
+
+.castle {
+  grid-area: castle;
+}
+
+.bw-logo {
+  grid-area: bw-logo;
+}
+                             /***typography***/
+.typography {
+  grid-area: typography;
+  grid-template-areas:
+  ".  text-type ."
+  ".  img-type  .";
+  grid-template-columns: repeat(3, 4fr);
+  justify-content: center;
+}
+
+.text-type {
+  grid-area: text-type;
+  margin: 2.5rem 0;
+}
+
+.img-type {
+  display: grid;
+  grid-area: img-type;
+  justify-content: center;
+}
+
+                            /***style guide***/
+.style-guide {
+  grid-area: style-guide;
+  grid-template-areas:
+  ".            text-style        ."
+  "img-style    img-style         img-style";
+  grid-template-columns: repeat(3, 4fr);
+}
+
+.text-style {
+  grid-area: text-style;
+  margin: 2.5rem 0;
+}
+
+.img-style {
+  display: grid;
+  grid-area: img-style;
+  justify-content: center;
+}
+
+                            /***prototypes***/
+.prototypes {
+  grid-area: prototypes;
+  grid-template-areas:
+  ".                  text-prototypes      ."
+  "first-mobile       second-mobile        third-mobile"
+  "changes            changes              changes"
+  "first-desktop      second-desktop       third-desktop";
+  grid-template-columns: 4fr 4fr 4fr;
+}
+
+.text-prototypes {
+  grid-area: text-prototypes;
+  margin: 2.5rem 0;
+}
+
+.first-mobile {
+  grid-area: first-mobile;
+  text-align: center;
+}
+
+.second-mobile {
+  grid-area: second-mobile;
+  text-align: center;
+}
+
+.third-mobile {
+  grid-area: third-mobile;
+  text-align: center;
+}
+
+.changes {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  grid-area: changes;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+
+.change1, .change2, .change3 {
+  background-color: #fff;
+  border-radius: 5rem;
+  padding: 2rem;
+  width: 25%;
+}
+.change1 {
+  border: .5rem solid rgba(5, 107, 189, .6);
+  grid-area: change1;
+}
+
+.change2 {
+  border: .5rem solid rgba(243, 204, 45, .8);
+  grid-area: change2;
+}
+
+.change3 {
+  border: .5rem solid rgba(20, 166, 67, .6);
+  grid-area: change3;
+}
+
+.first-desktop {
+  grid-area: first-desktop;
+  padding: 3rem;
+  text-align: center;
+}
+
+
+.second-desktop {
+  grid-area: second-desktop;
+  margin-top: 2.9rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.third-desktop {
+  grid-area: third-desktop;
+  margin-top: 2.9rem;
+  padding: 3rem;
+  text-align: center;
+}
+                           /***preference testing***/
+.pref-testing {
+  grid-area: pref-testing;
+  grid-template-areas:
+  ".        text-pref ."
+  "pref-img pref-img  pref-img";
+  grid-template-columns: repeat(3, 4fr);
+}
+.text-pref {
+  grid-area: text-pref;
+  margin: 2.5rem 0;
+
+}
+
+.pref-img {
+  display: flex;
+  grid-area: pref-img;
+  margin: 2.5rem 0;
+  justify-content: center;
+}
+/****************************************************************CONCLUSION***/
+.conclusion {
+  grid-area: conclusion;
+  grid-template-areas:
+  ". . . . title-conclusion . . . ."
+  ". . . text-conclusion  text-conclusion text-conclusion . . ."
+  ". . . roles      deliverables     tools      . . ."
+  ". . . icon-roles con-deliv        icon-tools . . .";
+  grid-template-columns:  2fr repeat(3, 1fr) 2fr repeat(3,1fr) 2fr;
+  padding: 5rem;
+}
+
+
+.title-conclusion {
+  grid-area: title-conclusion;
+  padding: 2rem;
+}
+.text-conclusion {
+  grid-area: text-conclusion;
+  margin-bottom: 5rem;
+}
+
+.roles {
+  grid-area: roles;
+  margin: 2.5rem 0;
+}
+
+.icon-roles {
+  display: grid;
+  grid-area: icon-roles;
+  margin-top: 10rem;
+  justify-content: center;
+
+}
+
+.deliverables {
+  grid-area: deliverables;
+  margin: 2.5rem 0;
+}
+
+.icon-deliv {
+  display: grid;
+  grid-area: icon-deliv;
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+.tools {
+  grid-area: tools;
+  margin: 2.5rem 0;
+}
+
+.icon-tools {
+  display: grid;
+  grid-area: icon-tools;
+  margin-top: 8rem;
+  justify-content: center;
+}
+/*************************************************************MORE PROJECTS***/
+.more {
+  border-radius: 5rem;
+  display: grid;
+  grid-area: more;
+  grid-template-areas:
+  ". top ."
+  ". see-more   ."
+  "blocjams  .    busybus";
+  grid-template-columns:2fr auto 2fr;
+}
+
+.top {
+  text-align: center;
+  grid-area: top;
+  padding: 10rem;
+}
+
+.see-more {
+  grid-area: see-more;
+  padding: 5rem 0;
+}
+
+.blocjams, .busybus {
+  background-color: #fff;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 3rem;
+  padding: 6rem;
+}
+
+.blocjams {
+  grid-area: blocjams;
+  margin-left: 20rem;
+}
+
+.busybus {
+  grid-area: busybus;
+  margin-right: 20rem;
+}
+                                 /***footer***/
+
+.connect {
+  background-color: #056BBD;
+  border-top-left-radius: 20rem;
+  grid-area: connect;
+  margin-top: 10rem;
+  padding: 10% 20%;
+  text-align: center;
+}
+
+.connect > h2 {
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto 0;
+  width: 40%;
+}
+
+/* @media (min-width: 70rem) {
+  .container {
+    display:grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-areas:
+    "navbar navbar"
+    "hero hero"
+    "camelot camelot"
+    "busybus busybus"
+    "blocjams  blocjams"
+    "connect connect";
+  } */

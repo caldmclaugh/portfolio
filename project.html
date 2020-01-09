@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camelot Case Study</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/camelot-style.css">
   </head>
   <body>
-    <div class="container">
 
 <!--nav-->
       <nav class="navbar">
@@ -18,66 +17,86 @@
         <a href="project.html#contact"><p>Contact</p></a>
       </nav>
 
+    <main class="container">
 <!--hero-->
       <section class="hero">
+        <div class="white-wrapper">
         <a id="top"></a>
-        <figure>
+        <figure class="camelot-logo">
           <img src="images/camelot-logo.svg" alt="Camelot logo">
         </figure>
-        <h1>Camelot offers a cloud storage solution for users who need to store and send large amounts of data in a secure and simple interface.</h1>
-        <figure>
-          <img src="images/camelot-mockup-img.svg" alt="Landing page">
+        <h1 class="text-hero">Camelot offers a cloud storage solution for users who need to store and send large amounts of data in a secure and simple interface.</h1>
+        <figure class="camelot-landing">
+          <img src="images/camelot-landing.svg" alt="Landing page">
         </figure>
-        <a class="cta" href="bit.ly/camelotapp">See prototype</a>
+        <div class="cta-prototype">
+          <a class="cta" href="bit.ly/camelotapp">See prototype</a>
+        </div>
+
+      </div>
       </section>
 
 <!--problem/solution-->
-      <section class="problem">
-        <h2>Problem</h2>
-          <p>
-            Among current cloud storage options, users were still concerned about security and privacy, as well as the financial and capacity limitations of these services.
-          </p>
-        <figure>
-          <img src="images/problem.svg" alt="Problem icon">
-        </figure>
-
-        <h2>Solution</h2>
-          <p>
-            Discovery of barriers led me to design an app and brand that focused on privacy and security, unlimited storage and competitive price plans.
-          </p>
-        <figure>
-          <img src="images/solution.svg" alt="Solution icon">
-        </figure>
+      <section class="prob-sol">
+        <div class="problem">
+          <h2 class="title-prob">Problem</h2>
+            <p class="text-prob">
+              Among current cloud storage options, users were still concerned about security and privacy, as well as the financial and capacity limitations of these services.
+            </p>
+          <figure class="icon-prob">
+            <img src="images/problem.svg" alt="Problem icon">
+          </figure>
+        </div>
+        <div class="solution">
+          <h2 class="title-sol">Solution</h2>
+            <p class="text-sol">
+              Discovery of barriers led me to design an app and brand that focused on privacy and security, unlimited storage and competitive price plans.
+            </p>
+          <figure class="icon-sol">
+            <img src="images/solution.svg" alt="Solution icon">
+          </figure>
+        </div>
       </section>
 
 <!--DISCOVERY-->
       <section class="discovery">
+      <div class="text-disc">
         <h2>Discovery</h2>
+      </div>
 
 <!--user research-->
-        <h3>User research</h3>
-        <p>
-          To kick off the discovery phase, I created a survey to get feedback on current cloud users and nonusers. I found that <span>two-thirds of nonusers had privacy and security concerns keeping them from using cloud storage</span>, and stronger privacy was a proposed improvement from current users. Among other suggestions were more free storage and larger file sharing capability. <span>This feedback inspired brand values of privacy, security, and ample storage</span>.
-        </p>
+        <div class="user-research">
+          <h3>User research</h3>
+          <p>
+            To kick off the discovery phase, I created a survey to get feedback on current cloud users and nonusers. I found that <span>two-thirds of nonusers had privacy and security concerns keeping them from using cloud storage</span>, and stronger privacy was a proposed improvement from current users. Among other suggestions were more free storage and larger file sharing capability. <span>This feedback inspired brand values of privacy, security, and ample storage</span>.
+          </p>
+        </div>
         <!--chart will go here-->
       </section>
 
 <!--STRATEGY-->
       <section class="strategy">
+      <div class="text-strat">
         <h2>Strategy</h2>
+      </div>
 
 <!--competitive analysis-->
+        <div class="comp-analysis">
           <h3>Competitive analysis</h3>
             <p>
               My exploration of current cloud storage apps confirmed the issues I discovered in the user survey. Google Drive, Dropbox and Evernote all had <span>privacy issues and a lack of zero-knowledge encryption</span> in common. Addressing these weaknesses of privacy and security, issues users faced with current cloud storage and barriers that kept nonusers away, became my design focus.
             </p>
+        </div>
 
 <!--user personas-->
+        <div class="personas">
+        <div class="text-personas">
           <h3>User personas</h3>
             <p>
               Insight from the user surveys and competitive analysis informed my user personas. The first is a hobby filmmaker who needs to store video files, requires large amounts of data storage, and would benefit from a way to share files with his fellow filmmaker friends. The second is a professional in the renewables industry who needs a place to store large amounts of proprietary company data, namely previous projects, and a way to share the data with team members.
             </p>
-          <figure>
+        </div>
+          <figure class="thomas">
             <img src="images/thomas.svg" alt="Thomas persona">
             <figcaption><h3>Thomas</h3>
               <ul>Needs:
@@ -87,7 +106,7 @@
               </ul>
             </figcaption>
           </figure>
-          <figure>
+          <figure class="danny">
             <img src="images/Danny.svg" alt="Danny persona">
             <figcaption><h3>Danny</h3>
               <ul>Needs:
@@ -96,72 +115,104 @@
                 <li>privacy and security</li>
               </ul>
             </figcaption>
+          </div>
       </section>
 
 <!--INFORMATION ARCHITECTURE-->
       <section class="info-arch">
+      <div class="text-info">
         <h2>Information architecture</h2>
+      </div>
 
 <!--user stories-->
-          <h3>User stories</h3>
-            <p>
-              I started to think about the features users would need in this cloud storage app. With personas in mind, I created a range of user stories. <span>The most challenging part of this task was identifying the priorities of certain actions</span>. I made decisions about the direction in which I wanted the design to go, and I would later find out that for many tasks the weight I initially assigned changed throughout the design process.
-            </p>
-            <p>
-              For example, I originally placed stories about saving content such as documents, images, videos and links in the high priority category. Later on, when doing my mockups <span>I realized that the web-clipping feature I created to fulfill these stories introduced scope creep</span>. Still, laying out all the possibilities of the app’s potential was worthwhile because it showed additional components that could be added in a future version, i.e. a webclip plugin.
-            </p>
+        <div class="user-stories">
+          <div class="stories">
+            <h3>User stories</h3>
+              <p>
+                I started to think about the features users would need in this cloud storage app. With personas in mind, I created a range of user stories. <span>The most challenging part of this task was identifying the priorities of certain actions</span>. I made decisions about the direction in which I wanted the design to go, and I would later find out that for many tasks the weight I initially assigned changed throughout the design process.
+              </p>
+              <p>
+                For example, I originally placed stories about saving content such as documents, images, videos and links in the high priority category. Later on, when doing my mockups <span>I realized that the web-clipping feature I created to fulfill these stories introduced scope creep</span>. Still, laying out all the possibilities of the app’s potential was worthwhile because it showed additional components that could be added in a future version, i.e. a webclip plugin.
+              </p>
+          </div>
 
-            <h3>High priority stories</h3>
-              <ul>As a new user, I want to...
-                <li>sign up for an account using an email</li>
-                <li>sign up for an account using Gmail</li>
-                <li>see what features the app offers</li>
-                <li>explore the different price plans</li>
-              </ul>
-
-              <ul>As a returning user, I want to...
-                <li>sign into my existing account</li>
-                <li>upload files from my computer</li>
-                <li>back up docs, videos, photos to the cloud</li>
-                <li>back up my files securely</li>
-                <li>store all my files in one place</li>
-                <li>store large files in the cloud</li>
-                <li>organize my files into folders</li>
-                <li>create tags to organize my files</li>
-                <li>access the app from my computer</li>
-              </ul>
+          <div class="list-stories">
+            <h3 class="high-pri">High priority stories</h3>
+              <div class="new-user">
+                <ul>As a new user, I want to...
+                  <li>sign up for an account using an email</li>
+                  <li>sign up for an account using Gmail</li>
+                  <li>see what features the app offers</li>
+                  <li>explore the different price plans</li>
+                </ul>
+              </div>
+              <div class="returning-user">
+                <ul>As a returning user, I want to...
+                  <li>sign into my existing account</li>
+                  <li>upload files from my computer</li>
+                  <li>back up docs, videos, photos to the cloud</li>
+                  <li>back up my files securely</li>
+                  <li>store all my files in one place</li>
+                  <li>store large files in the cloud</li>
+                  <li>organize my files into folders</li>
+                  <li>create tags to organize my files</li>
+                  <li>access the app from my computer</li>
+                </ul>
+              </div>
+            </div>
+        </div>
 
 <!--user flows-->
-          <h3>User flows</h3>
-            <p>
-              I mapped out the high-priority user stories to eventually test with users. I included processes for signing up, signing in, uploading files, organizing items, saving content, sharing and receiving shared items. Thinking about the actions for each step helped me to view each task from different user perspectives.
-            </p>
-            <p>
-              For example, one user might choose to sign up through Google and another user might prefer signing up through the app itself. Even a simple signup process can become complex when mapping out user flows, and it was a reminder of the importance of considering all possible decision points for potential users.
-            </p>
-            <figure>
+        <div class="user-flows">
+          <div class="text-flows">
+            <h3>User flows</h3>
+              <p>
+                I mapped out the high-priority user stories to eventually test with users. I included processes for signing up, signing in, uploading files, organizing items, saving content, sharing and receiving shared items. Thinking about the actions for each step helped me to view each task from different user perspectives.
+              </p>
+              <p>
+                For example, one user might choose to sign up through Google and another user might prefer signing up through the app itself. Even a simple signup process can become complex when mapping out user flows, and it was a reminder of the importance of considering all possible decision points for potential users.
+              </p>
+          </div>
+            <figure class="sign-up">
               <img src="images/sign-up-user-flow.svg" alt="sign up user flow">
                 <figcaption>Sign up</figcaption>
+            </figure>
+            <div class="img-flows">
+            <figure class="sign-in">
               <img src="images/sign-in-user-flows.svg" alt="sign in user flow">
                 <figcaption>Sign in</figcaption>
+            </figure>
+            <figure class="upload">
               <img src="images/upload-user-flows.svg" alt="upload user flow">
                 <figcaption>Upload</figcaption>
+            </figure>
+            <figure class="organize">
               <img src="images/organize-user-flows.svg" alt="organize user flow">
                 <figcaption>Organize</figcaption>
             </figure>
-
+          </div>
+        </div>
 <!--wireframes-->
+        <div class="wireframes">
+          <div class="text-wireframes">
           <h3>Wireframes</h3>
             <p>
               My first wireframes were very basic. I wanted to show the structure alone without the content, so there were no images, only buttons, icons and minimal text. I soon realized the importance of giving the wireframes some context so that they would make sense in the clickable prototype, so I refined them to include more detail, mainly in text form.
             </p>
-            <figure>
+          </div>
+            <figure class="sketch-dash">
               <img src="images/dashboard-sketch.svg" alt="dashboard sketch">
+            </figure>
+            <figure class="wire-dash">
               <img src="images/wireframes-dashboard.svg" alt="dashboard wireframe">
             </figure>
-            <a class="cta">See all wireframes</a>
-
+            <div class="cta-wireframes">
+              <a class="cta">See all wireframes</a>
+            </div>
+        </div>
 <!--mockups-->
+        <div class="mockups">
+        <div class="text-mockups">
           <h3>Mockups</h3>
             <p>
               My second set of wireframes were used to put together a clickable prototype, which I used in the first round of usability testing.<span>The first user feedback I got was mostly about content clarity</span>. For example, one of my participants pointed out that I had shown the pricing plans in an order that did not make sense to her. Another participant had expected to see a call-to-action in the pricing section.
@@ -169,46 +220,71 @@
             <p>
               My last participant struggled with finding the button to upload content, which was confusing because it was not consistent with other buttons in the prototype. <span>I made a note of improvements to make for the next iteration</span>, and I got confirmation that other than these few hiccups the prototype was easy to use and made for a simple user experience.
             </p>
-            <figure>
+        </div>
+        <div class="img-wire">
+            <figure class="landing-wire">
               <img src="images/wf-landing.svg" alt="landing page wireframe">
+            </figure>
+            <figure class="dash-wire">
               <img src="images/dashboard-wireframe.svg" alt="dashboard wireframe">
+            </figure>
+            <figure class="upload-wire">
               <img src="images/upload.svg" alt="upload wireframe">
             </figure>
-            <a class="cta">See all mockups</a>
+          </div>
+            <div class="cta-mockups">
+              <a class="cta">See all mockups</a>
+            </div>
+        </div>
       </section>
 
 <!--VISUAL DESIGN-->
       <section class="visual-design">
+      <div class="text-visual">
         <h2>Visual design</h2>
+      </div>
 
 <!--logo-->
+        <div class="logo">
+          <div class="text-logo-1">
           <h3>Logo</h3>
             <p>
               Through brainstorming brand ideas I came up with the idea to call the app Camelot. The initial train of thought was of a camel, known for being able to store large amounts of water (actually fat) in their humps, as a metaphor for the app’s ability to store large amounts of data in the cloud.  I thought this could work because Camelot is known as the great castle associated with King Arthur. With the main brand differentiators being the unlimited storage and security features, I wanted these concepts to be present in the logo.
             </p>
-            <figure>
+          </div>
+            <figure class="camel-logo">
               <img src="images/camel-logo.svg" alt="camel logo">
+            </figure>
+            <figure class="camel-sketch">
               <img src="images/camel-sketch.svg" alt="camel sketch">
             </figure>
-
+          <div class="text-logo-2">
             <p>
               I later nixed the camel concept, worried that camels also conjure images of the desert and scarcity. I did not want such thoughts associated with the brand, however, I held onto Camelot. Inspired by King Arthur’s chief fortress, the legendary castle where he and his knights would collaborate at the Round Table, the Camelot brand draws parallels in that users collect, organize and collaborate in a private and secure place. <span>The logo includes a cloud surrounding a castle containing a keyhole, echoing values of privacy and security</span>, and in the negative space reveals a watchdog to evoke an additional sense of protection.
             </p>
-            <figure>
+          </div>
+            <figure class="castle">
               <img src="images/castle.svg" alt="castle">
+            </figure>
+            <figure class="bw-logo">
               <img src="images/camelot-b&w.svg" alt="camelot b&w logo">
             </figure>
-
+        </div>
 <!--typography-->
+        <div class="typography">
+          <div class="text-type">
           <h3>Typography</h3>
             <p>
               I chose Righteous as the brand typeface because to me it has a bold, sturdy appearance. <span>I wanted to find a typeface that would come across as strong or dignified to align with associations of the original Camelot</span>, and the brand values of privacy and security. I chose Muli as the complementary typeface because it is very readable and has a geometric quality that harmonizes well with Righteous.
             </p>
-            <figure>
+          </div>
+            <figure class="img-type">
               <img src="images/typography.svg" alt="typography">
             </figure>
-
+        </div>
 <!--style guide-->
+        <div class="style-guide">
+          <div class="text-style">
           <h3>Style guide</h3>
             <p>
                 The style guide I created would serve as a set of standards for various assets within the brand. I included all logo configurations and directions for proper and improper logo use. I created a color palette. I chose dark teal for the logo and text color because it has the stable, trustworthy qualities of blue, and optimistic, harmonic properties of green. The contrasting oranges in my palette are energizing and I thought would serve well for calls to action and links. For the background color I chose the almost white light blue, a tint of the dark teal, which contrasts well with the other hues.
@@ -216,11 +292,15 @@
             <p>
                 The guide also includes brand and complementary typefaces, icons and buttons, and typography styling for desktop and mobile. This guide is meant to be a tool for others to easily replicate and create similar assets for Camelot, a key for easy and proper brand representation.
             </p>
-            <figure>
+          </div>
+            <figure class="img-style">
               <img src="images/style-guide.svg" alt="style guide">
             </figure>
+        </div>
 
 <!--prototypes-->
+        <div class="prototypes">
+          <div class="text-prototypes">
           <h3>Prototypes</h3>
             <p>
               My first iteration was solid but it revealed that I had made some functions of the app redundant. For example, I had separate screens for different actions when each screen was roughly the same layout but with a different title. For my second iteration I combined these actions directly on the dashboard, which made navigation much smoother.
@@ -235,32 +315,43 @@
               <span>Performing usability tests on my prototypes showed me several areas where usability could be improved, and the reactions of my participants would inform important changes to my design
               </span>.
             </p>
+          </div>
 
-            <figure>
+            <figure class="first-mobile">
               <img src="images/1st-it.svg">
                 <figcaption>1st iteration</figcaption>
+            </figure>
+            <figure class="second-mobile">
               <img src="images/2nd-it.svg">
                 <figcaption>2nd iteration</figcaption>
+            </figure>
+            <figure class="third-mobile">
               <img src="images/3rd-it.svg">
                 <figcaption>3rd iteration</figcaption>
             </figure>
 
             <ol class="changes">
-              <li>1. Combined actions on separate screens into one dashboard.</li>
-              <li>2. Added an account menu and subsequently a hamburger menu including a way to sign out of the mobile app.</li>
-              <li>3. Added “more” icon and later replaced with checkboxes.</li>
+              <li class="change1">1. Combined actions on separate screens into one dashboard.</li>
+              <li class="change2">2. Added an account menu and subsequently a hamburger menu including a way to sign out of the mobile app.</li>
+              <li class="change3">3. Added “more” icon and later replaced with checkboxes.</li>
             </ol>
 
-            <figure>
+            <figure class="first-desktop">
               <img src="images/1st-desktop.svg">
                 <figcaption>1st iteration</figcaption>
+            </figure>
+            <figure class="second-desktop">
               <img src="images/2nd-desktop.svg">
                 <figcaption>2nd iteration</figcaption>
+            </figure>
+            <figure class="third-desktop">
               <img src="images/3rd-desktop.svg">
                 <figcaption>3rd iteration</figcaption>
             </figure>
-
+        </div>
 <!--preference testing-->
+        <div class="pref-testing">
+          <div class="text-pref">
           <h3>Preference testing</h3>
             <p>
               For more user feedback, I tested three elements in my design where I considered more than one potential style. The first was simply whether a button should be square with rounded corners or completely rounded. Initially, 67% of participants said they preferred the rounded option, however I only had 12 responses so the difference was not statistically significant. I repeated this test later on and increased the white space around each button to make sure that I wasn’t creating a bias due to perceived crowding of the element, and with 21 responses I got the exact same result: <span>67% preferred the rounded button</span>. I had initially decided on the square buttons, but I changed the shape of my buttons to reflect this preference.
@@ -268,74 +359,94 @@
             <p>
               The second test was which popup screen I should use, and <span>69% of participants chose the centered popup</span> over the side popup. This was the style I chose initially, so I simply kept this screen the same. The last test was on the color scheme, and whether the side bar should be dark and the rest of the screen light  or vise versa. With <span>83% of participants confirming my preference for the light majority</span>, I kept this screen as is as well.
             </p>
+            </div>
+          <figure class="pref-img">
             <img src="images/pref-test.svg">
+          </figure>
+        </div>
       </section>
 
 <!--CONCLUSION-->
       <section class="conclusion">
-        <h3>Conclusion</h3>
-            <p>
-              Through the design process I created a simple interface for users to navigate their cloud storage needs. In reflecting on this project, my biggest takeaway was how complex the design process is, from start to finish, and how valuable each step is in creating a worthwhile product. <span>While parts can be tedious, more research, testing and thoughtful branding leads to a stronger design</span>.  User testing can quickly point out issues that you were initially blind to, and iteration, though taxing, always produces results.
-            </p>
-            <p>
-              If I had more time, I would do a second survey. Once I progressed further in the project, I thought of more questions to ask and got clarity on how I could have asked some of my questions differently. Having more input early on could have given me more confidence in my early designs. I would also spend more time on the visual design of the site, perhaps adding more texture or images to enhance aesthetics. In future projects, I will continue to rely heavily on user feedback early and often in the design process and reflect thoroughly on how each step can provide key insights to move forward.
-            </p>
+        <div class="title-conclusion">
+          <h3>Conclusion</h3>
+        </div>
+        <div class="text-conclusion">
+              <p>
+                Through the design process I created a simple interface for users to navigate their cloud storage needs. In reflecting on this project, my biggest takeaway was how complex the design process is, from start to finish, and how valuable each step is in creating a worthwhile product. <span>While parts can be tedious, more research, testing and thoughtful branding leads to a stronger design</span>.  User testing can quickly point out issues that you were initially blind to, and iteration, though taxing, always produces results.
+              </p>
+              <p>
+                If I had more time, I would do a second survey. Once I progressed further in the project, I thought of more questions to ask and got clarity on how I could have asked some of my questions differently. Having more input early on could have given me more confidence in my early designs. I would also spend more time on the visual design of the site, perhaps adding more texture or images to enhance aesthetics. In future projects, I will continue to rely heavily on user feedback early and often in the design process and reflect thoroughly on how each step can provide key insights to move forward.
+              </p>
+        </div>
 
             <div class="roles">
               <ul><h3>Roles</h3>
-                <li>User research</li>
-                <li>nformation architecture</li>
-                <li>Branding</li>
-                <li>Visual design</li>
-                <li>Usability testing</li>
-                <li>Mockup iteration</li>
-                <img src="images/roles.svg" alt="Roles icon">
+                <li><p>User research</p></li>
+                <li><p>nformation architecture</p></li>
+                <li><p>Branding</p></li>
+                <li><p>Visual design</p></li>
+                <li><p>Usability testing</p></li>
+                <li><p>Mockup iteration</p></li>
               </ul>
+              <figure class="icon-roles">
+                <img src="images/roles.svg" alt="roles icon">
+              </figure>
+            </div>
 
-              <ul><h3>Deliverables</h3>
-                <li>User surveys</li>
-                <li>Competitive analysis</li>
-                <li>User personas</li>
-                <li>User stories</li>
-                <li>User flows</li>
-                <li>Wireframes</li>
-                <li>Branding</li>
-                <li>High fidelity mockups</li>
-                <li>Clickable prototype</li>
-                <img src="images/deliverables.svg" alt="Deliverables icon">
+            <div class="deliverables">
+              <ul><h3>Deliverables</p></h3>
+                <li><p>User surveys</p></li>
+                <li><p>Competitive analysis</p></li>
+                <li><p>User personas</p></li>
+                <li><p>User stories</p></li>
+                <li><p>User flows</p></li>
+                <li><p>Wireframes</p></li>
+                <li><p>Branding</p></li>
+                <li><p>High fidelity mockups</p></li>
+                <li><p>Clickable prototype</p></li>
               </ul>
+              <figure class="icon-deliv">
+                <img src="images/deliverables.svg" alt="deliverables icon">
+              </figure>
+            </div>
 
-              <ul><h5>Tools</h5>
-                <li>Figma</li>
-                <li>UsabilityHub</li>
-                <li>InVision</li>
-                <li>Whimsical</li>
-                <li>draw.io</li>
-                <li>Google Sheets</li>
-                <li>Google Forms</li>
-                <img src="images/tools.svg" alt="Tools icon">
+            <div class="tools">
+              <ul><h3>Tools</h3>
+                <li><p>Figma</p></li>
+                <li><p>UsabilityHub</p></li>
+                <li><p>InVision</p></li>
+                <li><p>Whimsical</p></li>
+                <li><p>draw.io</p></li>
+                <li><p>Google Sheets</p></li>
+                <li><p>Google Forms</p></li>
               </ul>
+              <figure class="icon-tools">
+                <img src="images/tools.svg" alt="tools icon">
+              </figure>
             </div>
       </section>
 
 <!--MORE PROJECTS-->
       <section class="more">
+        <div class="top">
         <a class="cta" href="project.html#top">Back to top</a>
-        <h1>See more projects</h1>
+      </div>
+        <h1 class="see-more">See more projects</h1>
 
-        <section class="blocjams">
+        <div class="blocjams">
           <figure>
             <img src="images/bloc_jams_logo.png" alt="BlocJams logo">
           </figure>
           <h2>BlocJams is a functional music player with displayed information and standard music controls.</h2>
           <a class="cta" href="bjproject.html">See case study</a>
-        </section>
+        </div>
 
-        <section class="busybus">
+        <div class="busybus">
           <h1>BusyBus</h1>
           <h2>BusyBus is a mobile public transit app that informs riders of ETA's for multiple busses using the same stop.</h2>
           <a class="cta" href="bbproject.html">See case study</a>
-        </section>
+        </div>
       </section>
 
       <!--footer-->
@@ -348,3 +459,4 @@
           <img src="images/email.svg" alt="email icon">
         </figure>
       </footer>
+    </main>
