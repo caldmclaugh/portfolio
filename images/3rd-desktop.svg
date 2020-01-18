@@ -1,13 +1,11 @@
-<svg width="457" height="369" viewBox="0 0 457 369" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<circle cx="442.5" cy="76.5264" r="14.5" fill="#14A643"/>
-<path d="M444.035 76.6284C445.199 76.7724 446.087 77.1684 446.699 77.8164C447.311 78.4644 447.617 79.2744 447.617 80.2464C447.617 80.9784 447.431 81.6444 447.059 82.2444C446.687 82.8444 446.123 83.3244 445.367 83.6844C444.623 84.0324 443.711 84.2064 442.631 84.2064C441.731 84.2064 440.861 84.0804 440.021 83.8284C439.193 83.5644 438.485 83.2044 437.897 82.7484L438.905 80.9304C439.361 81.3144 439.913 81.6204 440.561 81.8484C441.221 82.0644 441.899 82.1724 442.595 82.1724C443.423 82.1724 444.071 82.0044 444.539 81.6684C445.019 81.3204 445.259 80.8524 445.259 80.2644C445.259 79.6764 445.031 79.2204 444.575 78.8964C444.131 78.5604 443.447 78.3924 442.523 78.3924H441.371V76.7904L444.233 73.3884H438.509V71.4264H447.095V72.9924L444.035 76.6284Z" fill="white"/>
+<svg width="432" height="369" viewBox="0 0 432 369" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_d)">
-<rect x="4.01953" y="0.613281" width="423.985" height="360.386" fill="url(#pattern0)"/>
-<rect x="4.48716" y="1.08091" width="423.049" height="359.451" stroke="#E2E2E2" stroke-width="0.935267"/>
+<rect x="4.01953" y="0.458008" width="423.985" height="360.386" fill="url(#pattern0)"/>
+<rect x="4.48716" y="0.925641" width="423.049" height="359.451" stroke="#E2E2E2" stroke-width="0.935267"/>
 </g>
-<circle cx="380.102" cy="75.1055" r="9.06473" stroke="#14A643" stroke-opacity="0.6" stroke-width="1.87053"/>
+<circle cx="380.102" cy="74.9502" r="9.06473" stroke="#14A643" stroke-opacity="0.6" stroke-width="1.87053"/>
 <defs>
-<filter id="filter0_d" x="0.278463" y="0.613281" width="431.467" height="367.869" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="0.278463" y="0.458008" width="431.467" height="367.869" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="3.74107"/>

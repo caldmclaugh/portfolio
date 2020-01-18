@@ -5,59 +5,27 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   font-size: 10px;
 }
-
 body {
   background: linear-gradient(#E2EFFA 50%, #FFF7D5  50%);
   line-height: 1.5;
 }
-
-/***typography***/
-
-h1 {
-  font-family: "Ubuntu", "Open Sans", sans-serif;
-  font-size: 3.6rem;
-  font-weight:bold;
-  /* line-height: 5.6rem; */
-}
-
-h2 {
-  font-family: "Montserrat", "Open Sans",sans-serif;
-  font-size: 2.4rem;
-  font-weight: 600;
-  /* line-height: 3.9rem; */
-}
-
-h3 {
-  font-family: "Montserrat", "Open Sans",sans-serif;
-  font-size: 2rem;
-  font-weight:600;
-  /* line-height: 3.3rem; */
-}
-
-h4, p {
-  font-family: "Cabin", "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  /* line-height: 2.5rem; */
-}
-
 .container {
-  display: grid;
-  grid-template-areas:
-  "navbar"
-  "hero"
-  "camelot"
-  "busybus"
-  "blocjams"
-  "connect";
-  grid-template-columns: 1fr;
-  grid-template-rows:12rem 1fr 1fr 1fr 1fr auto;
   width: 100%;
 }
-
+.description {
+  background-color: #fff;
+  border-radius: 5rem;
+  display:flex;
+  flex-direction:column;
+  grid-row-gap: 2rem;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 66ch;
+  padding: 5rem 2rem;
+}
 .cta {
   background-color: #056BBD;
   border-radius: 5rem;
@@ -65,165 +33,296 @@ h4, p {
   font-family: "Montserrat","Open Sans", sans-serif;
   font-size: 2rem;
   font-weight: 600;
+  margin: auto;
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
-  width: 21rem;
+  width: max-content;
 }
-
-.rectangle {
-  height: 60%;
-  width: 40rem;
-  background-color:#e2e2e2;
+figure {
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
-
-.navbar, .hero, .camelot, .busybus, .blocjams, .connect {
-  display: grid;
-  padding: 2rem;
+/***typography***/
+h1 {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+  font-size: 3.2rem;
+  font-weight:bold;
 }
-
-.navbar {
-  align-items: center;
-  background-color: #fff;
-  grid-area: navbar;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.description {
-  background-color: #fff;
-  border-radius: 5rem;
-  display:flex;
-  flex-direction:column;
-  justify-content: space-around;
-  grid-row-gap: 2rem;
-  margin: 0 5%;
-  padding: 10%;
-}
-
-
-
-.hero {
-  background-color: #fff;
-  border-bottom-right-radius: 20rem;
-  grid-area: hero;
-  grid-template-areas:
-  "description-hero"
-  "rectangle";
-  grid-template-rows: auto;
-}
-
-section.hero > div.description {
-  grid-area: description-hero;
-}
-
-.rectangle {
-  grid-area: rectangle;
-}
-
-.camelot {
-  grid-area: camelot;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "description-camelot"
-  "camelot-img";
-}
-
-section.camelot > div.description {
-  grid-area: description-camelot;
-}
-
-.camelot-img {
-  grid-area: camelot-img;
-  max-width: 100%;
-  height: auto;
-}
-
-.busybus {
-  background-color: #fff;
-  border-radius:20rem 0;
-  grid-area: busybus;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "description-busybus"
-  "busybus-img";
-}
-
-section.busybus > div.description {
-  grid-area: description-busybus;
-}
-
-section.busybus > div.busybus-img {
-  grid-area: busybus-img;
-}
-
-.blocjams {
-  grid-area: blocjams;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "description-blocjams"
-  "blocjams-img";
-}
-
-section.blocjams > div.description {
-  grid-area: description-blocjams;
-}
-
-.blocjams-img {
-  grid-area: blocjams-img;
-  max-width: 100%;
-  height: auto;
-}
-
-.connect {
-  background-color: #056BBD;
-  border-top-left-radius: 20rem;
-  grid-area: connect;
-  padding: 10% 20%;
+h2 {
+  font-family: "Cabin", "Open Sans",sans-serif;
+  font-size: 1.6rem;
   text-align: center;
 }
-
+p {
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+ul > li {
+  text-align: center;
+}
+/***NAV***/
+.navbar {
+  display: none;
+}
+ .hamburger-nav {
+  background-color: #fff;
+  height: 5rem;
+  opacity: .95;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.cm-logo {
+  height: 5.12rem;
+  position: absolute;
+  left:1rem;
+  top: -.06rem;
+  width:auto;
+  z-index: 5;
+}
+.btn-toggle-nav {
+  background-image: url("/images/menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 3rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 4rem;
+  z-index: 5;
+}
+.nav-menu {
+  background-color: #fff;
+  bottom: 0;
+  height: 100%;
+  right: 0;
+  opacity: 0.95;
+  position: fixed;
+  top: 5rem;
+  transition: all .7s ease-in-out;
+  width: 0rem;
+  z-index: 5;
+}
+.nav-menu ul {
+  padding: 0 .5rem 5rem;
+  visibility: hidden;
+}
+.nav-menu ul li {
+  list-style: none;
+  padding-top: 5rem;
+}
+.nav-menu ul li a  {
+  color: #056BBD;
+  display: block;
+  font-family: "Montserrat", "Open Sans", "sans-serif";
+  font-size: 2.4rem;
+  font-weight: 600;
+  height: 6rem;
+  opacity: 0;
+  padding: 0 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.nav-sidear ul li a:hover {
+  background-color: #fff;
+}
+/***HERO***/
+.hero {
+  background-color: #fff;
+  border-bottom-right-radius: 10rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+.hero .description {
+  background-color: transparent;
+}
+/***CAMELOT***/
+ .camelot {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 2.5rem;
+  justify-content: center;
+  margin: 5rem auto;
+}
+.camelot img {
+  max-width: 95%;
+}
+.description img {
+  max-width: 95%;
+}
+/***BUSYBUS***/
+.busybus {
+  background-color: #fff;
+  border-radius:10rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.busybus img {
+  max-width:95%;
+  padding-top: 5rem;
+}
+.busybus  h1 {
+  text-align: center;
+}
+/***BLOCJAMS***/
+.blocjams {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 2.5rem;
+  justify-content: center;
+  margin: 5rem auto;
+}
+.blocjams img {
+  max-width: 95%;
+}
+/***CONNECT***/
+.connect {
+  background-color: #056BBD;
+  border-top-left-radius: 10rem;
+  padding: 10% 20% 5%;
+  text-align: center;
+}
 .connect > h2 {
   color: #fff;
 }
-
 .social {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 3rem auto 0;
-  width: 40%;
 }
-
-@media (min-width: 70rem) {
-  .container {
-    display:grid;
-    grid-template-columns: 50% 1fr;
-    grid-template-areas:
-    "navbar navbar"
-    "hero hero"
-    "camelot camelot"
-    "busybus busybus"
-    "blocjams  blocjams"
-    "connect connect";
+.social img {
+  width: 4rem;
+}
+/***MEDIA QUERIES***/
+/***TABLET***/
+@media (min-width: 45rem) {
+  section figure {
+    max-width: 50vw;
   }
-  .hero, .camelot, .busybus, .blocjams {
-    align-items: center;
-    display:grid;
-    grid-template-columns: 3fr 1fr 3fr;
+  .description {
+    max-height: 50rem;
+    min-width: 60ch;
   }
   .hero {
-    grid-template-areas:
-    "description-hero . rectangle";
+    display: flex;
+    flex-direction: row;
   }
   .camelot {
-    grid-template-areas:
-    "description-camelot . camelot-img";
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 10rem 0;
   }
   .busybus {
-    grid-template-areas:
-    "description-busybus . busybus-img";
+    flex-direction: row-reverse;
+  }
+  .busybus img {
+    padding-bottom: 5rem;
   }
   .blocjams {
-    grid-template-areas:
-    "description-blocjams . blocjams-img";
+    flex-direction: row-reverse;
+  }
+}
+/***DESKTOP***/
+@media (min-width: 70rem) {
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-family: "Montserrat", "Open Sans",sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: left;
+  }
+  .cta {
+    margin: 0;
+  }
+  .navbar {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    height: 5.7rem;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  .navbar a {
+    color: #056BBD;
+    font-family: "Cabin", "Open Sans", sans-serif;
+    font-size: 1.6rem;
+  }
+  .hamburger-nav {
+    display: none;
+  }
+  .links {
+    align-items: center;
+    display: flex;
+    grid-gap: 20rem;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  nav a {
+      text-decoration: none;
+    }
+  nav a img {
+      width: auto;
+    }
+
+  .hero {
+    border-bottom-right-radius: 20rem;
+    padding-top: 10rem;
+  }
+  .hero .description {
+    margin: 0 5rem;
+  }
+  .description {
+    margin: 0;
+    max-width: 100ch;
+    min-width: 25rem;
+    padding: 5rem;
+  }
+  .camelot {
+    grid-gap: 5rem;
+    justify-content: center;
+    margin: 5rem 3rem;
+  }
+  .camelot img {
+    max-width: 100%;
+  }
+  .busybus {
+    justify-content: center;
+    padding: 0 3rem;
+  }
+  .busybus .description {
+    background-color: transparent;
+  }
+  .busybus-img {
+    width: 70rem;
+  }
+  .busybus h1 {
+    text-align: left;
+  }
+  .busybus img {
+    max-width: 100%;
+    padding: 5rem 0;
+  }
+  .blocjams {
+    grid-gap: 5rem;
+    justify-content: center;
+    margin: 5rem 3rem;
+  }
+  .blocjams img {
+    max-width: 100%;
+  }
+  .connect h2 {
+    text-align: center;
+  }
+  .social {
+    max-width: 40%;
   }
 }
