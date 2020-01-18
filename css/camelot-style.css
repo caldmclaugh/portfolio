@@ -443,11 +443,6 @@ div.persona-img > figure > ul > li {
   padding: 0 3rem;
   position: relative;
 }
-/* .changes-mobile {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-} */
 .changes-media {
   display: none;
 }
