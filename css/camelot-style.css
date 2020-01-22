@@ -7,7 +7,7 @@ html {
   font-size: 10px;
 }
 body {
-  background: linear-gradient(#E2EFFA 25%, #FFF7D5  25%), linear-gradient(#E2EFFA 25%, #FFF7D5  25%);
+  background: linear-gradient(#E2EFFA 25%, #FFF7D5  25%);
   line-height: 1.75;
 }
 .cta {
@@ -219,7 +219,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2.5rem 2rem 0;
+  margin: 0 2rem 2rem;
   max-width: 70ch;
   min-width: 60ch;
   padding: 2rem;
@@ -281,7 +281,7 @@ div.persona-img > figure > ul > li {
   display: flex;
   flex-direction: column;
   grid-gap: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
 }
 .img-flows-mq {
   display: none;
@@ -292,11 +292,9 @@ div.persona-img > figure > ul > li {
 }
                   /***mockups***/
 .text-mockups {
-  margin: 0 1rem;
+  margin: 5rem 1rem 0;
 }
-.upload-wire {
-  padding-bottom: 2.5rem;
-}
+
 /*************************************************************VISUAL DESIGN***/
 .visual-design {
   background-color:#E3EFFA;
@@ -316,6 +314,10 @@ div.persona-img > figure > ul > li {
 .text-logo-2 {
   margin: 0 1rem;
   padding: .5rem 0;
+}
+.camel-sketch, .castle {
+  box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
+  margin: 0 .5rem;
 }
                /***typography***/
 .text-type {
@@ -481,7 +483,7 @@ div.persona-img > figure > ul > li {
   background-color: #056bbd;
   border-radius: 50%;
   height: 3rem;
-  left: .7rem;
+  left: .5rem;
   position:absolute;
   top: 7%;
   width: 3rem;
@@ -613,7 +615,7 @@ div.blocjams > figure {
 div.busybus > h2 {
   font-size: 2.4rem;
   height: 7.5rem;
-  padding-bottom: 2.5rem;
+  margin-top: 2.5rem;
   padding-top: 2rem;
 }
 .busybus > p {
@@ -622,14 +624,14 @@ div.busybus > h2 {
 .busybus {
   align-items: center;
   display: flex;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   max-width: 70ch;
   min-width: 50ch;
 }
 .blocjams {
   align-items: center;
   display: flex;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
 }
 .blocjams, .busybus {
   background-color: #fff;
@@ -641,7 +643,7 @@ div.busybus > h2 {
 }
 .blocjams > p, .busybus > p {
   font-size: 1.6rem;
-  margin: -3rem 1rem;
+  margin: -2rem 1rem;
 }
 h1.more {
   font-family: "Ubuntu", "Open Sans", sans-serif;
@@ -653,6 +655,7 @@ h1.more {
   flex-wrap:wrap;
   justify-content: center;
   margin: auto;
+  text-align: center;
 }
 /***********CONNECT***********/
 footer > figure {
