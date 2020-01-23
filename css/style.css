@@ -38,12 +38,13 @@ body {
   text-align: center;
   text-decoration: none;
   width: max-content;
+  z-index: 2;
 }
-figure {
+/* figure {
   display: flex;
   justify-content: center;
   margin: auto;
-}
+} */
 /***typography***/
 h1 {
   font-family: "Ubuntu", "Open Sans", sans-serif;
@@ -54,6 +55,12 @@ h1 {
 h2 {
   font-family: "Cabin", "Open Sans",sans-serif;
   font-size: 1.6rem;
+  text-align: center;
+}
+h3 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
   text-align: center;
 }
 p {
@@ -138,22 +145,31 @@ ul > li {
   flex-direction: column;
   padding-top: 5rem;
 }
-.hero .description {
+/* .hero .description {
   background-color: transparent;
+} */
+.hero-img img {
+  border-bottom-right-radius: 10rem;
+  margin-top: -10rem;
+  width: 100%;
 }
 /***CAMELOT***/
  .camelot {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 2.5rem;
+  grid-gap: 1rem;
   justify-content: center;
   margin: 5rem auto;
 }
 .camelot img {
+  margin: inherit 2rem;
   max-width: 95%;
 }
-.description img {
-  max-width: 95%;
+.description figure {
+  display: flex;
+  margin: auto;
+  max-width: 100%;
 }
 /***BUSYBUS***/
 .busybus {
@@ -162,6 +178,9 @@ ul > li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.busybus .description {
+  background-color: transparent;
 }
 .busybus img {
   max-width:95%;
@@ -172,6 +191,7 @@ ul > li {
 }
 /***BLOCJAMS***/
 .blocjams {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   grid-gap: 2.5rem;
@@ -202,24 +222,44 @@ ul > li {
 /***MEDIA QUERIES***/
 /***TABLET***/
 @media (min-width: 45rem) {
-  section figure {
+  /* section figure {
     max-width: 50vw;
-  }
+  } */
   .description {
+    margin-left: 2rem;
     max-height: 50rem;
     min-width: 60ch;
   }
+  .description figure {
+    max-width: 90%;
+  }
   .hero {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;
+    justify-content: space-between; */
   }
+  .hero img {
+    margin-top: -15rem;
+    width: 100%;
+  }
+  .hero .description {
+    margin: auto;
+    max-height: 40rem;
+  }
+
   .camelot {
+    background-color: #e2effa;
     flex-direction: row-reverse;
     justify-content: space-around;
-    margin: 10rem 0;
+    margin: 5rem 0;
+    padding-bottom: 20rem;
+  }
+  .camelot img {
+    max-width: 50vw;
   }
   .busybus {
     flex-direction: row-reverse;
+    margin-top: -20rem;
   }
   .busybus img {
     padding-bottom: 5rem;
@@ -227,11 +267,15 @@ ul > li {
   .blocjams {
     flex-direction: row-reverse;
   }
+  .blocjams img {
+    max-width: 50vw;
+  }
 }
 /***DESKTOP***/
 @media (min-width: 70rem) {
   h1 {
     font-size: 3.6rem;
+    text-align: left;
   }
   h2 {
     font-family: "Montserrat", "Open Sans",sans-serif;
@@ -276,10 +320,18 @@ ul > li {
 
   .hero {
     border-bottom-right-radius: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     padding-top: 10rem;
   }
   .hero .description {
-    margin: 0 5rem;
+    margin: 5rem;
+  }
+
+  .hero-img img {
+    border-bottom-right-radius: 20rem;
+    right: -5rem;
   }
   .description {
     margin: 0;
@@ -288,11 +340,9 @@ ul > li {
     padding: 5rem;
   }
   .camelot {
-    grid-gap: 5rem;
-    justify-content: center;
-    margin: 5rem 3rem;
+    margin: 5rem 0rem;
   }
-  .camelot img {
+  .camelot-img figure img {
     max-width: 100%;
   }
   .busybus {
@@ -313,9 +363,7 @@ ul > li {
     padding: 5rem 0;
   }
   .blocjams {
-    grid-gap: 5rem;
-    justify-content: center;
-    margin: 5rem 3rem;
+    margin: 5rem 0;
   }
   .blocjams img {
     max-width: 100%;

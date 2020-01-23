@@ -459,7 +459,7 @@ div.persona-img > figure > ul > li {
   margin: 5rem 0 2.5rem 0;
 }
 .first-desktop {
-  padding: 0 3rem;
+  padding: 0 3rem 5rem;
   position: relative;
 }
 .second-desktop {
@@ -684,6 +684,10 @@ footer > figure {
   /* typography */
   p {
     margin: auto;
+    padding: 2rem;
+  }
+  h1{
+    font-size: 2.4rem;
   }
   h2 {
     font-size: 2rem;
@@ -695,7 +699,7 @@ footer > figure {
   }
   .text-hero {
     margin: auto;
-    max-width: 66ch;
+    max-width: 40ch;
   }
   .camelot-landing {
     margin: auto;
@@ -728,6 +732,9 @@ footer > figure {
     display: flex;
     justify-content: center;
   }
+  .persona-img p {
+    padding: 0;
+  }
   /* INFORMATION ARCHITECTURE */
   /* user stories */
   .text-stories {
@@ -748,6 +755,7 @@ footer > figure {
   /* mockups */
   .text-mockups {
     margin: auto;
+    padding-top: 5rem;
   }
 
   /* VISUAL DESIGN */
@@ -757,6 +765,10 @@ footer > figure {
   }
   .text-logo-2 {
     margin: auto;
+  }
+  .logo-img {
+    margin: auto;
+    max-width: 96%;
   }
   /* typography */
   .text-type {
@@ -947,7 +959,6 @@ footer > figure {
   }
   .text-strat {
     margin: 5rem 0 2.5rem 20vw;
-    text-align: center;
     text-transform: uppercase;
   }
   /* competitive analysis */
@@ -963,7 +974,7 @@ footer > figure {
     grid-gap: 2.5rem;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    margin: -2.5rem auto;
+    margin: 0rem auto;
     width: 30%;
   }
   .text-personas {

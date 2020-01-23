@@ -25,14 +25,14 @@ h2 {
 p {
   font-family: "Cabin", "Open Sans", sans-serif;
   font-size: 1.6rem;
-  max-width: 70ch;
+  max-width:66ch;
   padding-bottom: 2rem;
 }
 /* nav */
 .navbar {
   display: none;
 }
- .hamburger-nav {
+.hamburger-nav {
   background-color: #fff;
   height: 5rem;
   opacity: .95;
@@ -108,27 +108,11 @@ p {
   position: relative;
   width: 100%;
 }
-
-
 .photo img {
   border-radius: 5%;
-  width:100%;
-  max-height:30rem;
   margin: 2.5rem 0;
-  object-fit: cover;
-  object-position: top;
+  max-width:100%;
 }
-  /* background-color: #e2e2e2; */
-  /* background-image: url("/images/cal-photo.jpg"); */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  margin: auto;
-  opacity: 0.3;*/
-  /* object-fit: cover; */
-  /* width: 30rem;
-  height: 30rem; */
-
 /* block */
 .block {
   background-color: #E3EFFA;
@@ -139,9 +123,9 @@ p {
 .conclusion {
   background-color: #fff;
   border-radius: 7.5rem 0;
+  bottom: 6rem;
   padding: 5rem 2rem 3rem;
   position: relative;
-  bottom: 6rem;
 }
 /* connect */
 footer img {
@@ -155,6 +139,7 @@ footer img {
 }
 .connect > h2 {
   color: #fff;
+  max-width: none;
 }
 .social {
   display: flex;
@@ -167,45 +152,53 @@ footer img {
 /*******************MEDIA QUERIES*********************/
 /* TABLET */
 @media screen and (min-width: 45rem) {
+  .hero, .block, .conclusion {
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .hero {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+    grid-column-gap: 2.5rem;
     grid-template-areas:
-    "about       about"
-    "p-one       p-one"
-    "photo       p-two"
-    "p-three     p-three"
-    "p-four      p-four";
-    grid-gap: 5rem;
-  }
-/*
-    flex-wrap: wrap;
-    grid-gap: 5rem;
-    justify-content: center;
-  } */
+    "about      about"
+    "p-one      p-one"
+    "photo      p-two"
+    "p-three    p-three"
+    "p-four     p-four";
+    grid-template-columns: 1fr 1fr;
+}
   .hero h1 {
     grid-area: about;
   }
-  .photo img {
-    /* max-height: 60rem; */
+  .photo {
     grid-area: photo;
-    max-width: 50vw;
+    max-width: 30rem;
   }
   .text {
-    min-width: 33ch;
     max-width: 66ch;
   }
   .p-one {
     grid-area: p-one;
+    padding-top: 5rem;
   }
   .p-two {
     grid-area: p-two;
+    padding-top: 3rem;
   }
   .p-three {
     grid-area: p-three;
   }
   .p-four {
     grid-area: p-four;
+  }
+  /* block */
+  .block {
+    padding: 10rem 5rem;
+  }
+  /* conclusion */
+  .conclusion {
+    padding: 5rem;
   }
   /* CONTACT */
   .social {
@@ -214,9 +207,6 @@ footer img {
 }
 /* DESKTOP */
 @media screen and (min-width: 70rem) {
-  .container {
-    width: 100%;
-  }
   /* typography */
   h1 {
     font-family: "Ubuntu", "Open Sans", sans-serif;
@@ -256,45 +246,62 @@ footer img {
   nav a img {
     width: auto;
   }
+  .hero, .block, .conclusion {
+    margin: auto;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  /* .container {
+    grid-template-columns: 25% 1fr 25%;
+    grid-template-areas:
+    ".   hero       ."
+    ".   block      ."
+    ".   conclusion .";
+  } */
   /* hero */
+  /* .hero {
+    grid-area: hero;
+    padding: 5rem 25%;
+  } */
   .hero h1 {
-    /* margin-left: 21%; */
     text-align: left;
-    margin: 5rem 40rem 0;
-    max-width: 110rem;
+    padding-top: 5rem;
+    /* margin: 5rem 40rem 0; */
+    /* max-width: 110rem; */
   }
-  .hero {
-    display: flex;
-    flex-wrap: wrap;
-    grid-gap: 5rem;
-    justify-content: center;
+
+  /* .hero {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-areas:
+    ". about      p-one   ."
+    ". photo      p-two  ."
+    ". p-two     p-two    ."
+    ". p-three    p-three  ."
+    ". p-four     p-four   .";
+    padding:5rem;
+  } */
+  /* .photo img {
+  max-width: 50rem;
+  } */
+  h2 {
+    max-width: 70ch;
+    min-width: 40ch;
   }
-.photo img {
-  height: 90rem;
-  max-width:100%;
-}
-
-/* .photo img {
-
-  width:100%;
-  /* height:30rem; */
-  /* margin: 2.5rem 0;
-  object-fit: cover;
-  object-position: top;
-} */
-
-
-
-h2 {
-  max-width: 70ch;
-  min-width: 40ch;
-}
+  .block {
+    grid-area: block;
+    margin-top: -5rem;
+  }
+  .conclusion {
+    grid-area: conclusion;
+  }
   /* CONNECT */
   footer img {
     width: 5rem;
   }
   .connect > h2 {
     font-size: 2.4rem;
+    max-width: none;
   }
   #contact {
     margin-top: 5rem;
