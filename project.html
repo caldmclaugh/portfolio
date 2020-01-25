@@ -15,7 +15,7 @@
         <a class="cm-logo" href="index.html"><img src="images/logo.svg" alt="Caleigh McLaughlin logo"></a>
         <div class="links">
           <a class="about" href="bio.html">About</a>
-          <a class="resume" href="resume.html">Resume</a>
+          <a class="resume" href="resume.html" target="_blank">Resume</a>
           <a class="contact" href="project.html#contact">Contact</a>
         </div>
       </div>
@@ -26,7 +26,7 @@
           <ul>
             <li><a class="home" href="index.html">Home</a></li>
             <li><a class="about" href="bio.html">About</a></li>
-            <li><a class="resume" href="resume.html">Resume</a></li>
+            <li><a class="resume" href="resume.html" target="_blank">Resume</a></li>
             <li><a class="contact" href="project.html#contact">Contact</a></li>
           </ul>
         </aside>
@@ -42,9 +42,9 @@
         </figure>
         <h1 class="text-hero">Camelot offers a cloud storage solution for users who need to store and send large amounts of data in a secure and simple interface.</h1>
         <figure class="camelot-landing">
-          <img src="images/camelot-landing.svg" alt="Landing page">
+          <img src="images/camelot-landing.png" alt="Landing page">
         </figure>
-        <a class="cta" href="http://bit.ly/camelotapp">See prototype</a>
+        <a class="cta" href="http://bit.ly/camelotapp" target="_blank">See prototype</a>
       </section>
 <!--problem/solution-->
       <section class="prob-sol">
@@ -67,6 +67,9 @@
           </figure>
         </div>
       </section>
+      <div class="to-top">
+        <a class="cta" href="project.html#top">Back to top</a>
+      </div>
 <!--DISCOVERY-->
       <section class="discovery">
         <div class="text-disc">
@@ -122,6 +125,7 @@
                   </ul>
                 </figcaption>
             </figure>
+          </div>
         </div>
       </section>
 <!--INFORMATION ARCHITECTURE-->
@@ -194,24 +198,58 @@
               <img src="images/user-flows-sign-up.svg" alt="sign up user flow">
                 <figcaption>Sign up</figcaption>
             </figure>
-            <img id="myImg-sign-in" src="images/sign-in-user-flows.svg" alt="Sign in" style="width:100%;max-width:30%">
-            <div id="myModal-sign-in" class="modal-sign-in">
-              <span class="close-sign-in">&times;</span>
-              <img class="modal-content-sign-in" id="img01-sign-in">
-              <div id="caption-sign-in">Sign In</div>
+            <div class="row">
+              <div class="column">
+                <figure class="sign-in">
+                  <img src="images/sign-in-user-flows.svg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                  <figcaption>Sign in</figcaption>
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="upload">
+                  <img src="images/upload-user-flows.svg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                  <figcaption>Upload</figcaption>
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="organize">
+                  <img src="images/organize-user-flows.svg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                  <figcaption>Organize</figcaption>
+                </figure>
+              </div>
             </div>
-            <img id="myImg-upload" src="images/upload-user-flows.svg" alt="Upload" style="width:100%;max-width:30%">
-            <div id="myModal-upload" class="modal-upload">
-              <span class="close-upload">&times;</span>
-              <img class="modal-content-upload" id="img01-upload">
-              <div id="caption-upload"></div>
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 3</div>
+                  <figure>
+                    <img src="images/sign-in-user-flows.svg" style="width:100%">
+                    <figcaption>Sign in</figcaption>
+                  </figure>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">2 / 3</div>
+                  <figure>
+                    <img src="images/upload-user-flows.svg" style="width:100%">
+                    <figcaption>Upload</figcaption>
+                  </figure>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">3 / 3</div>
+                    <figure>
+                      <img src="images/organize-user-flows.svg" style="width:100%">
+                      <figcaption>Organize</figcaption>
+                  </figure>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              </div>
             </div>
-            <img id="myImg-organize" src="images/organize-user-flows.svg" alt="Organize" style="width:100%;max-width:30%">
-            <div id="myModal-organize" class="modal-organize">
-              <span class="close-organize">&times;</span>
-              <img class="modal-content-organize" id="img01-organize">
-              <div id="caption-organize"></div>
-            </div>
+          </div>
         </div>
 <!--wireframes-->
         <div class="wireframes">
@@ -223,10 +261,10 @@
           </div>
           <div class="img-wire">
             <figure class="sketch-dash">
-              <img src="images/dashboard-sketch.jpg" alt="dashboard sketch">
+              <img src="images/dashboard-sketch.jpg" alt="dashboard sketch" style="max-width:70rem">
             </figure>
             <figure class="wire-dash">
-              <img src="images/wireframes-dashboard.svg" alt="dashboard wireframe">
+              <img src="images/wireframes-dashboard.svg" alt="dashboard wireframe" style="max-height: 52rem">
             </figure>
           </div>
         </div>
@@ -252,7 +290,7 @@
               <img src="images/upload.svg" alt="upload wireframe">
             </figure>
           </div>
-          <a class="cta" href="http://bit.ly/cloud-wireframes">See all mockups</a>
+          <a class="cta" href="http://bit.ly/cloud-wireframes" target="_blank">See all mockups</a>
         </div>
       </section>
 <!--VISUAL DESIGN-->
@@ -270,10 +308,10 @@
           </div>
           <div class="logo-img">
             <figure class="camel-sketch">
-              <img src="images/camel-sketch.jpg" alt="camel sketch">
+              <img src="images/camel-sketch.png" alt="camel sketch">
             </figure>
             <figure class="camel-logo">
-              <img src="images/camel-logo.svg" alt="camel logo">
+              <img src="images/camel-logo.png" alt="camel logo">
             </figure>
           </div>
           <div class="text-logo-2">
@@ -283,10 +321,10 @@
           </div>
           <div class="logo-img">
             <figure class="castle">
-              <img src="images/castle.jpg" alt="castle">
+              <img src="images/castle.png" alt="castle">
             </figure>
             <figure class="bw-logo">
-              <img src="images/camelot-b&w.svg" alt="camelot b&w logo">
+              <img src="images/bw-logo.png" alt="camelot b&w logo">
             </figure>
           </div>
         </div>
@@ -339,7 +377,7 @@
           </div>
           <h4 class="mobile">Mobile</h4>
           <div class="changes-mobile">
-            <h2 class="change1">1. Combined actions on separate screens into one dashboard.</h2>
+            <h2 class="change1" class="change1d">1. Combined actions on separate screens into one dashboard.</h2>
               <figure class="first-mobile">
                 <img src="images/1st-it.svg">
                   <figcaption>
@@ -403,7 +441,7 @@
               </figure>
           </div>
         </div>
-        <a class="cta" href="http://bit.ly/camelotapp">See prototype</a>
+        <a class="cta" href="http://bit.ly/camelotapp" target="_blank">See prototype</a>
 <!-- preference testing-->
         <div class="pref-testing">
           <div class="text-pref">
@@ -430,6 +468,7 @@
               <h4>67%</h4>
             </div>
           </div>
+        </div>
       </section>
 <!--CONCLUSION-->
       <section class="conclusion">
@@ -445,6 +484,9 @@
           </p>
         </div>
         <div class="conc-list">
+          <figure class="roles-icon">
+            <img src="images/roles.svg" alt="roles icon">
+          </figure>
           <ul class="roles"><h2>Roles</h2>
             <li><p>User research</p></li>
             <li><p>Information architecture</p></li>
@@ -453,8 +495,8 @@
             <li><p>Usability testing</p></li>
             <li><p>Mockup iteration</p></li>
           </ul>
-          <figure class="roles-icon">
-            <img src="images/roles.svg" alt="roles icon">
+          <figure class="deliv-icon">
+            <img src="images/deliverables.svg" alt="deliverables icon">
           </figure>
           <ul class="deliverables"><h2>Deliverables</p></h2>
             <li><p>User surveys</p></li>
@@ -467,8 +509,8 @@
             <li><p>High fidelity mockups</p></li>
             <li><p>Clickable prototype</p></li>
           </ul>
-          <figure class="deliv-icon">
-            <img src="images/deliverables.svg" alt="deliverables icon">
+          <figure class="tools-icon">
+            <img src="images/tools.svg" alt="tools icon">
           </figure>
           <ul class="tools"><h2>Tools</h2>
             <li><p>Figma</p></li>
@@ -479,16 +521,10 @@
             <li><p>Google Sheets</p></li>
             <li><p>Google Forms</p></li>
           </ul>
-          <figure class="tools-icon">
-            <img src="images/tools.svg" alt="tools icon">
-          </figure>
         </div>
       </section>
 <!--MORE PROJECTS-->
       <section class="more">
-        <div class="to-top">
-          <a class="cta" href="project.html#top">Back to top</a>
-        </div>
         <h1>See more projects</h1>
         <div class="see-more">
           <div class="blocjams">
@@ -510,41 +546,41 @@
         <h2><a id="contact">Like what you see?</a></h2>
         <h2>I'd love to hear from you!</h2>
         <div class="social">
-          <a href="https://www.linkedin.com/in/caleighmclaughlin/"><img src="images/linkedin.svg" alt="LinkedIn icon">
-          <a href="https://github.com/caldmclaugh"><img src="images/github.svg" alt="Github icon">
-          <a href="mailto:caldmclaugh@gmail.com"><img src="images/email.svg" alt="email icon">
+          <a href="https://www.linkedin.com/in/caleighmclaughlin/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn icon">
+          <a href="https://github.com/caldmclaugh" target="_blank"><img src="images/github.svg" alt="Github icon">
+          <a href="mailto:caldmclaugh@gmail.com" target="_blank"><img src="images/email.svg" alt="email icon">
         </div>
       </footer>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-</body>
-<script>
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'pie',
-    data: {
-        labels: ["I don't know how to use a cloud storage app", "cloud storage is insecure                                ", "It's a botnet                                                     "],
-        datasets: [{
-            label: '% of Votes',
-            data: [1/3, 1/3, 1/3],
-            backgroundColor: [
-                'rgba(5, 107, 189, 100)',
-                'rgba(20, 166, 67, 100)',
-                'rgba(243, 204, 45, 100)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
-<script src="script.js"></script>
     </main>
-  </html>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ["I don't know how to use a cloud storage app", "cloud storage is insecure                                ", "It's a botnet                                                     "],
+            datasets: [{
+                label: '% of Votes',
+                data: [1/3, 1/3, 1/3],
+                backgroundColor: [
+                    'rgba(5, 107, 189, 100)',
+                    'rgba(20, 166, 67, 100)',
+                    'rgba(243, 204, 45, 100)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

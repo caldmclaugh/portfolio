@@ -20,11 +20,14 @@ body {
   border-radius: 5rem;
   display:flex;
   flex-direction:column;
-  grid-row-gap: 2rem;
   justify-content: space-around;
   margin: auto;
   max-width: 66ch;
   padding: 5rem 2rem;
+}
+.description h2 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 .cta {
   background-color: #056BBD;
@@ -40,11 +43,6 @@ body {
   width: max-content;
   z-index: 2;
 }
-/* figure {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-} */
 /***typography***/
 h1 {
   font-family: "Ubuntu", "Open Sans", sans-serif;
@@ -76,17 +74,19 @@ ul > li {
 }
  .hamburger-nav {
   background-color: #fff;
+  border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
   height: 5rem;
   opacity: .95;
+  padding:3rem 0;
   position: fixed;
   width: 100%;
   z-index: 5;
 }
 .cm-logo {
   height: 5.12rem;
-  position: absolute;
   left:1rem;
-  top: -.06rem;
+  position: absolute;
+  top: .5rem;
   width:auto;
   z-index: 5;
 }
@@ -98,7 +98,7 @@ ul > li {
   height: 3rem;
   position: absolute;
   right: 1rem;
-  top: 1rem;
+  top: 1.5rem;
   width: 4rem;
   z-index: 5;
 }
@@ -106,9 +106,9 @@ ul > li {
   background-color: #fff;
   bottom: 0;
   height: 100%;
-  right: 0;
   opacity: 0.95;
   position: fixed;
+  right: 0;
   top: 5rem;
   transition: all .7s ease-in-out;
   width: 0rem;
@@ -145,26 +145,23 @@ ul > li {
   flex-direction: column;
   padding-top: 5rem;
 }
-/* .hero .description {
-  background-color: transparent;
-} */
-.hero-img img {
+.hero img {
   border-bottom-right-radius: 10rem;
   margin-top: -10rem;
-  width: 100%;
+  max-width: 100vw;
 }
 /***CAMELOT***/
  .camelot {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 1rem;
   justify-content: center;
   margin: 5rem auto;
 }
 .camelot img {
-  margin: inherit 2rem;
+  margin: auto 1rem;
   max-width: 95%;
+  padding-bottom: 2.5rem;
 }
 .description figure {
   display: flex;
@@ -181,6 +178,7 @@ ul > li {
 }
 .busybus .description {
   background-color: transparent;
+  margin: 0;
 }
 .busybus img {
   max-width:95%;
@@ -194,37 +192,38 @@ ul > li {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 2.5rem;
   justify-content: center;
   margin: 5rem auto;
 }
 .blocjams img {
+  margin: auto 1rem;
   max-width: 95%;
+  padding-bottom: 2.5rem;
 }
 /***CONNECT***/
 .connect {
   background-color: #056BBD;
   border-top-left-radius: 10rem;
-  padding: 10% 20% 5%;
+  padding: 10% 20% 1rem;
   text-align: center;
 }
-.connect > h2 {
+.connect h2 {
   color: #fff;
+  text-align: center;
 }
 .social {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 3rem auto 0;
+  max-width: 40%;
 }
 .social img {
-  width: 4rem;
+  padding: 1rem;
+  width: 6rem;
 }
 /***MEDIA QUERIES***/
 /***TABLET***/
 @media (min-width: 45rem) {
-  /* section figure {
-    max-width: 50vw;
-  } */
   .description {
     margin-left: 2rem;
     max-height: 50rem;
@@ -235,18 +234,16 @@ ul > li {
   }
   .hero {
     display: flex;
-    /*flex-direction: row;
-    justify-content: space-between; */
+    flex-direction: row;
   }
   .hero img {
-    margin-top: -15rem;
-    width: 100%;
+    margin-top: 15rem;
+    width: 50vw;
   }
   .hero .description {
     margin: auto;
     max-height: 40rem;
   }
-
   .camelot {
     background-color: #e2effa;
     flex-direction: row-reverse;
@@ -255,20 +252,32 @@ ul > li {
     padding-bottom: 20rem;
   }
   .camelot img {
+    padding-bottom: 0;
+  }
+  .camelot-img img {
     max-width: 50vw;
   }
   .busybus {
+    align-items: center;
     flex-direction: row-reverse;
     margin-top: -20rem;
   }
+  .busybus .description {
+    max-height: 37.5rem;
+  }
   .busybus img {
     padding-bottom: 5rem;
+    padding-left: 5rem;
   }
   .blocjams {
     flex-direction: row-reverse;
   }
   .blocjams img {
     max-width: 50vw;
+    padding-bottom: 0;
+  }
+  .connect h2 {
+    font-size: 2rem;
   }
 }
 /***DESKTOP***/
@@ -286,12 +295,20 @@ ul > li {
   .cta {
     margin: 0;
   }
+  .cm-logo {
+    padding-left: 5rem;
+    padding-top: 1rem;
+    position: absolute;
+    width:auto;
+    z-index: 5;
+  }
   .navbar {
     align-items: center;
     background-color: #fff;
+    border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
     display: flex;
-    height: 5.7rem;
-    padding: 1rem 2rem;
+    height: 8rem;
+    padding: 2rem 0;
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -307,9 +324,11 @@ ul > li {
   .links {
     align-items: center;
     display: flex;
-    grid-gap: 20rem;
     justify-content: flex-end;
     width: 100%;
+  }
+  .links a {
+    padding: 5rem;
   }
   nav a {
       text-decoration: none;
@@ -317,29 +336,33 @@ ul > li {
   nav a img {
       width: auto;
     }
-
   .hero {
+    align-items: center;
     border-bottom-right-radius: 20rem;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+    padding-bottom: 5rem;
     padding-top: 10rem;
   }
   .hero .description {
-    margin: 5rem;
+    margin: 0;
+    max-height: none;
   }
-
-  .hero-img img {
-    border-bottom-right-radius: 20rem;
-    right: -5rem;
+  .hero img {
+    border-radius: 5rem;
+    margin: 0 auto;
+    max-width: 65rem;
   }
   .description {
-    margin: 0;
+    margin-right:5rem;
     max-width: 100ch;
     min-width: 25rem;
     padding: 5rem;
   }
   .camelot {
+    align-items: center;
+    justify-content: center;
     margin: 5rem 0rem;
   }
   .camelot-img figure img {
@@ -347,31 +370,23 @@ ul > li {
   }
   .busybus {
     justify-content: center;
-    padding: 0 3rem;
   }
   .busybus .description {
     background-color: transparent;
-  }
-  .busybus-img {
-    width: 70rem;
-  }
+    margin-right:3rem;
+   }
   .busybus h1 {
     text-align: left;
   }
   .busybus img {
     max-width: 100%;
-    padding: 5rem 0;
+    padding: 5rem 17rem 5rem 20rem;
   }
   .blocjams {
+    align-items: center;
     margin: 5rem 0;
   }
   .blocjams img {
     max-width: 100%;
-  }
-  .connect h2 {
-    text-align: center;
-  }
-  .social {
-    max-width: 40%;
   }
 }
