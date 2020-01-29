@@ -117,7 +117,7 @@ ul {
   opacity: 0.95;
   position: fixed;
   right: 0;
-  top: 5rem;
+  top: 7rem; 
   transition: all .7s ease-in-out;
   width: 0rem;
   z-index: 5;
@@ -619,7 +619,7 @@ div.persona-img > figure > ul > li {
   border-radius: 7.5rem 0;
   margin-bottom: 5rem;
   margin-top: -15rem;
-  padding: 5rem 1rem 1rem;
+  padding: 5rem 1rem;
   position: relative;
   width: 100%;
 }
@@ -633,10 +633,13 @@ div.persona-img > figure > ul > li {
   padding: 0;
 }
 /*********MORE PROJECTS********/
-.more > h1{
+.more {
+  padding-bottom: 3rem;
+}
+.more h1{
   font-size: 2.4rem;
 }
-div.blocjams > figure {
+div.blocjams figure {
   height: 7.5rem;
   margin: 2.5rem auto;
 }
@@ -672,7 +675,7 @@ div.busybus > h2 {
   font-size: 1.6rem;
   margin: -2rem 1rem;
 }
-h1.more {
+.more h1 {
   font-family: "Ubuntu", "Open Sans", sans-serif;
   font-size: 2.4rem;
   font-weight:bold;

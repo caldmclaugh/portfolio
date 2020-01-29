@@ -21,7 +21,7 @@ body {
   display:flex;
   flex-direction:column;
   justify-content: space-around;
-  margin: auto;
+  /* margin: auto; */
   max-width: 66ch;
   padding: 5rem 2rem;
 }
@@ -109,7 +109,7 @@ ul > li {
   opacity: 0.95;
   position: fixed;
   right: 0;
-  top: 5rem;
+  top: 7rem;
   transition: all .7s ease-in-out;
   width: 0rem;
   z-index: 5;
@@ -173,7 +173,7 @@ ul > li {
   background-color: #fff;
   border-radius:10rem 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   justify-content: center;
 }
 .busybus .description {
@@ -224,8 +224,42 @@ ul > li {
 /***MEDIA QUERIES***/
 /***TABLET***/
 @media (min-width: 45rem) {
+  .navbar {
+    align-items: center;
+    background-color: #fff;
+    border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
+    display: flex;
+    height: 8rem;
+    padding: 2rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  .navbar a {
+    color: #056BBD;
+    font-family: "Cabin", "Open Sans", sans-serif;
+    font-size: 1.6rem;
+  }
+  .hamburger-nav {
+    display: none;
+  }
+  .links {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .links a {
+    padding: 5rem;
+  }
+  nav a {
+      text-decoration: none;
+    }
+  nav a img {
+      width: auto;
+    }
   .description {
-    margin-left: 2rem;
+    margin-right: 2.5rem;
     max-height: 50rem;
     min-width: 60ch;
   }
@@ -247,7 +281,6 @@ ul > li {
   .camelot {
     background-color: #e2effa;
     flex-direction: row-reverse;
-    justify-content: space-around;
     margin: 5rem 0;
     padding-bottom: 20rem;
   }
@@ -302,40 +335,6 @@ ul > li {
     width:auto;
     z-index: 5;
   }
-  .navbar {
-    align-items: center;
-    background-color: #fff;
-    border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
-    display: flex;
-    height: 8rem;
-    padding: 2rem 0;
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-  }
-  .navbar a {
-    color: #056BBD;
-    font-family: "Cabin", "Open Sans", sans-serif;
-    font-size: 1.6rem;
-  }
-  .hamburger-nav {
-    display: none;
-  }
-  .links {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
-  .links a {
-    padding: 5rem;
-  }
-  nav a {
-      text-decoration: none;
-    }
-  nav a img {
-      width: auto;
-    }
   .hero {
     align-items: center;
     border-bottom-right-radius: 20rem;
@@ -355,14 +354,12 @@ ul > li {
     max-width: 65rem;
   }
   .description {
-    margin-right:5rem;
     max-width: 100ch;
     min-width: 25rem;
     padding: 5rem;
   }
   .camelot {
     align-items: center;
-    justify-content: center;
     margin: 5rem 0rem;
   }
   .camelot-img figure img {
