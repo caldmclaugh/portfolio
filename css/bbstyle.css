@@ -10,6 +10,10 @@ body {
   background: linear-gradient(#E2EFFA 25%, #FFF7D5  25%);
   line-height: 1.75;
 }
+.links a:hover {
+  color: #11a64a;
+  text-decoration: underline;
+}
 .cta {
   background-color: #056BBD;
   border-radius: 5rem;
@@ -23,6 +27,9 @@ body {
   text-align: center;
   text-decoration: none;
   width: max-content;
+}
+a.cta:hover {
+  background-color: #11a64a;
 }
 /***********************************************typography***/
 h1 {
@@ -72,33 +79,31 @@ ul {
   display: none;
 }
  .hamburger-nav {
+  align-items: center;
   background-color: #fff;
   border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
-  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
   opacity: .95;
-  padding:3rem 0;
   position: fixed;
   width: 100%;
   z-index: 5;
 }
 .cm-logo {
-  height: 5.12rem;
-  left:1rem;
-  position: absolute;
-  top: .5rem;
+  align-items:center;
+  display: flex;
+  padding-left: 1rem;
   width:auto;
   z-index: 5;
 }
+.hamburger-nav .cm-logo {
+  width: 6rem;
+}
 .btn-toggle-nav {
-  background-image: url("/images/menu.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 3rem;
-  position: absolute;
-  right: 1rem;
-  top: 1.5rem;
-  width: 4rem;
+  align-items: center;
+  display: flex;
+  padding-right: .5rem;
   z-index: 5;
 }
 .nav-menu {
@@ -111,7 +116,7 @@ ul {
   top: 7rem;
   transition: all .7s ease-in-out;
   width: 0rem;
-  z-index: 5;
+  z-index: 6;
 }
 .nav-menu ul {
   padding: 0 .5rem 5rem;
@@ -120,6 +125,7 @@ ul {
 .nav-menu ul li {
   list-style: none;
   padding-top: 5rem;
+  text-align: center;
 }
 .nav-menu ul li a  {
   color: #056BBD;
@@ -130,12 +136,8 @@ ul {
   height: 6rem;
   opacity: 0;
   padding: 0 1rem;
-  text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-}
-.nav-sidear ul li a:hover {
-  background-color: #fff;
 }
 /**********************************************************************HERO***/
 .hero {
@@ -154,7 +156,7 @@ ul {
 }
 .hero img {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   max-width: 50%;
   padding-bottom:1.5rem;
 }
@@ -248,7 +250,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   max-width: 35rem;
   padding: 2rem;
 }
@@ -261,7 +263,7 @@ ul {
   border-radius: .5rem;
   box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
   display: block;
-  margin: auto;
+  margin: 0 auto;
   max-width: 75%;
 }
 .paper figcaption {
@@ -304,7 +306,7 @@ ul {
     border-radius: .5rem;
     box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
     display: block;
-    margin: auto;
+    margin: 0 auto;
     max-width: 75%;
 }
 /****************************************************************CONCLUSION***/
@@ -382,7 +384,7 @@ h1.more {
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
 }
 /***CONNECT***/
@@ -412,7 +414,7 @@ h1.more {
 @media screen and (min-width: 45rem) {
 /* typography */
   p {
-    margin: auto;
+    margin: 0 auto;
     padding: 2rem;
   }
   h1{
@@ -427,12 +429,12 @@ h1.more {
 /* hero */
   .hero h2 {
     font-size: 2.4rem;
-    margin: auto;
+    margin: 0 auto;
     max-width: 35ch;
   }
 /* problem/solution */
   .prob-sol {
-    margin: auto;
+    margin: 0 auto;
     max-width: 66ch;
   }
   .prob-sol h3 {
@@ -450,7 +452,7 @@ h1.more {
     padding-bottom: 0;
   }
   .comp-img {
-    margin: auto;
+    margin: 0 auto;
     max-width: 55rem;
   }
 /* INFORMATION ARCHITECTURE */
@@ -481,7 +483,7 @@ h1.more {
     padding: 1rem 2rem;
   }
   .blocjams {
-    margin: auto;
+    margin: 0 auto;
     padding: 1.5rem;
   }
 /* CONTACT */
@@ -492,8 +494,9 @@ h1.more {
 @media screen and (min-width: 70rem) {
 /******************NAV********************/
   .cm-logo {
-    padding-left: 5rem;
-    padding-top: 1rem;
+    align-items:center;
+    display: flex;
+    padding-left: 1rem;
     width:auto;
     z-index: 5;
   }
@@ -578,7 +581,7 @@ h1.more {
     text-align: left;
   }
   .paper-img {
-    margin: auto;
+    margin: 0 auto;
     max-width: 60vw;
   }
 /*********VISUAL DESIGN*******/
@@ -599,7 +602,7 @@ h1.more {
     "roles-icon deliv-icon    tools-icon"
     "roles      deliverables  tools";
     grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
+    margin: 0 auto;
     max-width: 64rem;
     min-width: 24rem;
   }
@@ -652,5 +655,8 @@ h1.more {
     font-size: 2.4rem;
     font-weight: 600;
     padding: 2.5rem;
+  }
+  .social img:hover {
+    width:7rem;
   }
 }

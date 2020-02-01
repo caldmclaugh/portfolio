@@ -10,30 +10,31 @@
   </head>
   <body>
 <!--nav-->
-    <nav>
-      <div class="navbar">
-        <a class="cm-logo" href="index.html"><img src="images/logo.svg" alt="Caleigh McLaughlin logo"></a>
-        <div class="links">
-          <a class="about" href="bio.html">About</a>
-          <a class="resume" href="cmclaughlinresume.pdf" target="_blank">Resume</a>
-          <a class="contact" href="project.html#contact">Contact</a>
-        </div>
+  <nav>
+    <div class="navbar">
+      <a class="cm-logo" href="index.html"><img src="../images/logo.svg" alt="Caleigh McLaughlin logo"></a>
+      <div class="links">
+        <a class="about" href="bio.html">About</a>
+        <a class="resume" href="portfolio/cmclaughlinresume.pdf" target="_blank">Resume</a>
+        <a class="contact" href="#contact">Contact</a>
       </div>
-      <div class="hamburger-nav">
-        <img class="cm-logo" src="images/logo.svg" alt="Caleigh McLaughlin logo">
-        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
-        <aside class="nav-menu">
-          <ul>
-            <li><a class="home" href="index.html">Home</a></li>
-            <li><a class="about" href="bio.html">About</a></li>
-            <li><a class="resume" href="cmclaughlinresume.pdf" target="_blank">Resume</a></li>
-          </ul>
-        </aside>
-      </div>
-    </nav>
+    </div>
+    <div class="hamburger-nav">
+    <a class="cm-logo hamburger" href="index.html"><img src="../images/logo.svg" alt="Caleigh McLaughlin logo"></a>
+      <i class="btn-toggle-nav" onclick="toggleNav()"><img src="images/menu.svg"></i>
+      <aside class="nav-menu">
+        <ul>
+          <li><a class="home" href="index.html">Home</a></li>
+          <li><a class="about" href="bio.html">About</a></li>
+          <li><a class="resume" href="cmclaughlinresume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </aside>
+    </div>
+  </nav>
 <!--container-->
     <main class="container">
       <a id="top"></a>
+      <a class="top-link hide" href="" id="js-top"><img src="images/to-top.svg"></a>
 <!--hero-->
       <section class="hero">
         <figure class="camelot-logo">
@@ -66,9 +67,6 @@
           </figure>
         </div>
       </section>
-      <!-- <div class="to-top">
-        <a class="cta" href="project.html#top">Back to top</a>
-      </div> -->
 <!--DISCOVERY-->
       <section class="discovery">
         <div class="text-disc">
@@ -94,6 +92,71 @@
             <p>
               My exploration of current cloud storage apps confirmed the issues I discovered in the user survey. Google Drive, Dropbox and Evernote all had <span>privacy issues and a lack of zero-knowledge encryption</span> in common. Addressing these weaknesses of privacy and security, issues users faced with current cloud storage and barriers that kept nonusers away, became my design focus.
             </p>
+          <div class="comp-img">
+            <div class="gdrive">
+              <figure>
+                <img src="images/gdrive.png">
+              </figure>
+              <div class="swot">
+                <h2>Google Drive</h2>
+                <div class="sw">
+                  <ul class="strengths">Strengths
+                    <li>15GB free storage</li>
+                    <li>Google Suite integration</li>
+                    <li>3rd party app integration</li>
+                    <li>Easy to share files and folders</li>
+                  </ul>
+                  <ul class="weaknesses">Weaknesses
+                    <li>Need internet to use</li>
+                    <li>No block-level sync</li>
+                    <li><span>No zero-knowledge encryption</span></li>
+                    <li><span>Insufficient privacy</span></li>
+                  </ul>
+                </div>
+                <div class="ot">
+                  <ul class="opportunities">Opportunities
+                    <li>Strengthen security</li>
+                    <li>Increase privacy</li>
+                    <li>Adopt block-level sync</li>
+                  </ul>
+                  <ul class="threats">Threats
+                    <li>More secure cloud storage apps</li>
+                    <li>Apps with more privacy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dropbox">
+              <figure>
+                <img src="images/dropbox.png">
+              </figure>
+              <div class="swot">
+                <h2>Dropbox</h2>
+                <div class="sw">
+                  <ul class="strengths">Strengths
+                    <li>Office online integration</li>
+                    <li>Dropbox Paper</li>
+                    <li>Block-level sync</li>
+                  </ul>
+                  <ul class="weaknesses">Weaknesses
+                    <li>Expensive beyond free plan</li>
+                    <li><span>No zero-knowledge encryption</span></li>
+                    <li><span>Insufficient privacy</span></li>
+                  </ul>
+                </div>
+                <div class="ot">
+                  <ul class="opportunities">Opportunities
+                    <li>Offer less expensive options</li>
+                    <li>Increase security</li>
+                  </ul>
+                  <ul class="threats">Threats
+                    <li>Less expensive storage available</li>
+                    <li>More secure storage apps</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 <!--user personas-->
         <div class="personas">
@@ -106,22 +169,40 @@
           <div class="persona-img">
             <figure class="thomas">
               <img src="images/thomas.jpg" alt="Thomas persona">
-                <figcaption><h2>Thomas</h2>
+                <figcaption>
+                  <h2>Thomas</h2>
+                  <h3>Hobby filmmaker</h3>
+                  <div class="thomas-text">
+                  <ul>Frustrations:
+                    <li><p>limited hard drive space</p></li>
+                    <li><p>buying external drives</p></li>
+                    <li><p>file sharing difficulties</p></li>
+                  </ul>
                   <ul>Needs:
                     <li><p>store large video files</p></li>
-                    <li><p>share with fellow filmmakers</p></li>
                     <li><p>unlimited data storage</p></li>
+                    <li><p>share with fellow filmmakers</p></li>
                   </ul>
+                </div>
                 </figcaption>
             </figure>
             <figure class="danny">
               <img src="images/danny.jpg" alt="Danny persona">
-                <figcaption><h2>Danny</h2>
+                <figcaption>
+                  <h2>Danny</h2>
+                  <h3>Asset Manager</h3>
+                  <div class="danny-text">
+                  <ul>Frustrations
+                    <li><p>no company database</p></li>
+                    <li><p>no communication among teams</p></li>
+                    <li><p>no secure project storage</p></li>
+                  </ul>
                   <ul>Needs:
                     <li><p>store company data</p></li>
                     <li><p>share with team members</li>
                     <li><p>privacy and security</li>
                   </ul>
+                </div>
                 </figcaption>
             </figure>
           </div>
@@ -200,19 +281,19 @@
             <div class="row">
               <div class="column">
                 <figure class="sign-in">
-                  <img src="images/sign-in-user-flows.svg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                  <img src="images/sign-in-user-flows-z.svg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                   <figcaption>Sign in</figcaption>
                 </figure>
               </div>
               <div class="column">
                 <figure class="upload">
-                  <img src="images/upload-user-flows.svg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                  <img src="images/upload-user-flows-z.svg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
                   <figcaption>Upload</figcaption>
                 </figure>
               </div>
               <div class="column">
                 <figure class="organize">
-                  <img src="images/organize-user-flows.svg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                  <img src="images/organize-user-flows-z.svg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
                   <figcaption>Organize</figcaption>
                 </figure>
               </div>
@@ -243,8 +324,8 @@
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                <div class="caption-container">
-                  <p id="caption"></p>
+                <!-- <div class="caption-container">
+                  <p id="caption"></p> -->
                 </div>
               </div>
             </div>

@@ -10,6 +10,10 @@ body {
   background: linear-gradient(#E2EFFA 25%, #FFF7D5  25%);
   line-height: 1.75;
 }
+.links a:hover {
+  color: #11a64a;
+  text-decoration: underline;
+}
 .cta {
   background-color: #056BBD;
   border-radius: 5rem;
@@ -24,12 +28,44 @@ body {
   text-decoration: none;
   width: max-content;
 }
+a.cta:hover {
+  background-color: #11a64a;
+}
 /************************************************structure***/
 img {
   width: 100%;
 }
 section.prob-sol > figure, section.conclusion > figure, section.more > div > figure {
   width: 25% ;
+}
+/* back to top */
+.top-link {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 0;
+  cursor: pointer;
+  display: inline-flex;
+  height: 4rem;
+  justify-content: center;
+  margin: 0 1rem 1rem 0;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  transition: all .3s ease-in-out;
+  width: 4rem;
+  z-index: 5;
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+.top-link:hover {
+  background-color: #e2e2e2;
 }
 /***********************************************typography***/
 h1 {
@@ -57,7 +93,7 @@ h4, p, li, ul, figcaption {
 }
 p {
   max-width: 66ch;
-  padding-bottom: 2rem;
+  padding: 0 1.5rem 2rem;
 }
 span, figcaption {
   font-weight: bold;
@@ -81,33 +117,31 @@ ul {
   display: none;
 }
  .hamburger-nav {
+  align-items: center;
   background-color: #fff;
   border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
-  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
   opacity: .95;
-  padding:3rem 0;
   position: fixed;
   width: 100%;
   z-index: 5;
 }
 .cm-logo {
-  height: 5.12rem;
-  left:1rem;
-  position: absolute;
-  top: .5rem;
+  align-items:center;
+  display: flex;
+  padding-left: 1rem;
   width:auto;
   z-index: 5;
 }
+.hamburger-nav .cm-logo {
+  width: 6rem;
+}
 .btn-toggle-nav {
-  background-image: url("/images/menu.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 3rem;
-  position: absolute;
-  right: 1rem;
-  top: 1.5rem;
-  width: 4rem;
+  align-items: center;
+  display: flex;
+  padding-right: .5rem;
   z-index: 5;
 }
 .nav-menu {
@@ -117,10 +151,10 @@ ul {
   opacity: 0.95;
   position: fixed;
   right: 0;
-  top: 7rem; 
+  top: 7rem;
   transition: all .7s ease-in-out;
   width: 0rem;
-  z-index: 5;
+  z-index: 6;
 }
 .nav-menu ul {
   padding: 0 .5rem 5rem;
@@ -142,15 +176,13 @@ ul {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-.nav-sidear ul li a:hover {
-  background-color: #fff;
-}
 /**********************************************************************HERO***/
 .hero {
   background-color: #fff;
   border-bottom-right-radius: 7.5rem;
   padding: 7.5rem 1rem 1rem;
   width: 100%;
+  z-index: -5;
 }
 .camelot-logo, .camelot-landing, .text-hero {
   padding: 1rem 0;
@@ -205,11 +237,55 @@ ul {
 }
           /***competitive analysis***/
 .comp-analysis {
+  /* max-width: 75vw; */
   padding: 0 1rem;
+}
+.comp-img {
+  max-width: 100%;
+}
+.swot ul, .swot li {
+  text-align: left;
+  width: 20rem;
+}
+.gdrive {
+  background-color: #fff;
+  border: .1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  box-shadow: 0 .2rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.5rem;
+  padding:1rem;
+}
+.swot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.swot h2 {
+  margin-top: 2.5rem;
+  width: 100%;
+}
+.dropbox {
+  background-color: #fff;
+  border: .1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  box-shadow: 0 .2rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.5rem;
+  padding: 1rem;
+}
+.dropbox figure {
+  border: .1rem solid rgba(0, 0, 0, 0.25);
 }
              /****user personas***/
 .text-personas {
   padding: 0 1rem;
+}
+.persona-img {
+  margin: 0 1rem;
+}
+.persona-img img {
+  object-fit: contain;
+  max-width: 30rem;
 }
 .thomas, .danny {
   background-color: #fff;
@@ -217,12 +293,22 @@ ul {
   border-radius: .5rem;
   box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 2rem 2rem;
-  max-width: 70ch;
-  min-width: 60ch;
+  margin: 0 auto 2rem;
+  max-width: 50rem;
   padding: 2rem;
+}
+.thomas h3, .danny h3 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.persona-img ul {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.thomas p, .danny p {
+  padding-bottom: .5rem;
 }
 figure.thomas > img, figure.danny > img {
   margin: 0 auto;
@@ -722,6 +808,13 @@ div.busybus > h2 {
   h2 {
     font-size: 2rem;
   }
+/* back to top   */
+.top-link {
+  height: 8rem;
+  margin: 0 3rem 3rem 0;
+  padding: 2.5rem;
+  width: 8rem;
+}
 /* hero */
   .camelot-logo {
     margin: auto;
@@ -751,19 +844,45 @@ div.busybus > h2 {
   }
 /* STRATEGY */
 /* competitive analysis */
-  .comp-analysis {
-    margin: auto;
+  .comp-img {
+    display: flex;
+  }
+  .gdrive {
+    margin-right: 1rem;
+  }
+  .strengths, .weaknesses {
+    height: 16.6rem;
+  }
+  .sw, .ot {
+    display: flex;
+  }
+  .opportunities {
+    height: 13.65rem;
   }
 /* user personas */
   .text-personas {
-    margin: auto;
-  }
+    margin: 0 auto;
+}
   .persona-img {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    max-width: 90vw;
   }
   .persona-img p {
     padding: 0;
+  }
+  .thomas, .danny {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+  .thomas-text {
+    display: flex;
+    flex-direction: row;
+  }
+  .danny-text {
+    display: flex;
+    flex-direction: row;
   }
 /* INFORMATION ARCHITECTURE */
 /* user stories */
@@ -1090,12 +1209,6 @@ div.busybus > h2 {
     margin: 0 auto;
   }
 /******************NAV********************/
-  .cm-logo {
-    padding-left: 5rem;
-    padding-top: 1rem;
-    width:auto;
-    z-index: 5;
-  }
   .navbar {
     align-items: center;
     background-color: #fff;
@@ -1116,7 +1229,6 @@ div.busybus > h2 {
     display: none;
   }
   .links {
-    align-items: center;
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -1126,9 +1238,6 @@ div.busybus > h2 {
   }
   nav a {
     text-decoration: none;
-  }
-  nav a img {
-    width: auto;
   }
 /***************HERO**************/
   .hero {
@@ -1157,11 +1266,6 @@ div.busybus > h2 {
     padding: 5rem 2rem 0;
     text-align: center;
   }
-  .to-top, .to-top .cta {
-    float: right;
-    margin-right: 5rem;
-    position: fixed;
-  }
 /************DISCOVERY*****************/
   .text-disc {
     margin: 5rem 0 2.5rem 20vw;
@@ -1187,16 +1291,21 @@ div.busybus > h2 {
   .comp-analysis {
     margin-bottom: 5rem;
   }
+  .comp-img {
+    margin: 0 auto;
+    max-width: 60vw;
+  }
 /* user personas */
   .personas {
     margin-bottom: 5rem;
   }
   .persona-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     justify-content: center;
-    margin: 0rem auto;
-    width: 30%;
+    margin: 0 auto;
+    max-width:90vw;
+  }
+  .danny, .thomas {
+    margin: 1rem;
   }
   .text-personas {
     margin-bottom:.5rem;
@@ -1267,7 +1376,7 @@ div.busybus > h2 {
     width: 33%;
   }
   .modal {
-    background-color: #000;
+    background-color: rgba(0,0,0,.75);
     display: none;
     height: 100%;
     left: 0;
@@ -1307,14 +1416,12 @@ div.busybus > h2 {
   }
   .prev, .next {
     border-radius: 0 3px 3px 0;
-    color: white;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
-    margin-top: -50px;
     padding: 16px;
     position: absolute;
-    top: 50%;
+    top: 75%;
     transition: 0.6s ease;
     user-select: none;
     -webkit-user-select: none;
@@ -1325,7 +1432,7 @@ div.busybus > h2 {
     right: 0;
   }
   .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .numbertext {
     color: #f2f2f2;
@@ -1333,12 +1440,6 @@ div.busybus > h2 {
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  .caption-container {
-    background-color: black;
-    color: white;
-    padding: 2px 16px;
-    text-align: center;
   }
   img.demo {
     opacity: 0.6;
@@ -1361,7 +1462,7 @@ div.busybus > h2 {
     flex-direction: row;
     justify-content:center;
     margin: auto;
-    max-width: 50vw;
+    max-width: 75vw;
   }
   .sketch-dash {
     padding-right: 2.5rem;
@@ -1375,7 +1476,7 @@ div.busybus > h2 {
     padding-top: 2.5rem;
   }
   .img-mock {
-    max-width: 60vw;
+    max-width: 80vw;
   }
   .landing-wire {
     margin-bottom: 2.5rem;;
@@ -1480,8 +1581,6 @@ div.busybus > h2 {
     align-items: baseline;
     display: flex;
     justify-content: space-between;
-    /* padding-left:5rem;
-    padding-right: 5rem; */
   }
 /**********************preference testing************************/
   .pref-testing {
@@ -1504,7 +1603,7 @@ div.busybus > h2 {
     padding-top: 10rem;
   }
   .text-conclusion {
-    margin-bottom: 2.5rem;
+    margin-bottom: 7.5rem;
   }
   .conc-list {
     display: grid;
@@ -1514,6 +1613,9 @@ div.busybus > h2 {
     "roles      deliverables  tools";
     max-width: 64rem;
     min-width: 24rem;
+  }
+  .roles h2, .deliverables h2, .tools h2 {
+      padding-bottom: 2.5rem;
   }
   .roles {
     grid-area: roles;
@@ -1570,5 +1672,8 @@ div.busybus > h2 {
     font-size: 2.4rem;
     font-weight: 600;
     padding: 2.5rem;
+  }
+  .social img:hover {
+    width:7rem;
   }
 }
