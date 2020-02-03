@@ -25,7 +25,6 @@ body {
   display:flex;
   flex-direction:column;
   justify-content: space-around;
-  margin: 0 auto;
   max-width: 66ch;
   padding: 5rem 2rem;
 }
@@ -85,7 +84,7 @@ ul > li {
   border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
   display: flex;
   justify-content: space-between;
-  height: 6rem;
+  height: 7rem;
   opacity: .95;
   position: fixed;
   width: 100%;
@@ -104,9 +103,10 @@ ul > li {
 .btn-toggle-nav {
   align-items: center;
   display: flex;
-  padding-right: .5rem;
+  margin-right: 1rem;
   z-index: 5;
 }
+
 .nav-menu {
   background-color: #fff;
   bottom: 0;
@@ -155,11 +155,12 @@ ul > li {
   background-size: 100%;
   border-bottom-right-radius: 10rem;
   width: 100vw;
-  margin-top: -15rem;
+  margin-top: -15rem; 
   z-index: 1;
 }
 .hero .description {
   background-color: transparent;
+  margin: 0 auto;
   z-index: 2;
 }
 /***CAMELOT***/
@@ -242,7 +243,6 @@ ul > li {
     border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
     display: flex;
     height: 8rem;
-    /* padding: 2rem 0; */
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -293,7 +293,7 @@ ul > li {
   .camelot {
     background-color: #e2effa;
     flex-direction: row-reverse;
-    margin: 5rem 0;
+    margin: 5rem auto;
     padding-bottom: 20rem;
   }
   .camelot img {
@@ -350,9 +350,10 @@ ul > li {
   }
   .camelot {
     align-items: center;
-    margin: 5rem 0rem;
+    margin: 5rem auto;
   }
   .camelot-img figure img {
+    margin: 0 auto;
     max-width: 100%;
   }
   .busybus {

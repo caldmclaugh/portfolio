@@ -103,9 +103,10 @@ ul {
 .btn-toggle-nav {
   align-items: center;
   display: flex;
-  padding-right: .5rem;
+  margin-right: 1rem;
   z-index: 5;
 }
+
 .nav-menu {
   background-color: #fff;
   bottom: 0;
@@ -125,7 +126,6 @@ ul {
 .nav-menu ul li {
   list-style: none;
   padding-top: 5rem;
-  text-align: center;
 }
 .nav-menu ul li a  {
   color: #056BBD;
@@ -136,9 +136,11 @@ ul {
   height: 6rem;
   opacity: 0;
   padding: 0 1rem;
+  text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
+
 /**********************************************************************HERO***/
 .hero {
   background-color: #fff;
@@ -426,6 +428,48 @@ h1.more {
   h3 {
     font-size: 2rem;
   }
+/******************NAV********************/
+  .cm-logo {
+    align-items:center;
+    display: flex;
+    padding-left: 1rem;
+    width:auto;
+    z-index: 5;
+  }
+  .navbar {
+    align-items: center;
+    background-color: #fff;
+    border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
+    display: flex;
+    height: 8rem;
+    padding: 2rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  .navbar a {
+    color: #056BBD;
+    font-family: "Cabin", "Open Sans", sans-serif;
+    font-size: 1.6rem;
+  }
+  .hamburger-nav {
+    display: none;
+  }
+  .links {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .links a {
+    padding: 5rem;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  nav a img {
+    width: auto;
+  }
 /* hero */
   .hero h2 {
     font-size: 2.4rem;
@@ -492,48 +536,6 @@ h1.more {
   }
 /* DESKTOP */
 @media screen and (min-width: 70rem) {
-/******************NAV********************/
-  .cm-logo {
-    align-items:center;
-    display: flex;
-    padding-left: 1rem;
-    width:auto;
-    z-index: 5;
-  }
-  .navbar {
-    align-items: center;
-    background-color: #fff;
-    border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
-    display: flex;
-    height: 8rem;
-    padding: 2rem 0;
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-  }
-  .navbar a {
-    color: #056BBD;
-    font-family: "Cabin", "Open Sans", sans-serif;
-    font-size: 1.6rem;
-  }
-  .hamburger-nav {
-    display: none;
-  }
-  .links {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
-  .links a {
-    padding: 5rem;
-  }
-  nav a {
-    text-decoration: none;
-  }
-  nav a img {
-    width: auto;
-  }
 /***************HERO**************/
   .hero {
     padding-top: 15rem;

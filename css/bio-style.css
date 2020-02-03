@@ -58,9 +58,10 @@ p {
 .btn-toggle-nav {
   align-items: center;
   display: flex;
-  padding-right: .5rem;
+  margin-right: 1rem;
   z-index: 5;
 }
+
 .nav-menu {
   background-color: #fff;
   bottom: 0;
@@ -80,7 +81,6 @@ p {
 .nav-menu ul li {
   list-style: none;
   padding-top: 5rem;
-  text-align: center;
 }
 .nav-menu ul li a  {
   color: #056BBD;
@@ -91,6 +91,7 @@ p {
   height: 6rem;
   opacity: 0;
   padding: 0 1rem;
+  text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -161,42 +162,7 @@ p {
   p {
     margin: auto;
   }
-/* hero */
-  .p-one {
-    padding-top: 2rem;
-  }
-  .photo {
-    float:left;
-    margin: auto;
-    max-width: 30rem;
-    padding-right: 2.5rem;
-  }
-  /* block */
-  .block {
-    margin-top: -5rem;
-    padding: 10rem 5rem;
-}
-  /* conclusion */
-
-  /* connect */
-  .connect h2 {
-    max-width: none;
-  }
-}
-/* DESKTOP */
-@media screen and (min-width: 70rem) {
-  /* typography */
-  h1 {
-    font-family: "Ubuntu", "Open Sans", sans-serif;
-    font-size: 3.2rem;
-    font-weight: bold;
-    text-align: left;
-    width:max-content;
-  }
-  h2 {
-    min-width: 40ch;
-  }
-  /* nav */
+/* nav */
   .cm-logo {
     align-items:center;
     display: flex;
@@ -253,9 +219,45 @@ p {
       background-color: #11A64A;
       height: 0.5rem;
       position: absolute;
+      margin-left: 4.9rem;
       width: 4.5rem;
       z-index: 500;
     }
+/* hero */
+  .p-one {
+    padding-top: 2rem;
+  }
+  .photo {
+    float:left;
+    margin: auto;
+    max-width: 30rem;
+    padding-right: 2.5rem;
+  }
+  /* block */
+  .block {
+    margin-top: -5rem;
+    padding: 10rem 5rem;
+}
+  /* conclusion */
+
+  /* connect */
+  .connect h2 {
+    max-width: none;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 70rem) {
+  /* typography */
+  h1 {
+    font-family: "Ubuntu", "Open Sans", sans-serif;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: left;
+    width:max-content;
+  }
+  h2 {
+    min-width: 40ch;
+  }
 /* hero */
     .hero h1 {
       padding-top: 5rem;

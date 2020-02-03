@@ -4,15 +4,21 @@ let toggleNav = function() {
   let getMenu = document.querySelector(".nav-menu");
   let getMenuUl = document.querySelector(".nav-menu ul");
   let getMenuLinks = document.querySelectorAll(".nav-menu a");
+  let getMenuIcon = document. querySelector(".btn-toggle-nav img");
 
   if(toggleNavStatus === false) {
     getMenuUl.style.visibility ="visible";
     getMenu.style.width="100%";
 
+
     let arrayLength = getMenuLinks.length;
     for (let i=0; i < arrayLength; i++) {
 
       getMenuLinks[i].style.opacity = "1";
+      getMenuIcon.style.background = "#E3EFFA";
+      getMenuIcon.style.padding = "1rem";
+      getMenuIcon.style.margin = "0 -1rem 0 0";
+
 }
     toggleNavStatus = true;
     }
@@ -20,6 +26,8 @@ let toggleNav = function() {
     else if(toggleNavStatus === true) {
 
       getMenu.style.width="0";
+      getMenuIcon.style.background = "white";
+
 
 
       let arrayLength = getMenuLinks.length;
@@ -31,6 +39,7 @@ let toggleNav = function() {
       toggleNavStatus = false;
       }
 }
+
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
