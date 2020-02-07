@@ -50,12 +50,13 @@ h3 {
   font-weight: 600;
   text-align: center;
 }
-p, li, ul, figcaption {
+p, li, h4, figcaption {
   font-family: "Cabin", "Open Sans", sans-serif;
   font-size: 1.6rem;
 }
 p {
-  max-width: 66ch;
+  margin: 0 auto;
+  max-width: 66ex;
   padding-bottom: 2rem;
 }
 span, figcaption {
@@ -170,6 +171,10 @@ ul {
   padding: 5rem 1rem 0;
   text-align: center;
 }
+.problem, .solution {
+  margin: 0 auto;
+  max-width: 66ex;
+}
 .icon-prob {
   display: flex;
   margin: 0 auto;
@@ -193,7 +198,7 @@ ul {
   padding-bottom: 2.5rem;
   text-transform: uppercase;
 }
-.user-research {
+.user-researex {
   padding: 1rem;
 }
 .chart {
@@ -215,7 +220,6 @@ ul {
   padding: 0 1rem;
 }
 .comp-analysis img {
-  max-width: 50%;
   padding: .5rem;
 }
 .comp-img {
@@ -296,8 +300,11 @@ ul {
   border-radius: .5rem;
   box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
   display: block;
-  margin: 0 auto 5rem;
+  margin: 0 auto 3rem;
   max-width: 75%;
+}
+.mockups figure {
+    margin-bottom:5rem;
 }
                 /***final prototype***/
 .final {
@@ -308,7 +315,7 @@ ul {
     border-radius: .5rem;
     box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
     max-width: 75%;
 }
 /****************************************************************CONCLUSION***/
@@ -349,8 +356,8 @@ div.blocjams figure {
 .camelot {
   align-items: center;
   display: flex;
-  max-width: 70ch;
-  min-width: 50ch;
+  max-width: 66ex;
+  min-width: 50ex;
 }
 .camelot img {
   margin: auto 1rem;
@@ -390,6 +397,9 @@ h1.more {
   text-align: center;
 }
 /***CONNECT***/
+#contact {
+  font-weight: inherit;
+}
 .connect {
   background-color: #056BBD;
   border-top-left-radius: 10rem;
@@ -399,7 +409,15 @@ h1.more {
 .connect h2 {
   color: #fff;
   font-size: 1.6rem;
+  margin: 0 auto;
+  max-width: 33ex;
   text-align: center;
+}
+.connect a {
+  color: #fff;
+}
+.connect a:hover {
+  font-weight:bolder;
 }
 .social {
   display: flex;
@@ -474,12 +492,12 @@ h1.more {
   .hero h2 {
     font-size: 2.4rem;
     margin: 0 auto;
-    max-width: 35ch;
+    max-width: 40ex;
   }
 /* problem/solution */
   .prob-sol {
+    flex-direction: row;
     margin: 0 auto;
-    max-width: 66ch;
   }
   .prob-sol h3 {
     font-size: 2rem;
@@ -489,7 +507,6 @@ h1.more {
   }
 /* competitive analysis */
   .comp-analysis img {
-    max-width: 75%;
     padding: .5rem;
   }
   .comp-analysis figcaption {
@@ -527,7 +544,6 @@ h1.more {
     padding: 1rem 2rem;
   }
   .blocjams {
-    margin: 0 auto;
     padding: 1.5rem;
   }
 /* CONTACT */
@@ -545,15 +561,13 @@ h1.more {
   }
 /******PROBLEM/SOLUTION******/
   .prob-sol {
-    display: flex;
-    flex-direction: row;
     margin: 5rem auto;
-    max-width: 190ch;
+    max-width: 100rem;
     padding: 5rem 2rem 0;
     text-align: center;
   }
   .icon-sol {
-    padding-top: 6rem;
+    padding-top: 3rem;
   }
 /************DISCOVERY*****************/
   .discovery h2 {
@@ -661,4 +675,3 @@ h1.more {
   .social img:hover {
     width:7rem;
   }
-}

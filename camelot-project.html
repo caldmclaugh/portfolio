@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camelot Case Study</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700|Montserrat:400,600|Ubuntu:700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700|Montserrat:400,600,800|Ubuntu:700&display=swap">
     <link rel="stylesheet" href="css/camelot-style.css">
   </head>
   <body>
@@ -21,7 +21,7 @@
       </div>
       <div class="hamburger-nav">
         <a class="cm-logo hamburger" href="index.html"><img src="../images/logo.svg" alt="Caleigh McLaughlin logo"></a>
-        <i class="btn-toggle-nav" onclick="toggleNav()"><img src="images/menu.svg"></i>
+        <i class="btn-toggle-nav" onclick="toggleNav()"><img src="images/menu.svg" alt="hamburger menu"></i>
         <aside class="nav-menu">
           <ul>
             <li><a class="home" href="index.html">Home</a></li>
@@ -34,7 +34,7 @@
 <!--container-->
     <main class="container">
       <a id="top"></a>
-      <a class="top-link hide" href="" id="js-top"><img src="images/to-top.svg"></a>
+      <a class="top-link hide" href="" id="js-top"><img src="images/to-top.svg" alt="back to top icon"></a>
 <!--hero-->
       <section class="hero">
         <figure class="camelot-logo">
@@ -79,9 +79,10 @@
             To kick off the discovery phase, I created a survey to get feedback on current cloud users and nonusers. I found that <span>two-thirds of nonusers had privacy and security concerns keeping them from using cloud storage</span>, and stronger privacy was a proposed improvement from current users. Among other suggestions were more free storage and larger file sharing capability. <span>This feedback inspired brand values of privacy, security, and ample storage</span>.
           </p>
         </div>
-        <div class="chart">
+        <figure class="chart">
+          <figcaption>Why don't you use a cloud storage app?</figcaption>
           <canvas id="myChart" width="400" height="400"></canvas>
-        </div>
+        </figure>
       </section>
 <!--STRATEGY-->
       <section class="strategy">
@@ -95,64 +96,88 @@
           <div class="comp-img">
             <div class="gdrive">
               <figure>
-                <img src="images/gdrive.png">
+                <img src="images/gdrive.png" alt="Google Drive screenshot">
               </figure>
               <div class="swot">
                 <h2>Google Drive</h2>
                 <div class="sw">
-                  <ul class="strengths">Strengths
-                    <li>15GB free storage</li>
-                    <li>Google Suite integration</li>
-                    <li>3rd party app integration</li>
-                    <li>Easy to share files and folders</li>
-                  </ul>
-                  <ul class="weaknesses">Weaknesses
-                    <li>Need internet to use</li>
-                    <li>No block-level sync</li>
-                    <li><span>No zero-knowledge encryption</span></li>
-                    <li><span>Insufficient privacy</span></li>
-                  </ul>
+                  <div class="strengths">
+                    <ul>
+                      <h4>Strengths</h4>
+                      <li>15GB free storage</li>
+                      <li>Google Suite integration</li>
+                      <li>3rd party app integration</li>
+                      <li>Easy to share files and folders</li>
+                    </ul>
+                  </div>
+                  <div class="weaknesses">
+                    <ul>
+                      <h4>Weaknesses</h4>
+                      <li>Need internet to use</li>
+                      <li>No block-level sync</li>
+                      <li><span>No zero-knowledge encryption</span></li>
+                      <li><span>Insufficient privacy</span></li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="ot">
-                  <ul class="opportunities">Opportunities
-                    <li>Strengthen security</li>
-                    <li>Increase privacy</li>
-                    <li>Adopt block-level sync</li>
-                  </ul>
-                  <ul class="threats">Threats
-                    <li>More secure cloud storage apps</li>
-                    <li>Apps with more privacy</li>
-                  </ul>
+                  <div class="opportunities">
+                    <ul>
+                      <h4>Opportunities</h4>
+                      <li>Strengthen security</li>
+                      <li>Increase privacy</li>
+                      <li>Adopt block-level sync</li>
+                    </ul>
+                  </div>
+                  <div class="threats">
+                    <ul>
+                      <h4>Threats</h4>
+                      <li>More secure cloud storage apps</li>
+                      <li>Apps with more privacy</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="dropbox">
               <figure>
-                <img src="images/dropbox.png">
+                <img src="images/dropbox.png" alt="Dropbox screenshot">
               </figure>
               <div class="swot">
                 <h2>Dropbox</h2>
                 <div class="sw">
-                  <ul class="strengths">Strengths
-                    <li>Office online integration</li>
-                    <li>Dropbox Paper</li>
-                    <li>Block-level sync</li>
-                  </ul>
-                  <ul class="weaknesses">Weaknesses
-                    <li>Expensive beyond free plan</li>
-                    <li><span>No zero-knowledge encryption</span></li>
-                    <li><span>Insufficient privacy</span></li>
-                  </ul>
+                  <div class="strengths">
+                    <ul>
+                      <h4>Strengths</h4>
+                      <li>Office online integration</li>
+                      <li>Dropbox Paper</li>
+                      <li>Block-level sync</li>
+                    </ul>
+                  </div>
+                  <div class="weaknesses">
+                    <ul>
+                      <h4>Weaknesses</h4>
+                      <li>Expensive beyond free plan</li>
+                      <li><span>No zero-knowledge encryption</span></li>
+                      <li><span>Insufficient privacy</span></li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="ot">
-                  <ul class="opportunities">Opportunities
-                    <li>Offer less expensive options</li>
-                    <li>Increase security</li>
-                  </ul>
-                  <ul class="threats">Threats
-                    <li>Less expensive storage available</li>
-                    <li>More secure storage apps</li>
-                  </ul>
+                  <div class="opportunities">
+                    <ul>
+                      <h4>Opportunities</h4>
+                      <li>Offer less expensive options</li>
+                      <li>Increase security</li>
+                    </ul>
+                  </div>
+                  <div class="threats">
+                    <ul>
+                      <h4>Threats</h4>
+                      <li>Less expensive storage available</li>
+                      <li>More secure storage apps</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -173,12 +198,14 @@
                   <h2>Thomas</h2>
                   <h3>Hobby filmmaker</h3>
                   <div class="thomas-text">
-                  <ul>Frustrations:
+                  <ul>
+                    <h4>Frustrations</h4>
                     <li><p>limited hard drive space</p></li>
                     <li><p>buying external drives</p></li>
                     <li><p>file sharing difficulties</p></li>
                   </ul>
-                  <ul>Needs:
+                  <ul>
+                    <h4>Needs</h4>
                     <li><p>store large video files</p></li>
                     <li><p>unlimited data storage</p></li>
                     <li><p>share with fellow filmmakers</p></li>
@@ -192,12 +219,14 @@
                   <h2>Danny</h2>
                   <h3>Asset Manager</h3>
                   <div class="danny-text">
-                  <ul>Frustrations
+                  <ul>
+                    <h4>Frustrations</h4>
                     <li><p>no company database</p></li>
                     <li><p>no communication among teams</p></li>
                     <li><p>no secure project storage</p></li>
                   </ul>
-                  <ul>Needs:
+                  <ul>
+                    <h4>Needs</h4>
                     <li><p>store company data</p></li>
                     <li><p>share with team members</li>
                     <li><p>privacy and security</li>
@@ -224,25 +253,32 @@
                 For example, I originally placed stories about saving content such as documents, images, videos and links in the high priority category. Later on, when doing my mockups <span>I realized that the web-clipping feature I created to fulfill these stories introduced scope creep</span>. Still, laying out all the possibilities of the app’s potential was worthwhile because it showed additional components that could be added in a future version, i.e. a webclip plugin.
               </p>
           </div>
-          <ul class="list-stories"><h2 class="high-pri">High priority stories</h2>
-            <ul class="new-user">As a new user, I want to...
-              <li>sign up for an account using an email</li>
-              <li>sign up for an account using Gmail</li>
-              <li>see what features the app offers</li>
-              <li>explore the different price plans</li>
-            </ul>
-            <ul class="returning-user">As a returning user, I want to...
-              <li>sign into my existing account</li>
-              <li>upload files from my computer</li>
-              <li>back up docs, videos, photos to the cloud</li>
-              <li>back up my files securely</li>
-              <li>store all my files in one place</li>
-              <li>store large files in the cloud</li>
-              <li>organize my files into folders</li>
-              <li>create tags to organize my files</li>
-              <li>access the app from my computer</li>
-            </ul>
-          </ul>
+          <div class="list-stories">
+            <h2 class="high-pri">High priority stories</h2>
+            <div class="new-user">
+              <ul>
+                <h4>As a new user, I want to...</h4>
+                <li>sign up for an account using an email</li>
+                <li>sign up for an account using Gmail</li>
+                <li>see what features the app offers</li>
+                <li>explore the different price plans</li>
+              </ul>
+            </div>
+            <div class="returning-user">
+              <ul>
+                <h4>As a returning user, I want to...</h4>
+                <li>sign into my existing account</li>
+                <li>upload files from my computer</li>
+                <li>back up docs, videos, photos to the cloud</li>
+                <li>back up my files securely</li>
+                <li>store all my files in one place</li>
+                <li>store large files in the cloud</li>
+                <li>organize my files into folders</li>
+                <li>create tags to organize my files</li>
+                <li>access the app from my computer</li>
+              </ul>
+            </div>
+          </div>
         </div>
 <!--user flows-->
         <div class="user-flows">
@@ -281,19 +317,19 @@
             <div class="row">
               <div class="column">
                 <figure class="sign-in">
-                  <img src="images/sign-in-user-flows-z.svg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                  <img src="images/sign-in-user-flows-z.svg" alt="sign in user flow" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                   <figcaption>Sign in</figcaption>
                 </figure>
               </div>
               <div class="column">
                 <figure class="upload">
-                  <img src="images/upload-user-flows-z.svg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                  <img src="images/upload-user-flows-z.svg" alt="upload user flow" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
                   <figcaption>Upload</figcaption>
                 </figure>
               </div>
               <div class="column">
                 <figure class="organize">
-                  <img src="images/organize-user-flows-z.svg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                  <img src="images/organize-user-flows-z.svg" alt="organize user flow" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
                   <figcaption>Organize</figcaption>
                 </figure>
               </div>
@@ -304,21 +340,21 @@
                 <div class="mySlides">
                   <div class="numbertext">1 / 3</div>
                   <figure>
-                    <img src="images/sign-in-user-flows.svg" style="width:100%">
+                    <img src="images/sign-in-user-flows.svg" alt="sign in user flow" style="width:100%">
                     <figcaption>Sign in</figcaption>
                   </figure>
                 </div>
                 <div class="mySlides">
                   <div class="numbertext">2 / 3</div>
                   <figure>
-                    <img src="images/upload-user-flows.svg" style="width:100%">
+                    <img src="images/upload-user-flows.svg" alt="upload user flows" style="width:100%">
                     <figcaption>Upload</figcaption>
                   </figure>
                 </div>
                 <div class="mySlides">
                   <div class="numbertext">3 / 3</div>
                     <figure>
-                      <img src="images/organize-user-flows.svg" style="width:100%">
+                      <img src="images/organize-user-flows.svg" alt="organize user flow" style="width:100%">
                       <figcaption>Organize</figcaption>
                   </figure>
                 </div>
@@ -330,7 +366,6 @@
               </div>
             </div>
           </div>
-        </div>
 <!--wireframes-->
         <div class="wireframes">
           <div class="text-wireframes">
@@ -342,9 +377,11 @@
           <div class="img-wire">
             <figure class="sketch-dash">
               <img src="images/dashboard-sketch.jpg" alt="dashboard sketch" style="max-width:70rem">
+              <figcaption>Dashboard sketch</figcaption>
             </figure>
             <figure class="wire-dash">
               <img src="images/wireframes-dashboard.png" alt="dashboard wireframe" style="max-height: 52rem">
+              <figcaption>Dashboard wireframe</figcaption>
             </figure>
           </div>
         </div>
@@ -362,12 +399,15 @@
           <div class="img-mock">
             <figure class="landing-wire">
               <img src="images/wf-landing.svg" alt="landing page wireframe">
+              <figcaption>Landing page wireframe</figcaption>
             </figure>
             <figure class="dash-wire">
               <img src="images/dashboard-wireframe.svg" alt="dashboard wireframe">
+              <figcaption>Dashboard wireframe</figcaption>
             </figure>
             <figure class="upload-wire">
               <img src="images/upload.svg" alt="upload wireframe">
+              <figcaption>Upload wireframe</figcaption>
             </figure>
           </div>
           <a class="cta" href="http://bit.ly/cloud-wireframes" target="_blank">See all mockups</a>
@@ -389,9 +429,11 @@
           <div class="logo-img">
             <figure class="camel-sketch">
               <img src="images/camel-sketch.png" alt="camel sketch">
+              <figcaption>Camel logo sketch</figcaption>
             </figure>
             <figure class="camel-logo">
               <img src="images/camel-logo.png" alt="camel logo">
+              <figcaption>Camel logo vector</figcaption>
             </figure>
           </div>
           <div class="text-logo-2">
@@ -402,9 +444,11 @@
           <div class="logo-img">
             <figure class="castle">
               <img src="images/castle.png" alt="castle">
+              <figcaption>Castle sketch</figcaption>
             </figure>
             <figure class="bw-logo">
               <img src="images/bw-logo.png" alt="camelot b&w logo">
+              <figcaption>Camelot logo</figcaption>
             </figure>
           </div>
         </div>
@@ -418,6 +462,7 @@
           </div>
           <figure class="img-type">
             <img src="images/typography.svg" alt="typography">
+            <figcaption>Typography</figcaption>
           </figure>
         </div>
 <!--style guide-->
@@ -433,9 +478,11 @@
           </div>
           <figure class="img-style">
             <img src="images/style-guide-mobile.png" alt="style guide">
+            <figcaption>Style guide</figcaption>
           </figure>
           <figure class="img-style-media">
             <img src="images/style-guide.png" alt="style guide">
+            <figcaption>Style guide</figcaption>
           </figure>
         </div>
 <!--prototypes-->
@@ -457,9 +504,9 @@
           </div>
           <h4 class="mobile">Mobile</h4>
           <div class="changes-mobile">
-            <h2 class="change1" class="change1d">1. Combined actions on separate screens into one dashboard.</h2>
+            <h2 class="change1 change1d">1. Combined actions on separate screens into one dashboard.</h2>
               <figure class="first-mobile">
-                <img src="images/1st-it.png">
+                <img src="images/1st-it.png" alt="1st iteration mobile">
                   <figcaption>
                     <p>1st iteration</p>
                     <figure class="blue-circle-1st"></figure>
@@ -467,7 +514,7 @@
               </figure>
             <h2 class="change2">2. Added an account menu and subsequently a hamburger menu including a way to sign out of the mobile app.</h2>
               <figure class="second-mobile">
-                <img src="images/2nd-it.png">
+                <img src="images/2nd-it.png" alt="2nd iteration mobile">
                   <figcaption>
                     <p>2nd iteration</p>
                     <figure class="blue-circle-2nd-a"></figure>
@@ -478,7 +525,7 @@
               </figure>
             <h2 class="change3">3. Added “more” icon and later replaced with checkboxes.</h2>
               <figure class="third-mobile">
-                <img src="images/3rd-it.png">
+                <img src="images/3rd-it.png" alt="3rd iteration mobile">
                   <figcaption>
                     <p>3rd iteration</p>
                     <figure class="yellow-circle-3rd"></figure>
@@ -495,14 +542,14 @@
           <div class="changes-desktop">
             <h2 class="change1">1. Combined actions on separate screens into one dashboard.</h2>
               <figure class="first-desktop">
-                <img src="images/1st-desktop.png">
+                <img src="images/1st-desktop.png" alt="1st iteration desktop">
                 <figcaption>
                   <p>1st iteration</p>
                   <figure class="blue-circle-1st-d"></figure>
                 </figcaption>
               </figure>
               <figure class="second-desktop">
-                <img src="images/2nd-desktop.png">
+                <img src="images/2nd-desktop.png" alt="2nd iteration desktop">
                 <figcaption>
                   <p>2nd iteration</p>
                   <figure class="blue-circle-2nd-a-d"></figure>
@@ -513,7 +560,7 @@
               </figure>
             <h2 class="change3">3. Added “more” icon and later replaced with checkboxes.</h2>
               <figure class="third-desktop">
-                <img src="images/3rd-desktop.png">
+                <img src="images/3rd-desktop.png" alt="3rd iteration desktop">
                 <figcaption>
                   <p>3rd iteration</p>
                   <figure class="green-circle-3rd-d"></figure>
@@ -567,40 +614,49 @@
           <figure class="roles-icon">
             <img src="images/roles.svg" alt="roles icon">
           </figure>
-          <ul class="roles"><h2>Roles</h2>
-            <li><p>User research</p></li>
-            <li><p>Information architecture</p></li>
-            <li><p>Branding</p></li>
-            <li><p>Visual design</p></li>
-            <li><p>Usability testing</p></li>
-            <li><p>Mockup iteration</p></li>
-          </ul>
+          <div class="roles">
+            <h2>Roles</h2>
+            <ul>
+              <li><p>User research</p></li>
+              <li><p>Information architecture</p></li>
+              <li><p>Branding</p></li>
+              <li><p>Visual design</p></li>
+              <li><p>Usability testing</p></li>
+              <li><p>Mockup iteration</p></li>
+            </ul>
+          </div>
           <figure class="deliv-icon">
             <img src="images/deliverables.svg" alt="deliverables icon">
           </figure>
-          <ul class="deliverables"><h2>Deliverables</h2>
-            <li><p>User surveys</p></li>
-            <li><p>Competitive analysis</p></li>
-            <li><p>User personas</p></li>
-            <li><p>User stories</p></li>
-            <li><p>User flows</p></li>
-            <li><p>Wireframes</p></li>
-            <li><p>Branding</p></li>
-            <li><p>High fidelity mockups</p></li>
-            <li><p>Clickable prototype</p></li>
-          </ul>
+          <div class="deliverables">
+            <h2>Deliverables</h2>
+            <ul>
+              <li><p>User surveys</p></li>
+              <li><p>Competitive analysis</p></li>
+              <li><p>User personas</p></li>
+              <li><p>User stories</p></li>
+              <li><p>User flows</p></li>
+              <li><p>Wireframes</p></li>
+              <li><p>Branding</p></li>
+              <li><p>High fidelity mockups</p></li>
+              <li><p>Clickable prototype</p></li>
+            </ul>
+          </div>
           <figure class="tools-icon">
             <img src="images/tools.svg" alt="tools icon">
           </figure>
-          <ul class="tools"><h2>Tools</h2>
-            <li><p>Figma</p></li>
-            <li><p>UsabilityHub</p></li>
-            <li><p>InVision</p></li>
-            <li><p>Whimsical</p></li>
-            <li><p>draw.io</p></li>
-            <li><p>Google Sheets</p></li>
-            <li><p>Google Forms</p></li>
-          </ul>
+          <div class="tools">
+            <h2>Tools</h2>
+            <ul>
+              <li><p>Figma</p></li>
+              <li><p>UsabilityHub</p></li>
+              <li><p>InVision</p></li>
+              <li><p>Whimsical</p></li>
+              <li><p>draw.io</p></li>
+              <li><p>Google Sheets</p></li>
+              <li><p>Google Forms</p></li>
+            </ul>
+          </div>
         </div>
       </section>
 <!--MORE PROJECTS-->
@@ -624,11 +680,11 @@
       <!--footer-->
       <footer class="connect">
         <h2><a id="contact">Like what you see?</a></h2>
-        <h2>I'd love to hear from you!</h2>
+        <h2>Feel free to send me an <a href="mailto:caldmclaugh@gmail.com" target="_blank">email</a> or connect with me on <a href="https://www.linkedin.com/in/caleighmclaughlin/" target="_blank">LinkedIn</a>.</h2> <h2>I'd love to hear from you!</h2>
         <div class="social">
-          <a href="https://www.linkedin.com/in/caleighmclaughlin/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn icon">
-          <a href="https://github.com/caldmclaugh" target="_blank"><img src="images/github.svg" alt="Github icon">
-          <a href="mailto:caldmclaugh@gmail.com" target="_blank"><img src="images/email.svg" alt="email icon">
+          <a href="https://www.linkedin.com/in/caleighmclaughlin/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+          <a href="https://github.com/caldmclaugh" target="_blank"><img src="images/github.svg" alt="Github icon"></a>
+          <a href="mailto:caldmclaugh@gmail.com" target="_blank"><img src="images/email.svg" alt="email icon"></a>
         </div>
       </footer>
     </main>

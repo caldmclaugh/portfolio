@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Caleigh McLaughlin</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700|Montserrat:400,600|Ubuntu:700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700|Montserrat:400,600,800|Ubuntu:700&display=swap">
     <link rel="stylesheet" href="css/bbstyle.css">
   </head>
   <body>
@@ -21,7 +21,7 @@
       </div>
       <div class="hamburger-nav">
         <a class="cm-logo hamburger" href="index.html"><img src="../images/logo.svg" alt="Caleigh McLaughlin logo"></a>
-        <i class="btn-toggle-nav" onclick="toggleNav()"><img src="images/menu.svg"></i>
+        <i class="btn-toggle-nav" onclick="toggleNav()"><img src="images/menu.svg" alt="hamburger menu"></i>
         <aside class="nav-menu">
           <ul>
             <li><a class="home" href="index.html">Home</a></li>
@@ -75,9 +75,10 @@
             To understand feelings surrounding public transportation, I created a survey with questions about bus transit, using conditional logic to address particular questions based on use level. Survey analysis revealed that <span>over half of the riders said the bus is late at least weekly, and 68% said live updates would be the most helpful feature to them.</span> From this data I arrived at two main findings: that <span>bus schedules are unreliable</span>, and that <span>live updates on a bus’s location would help</span> solve the big problem.
           </p>
         </div>
-        <div class="chart">
+        <figure class="chart">
+          <figcaption>Which app feature would be most helpful?</figcaption>
           <canvas id="myChart" width="400" height="400"></canvas>
-        </div>
+        </figure>
       </section>
 <!-- STRATEGY                   -->
       <section class="strategy">
@@ -88,12 +89,16 @@
             <p>
               I reviewed two existing transit apps to see what was working or not working for them. I looked at Transit Stop, a Chicago-based transit app that is linked with Chicago Transit Authority’s tracking system, as well as DC Metro, a similar Washington, D.C. commuter app. Both apps feature live updates on bus locations as their primary selling point. The main weaknesses for both were unreliable arrival predictions, and each had strengths in additional features such as route delay alerts and stop saving abilities. While these apps were strong contenders, their single city audiences limit the apps’ scope. A new transit app with more reach could be successful for a wider user population.
             </p>
-            <figure class="comp-img">
-              <img srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/a6/c4/09/a6c40935-0c6e-0c63-54be-e750c355e0ed/pr_source.png/230x0w.png 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/a6/c4/09/a6c40935-0c6e-0c63-54be-e750c355e0ed/pr_source.png/460x0w.png 2x,https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/a6/c4/09/a6c40935-0c6e-0c63-54be-e750c355e0ed/pr_source.png/690x0w.png 3x" alt="Transit Stop screen">
-              <img srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/16/56/89/165689a1-301a-907d-9f0e-cbd8ab1ec72b/pr_source.png/230x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/16/56/89/165689a1-301a-907d-9f0e-cbd8ab1ec72b/pr_source.png/460x0w.png 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/16/56/89/165689a1-301a-907d-9f0e-cbd8ab1ec72b/pr_source.png/690x0w.png 3x" alt="DC Metro screen">
-              <figcaption>Transit Stop</figcaption>
-              <figcaption>DC Metro</figcaption>
-            </figure>
+            <div class="comp-img">
+              <figure>
+                <img src="images/transitstop.png" alt="Transit Stop screen">
+                <figcaption>Transit Stop</figcaption>
+              </figure>
+              <figure>
+                <img src="images/metrobus.png" alt="DC Metro screen">
+                <figcaption>DC Metro</figcaption>
+              </figure>
+            </div>
         </div>
       </section>
 <!-- INFORMATION ARCHITECTURE -->
@@ -106,8 +111,10 @@
               User stories helped me break down specific tasks different users would need in a transit app. I focused on the high priority stories for my BusyBus prototype.
             </p>
         </div>
-        <ul class="list-stories"><h3 class="high-pri">High priority stories</h3>
-          <ul>I want to...
+        <div class="list-stories">
+          <h3>High priority stories</h3>
+          <ul>
+            <h4>I want to...</h4>
             <li>know what the next arriving bus is</li>
             <li>know how much time I have to get to the bus stop</li>
             <li>locate my bus among other busses at my stop</li>
@@ -115,7 +122,7 @@
             <li>see a map of my location</li>
             <li>view the bus route steps</li>
           </ul>
-        </ul>
+        </div>
 <!-- paper prototype         -->
         <div class="paper">
           <h3>Paper prototype</h3>
@@ -158,6 +165,7 @@
           </p>
           <figure>
             <img src="images/bbmockup2.png" alt="BusyBus mockup">
+            <figcaption>Route screen</figcaption>
           </figure>
         </div>
 <!-- final prototype                 -->
@@ -168,6 +176,7 @@
           </p>
           <figure>
             <img src="images/final-prototype.png" alt="Final prototype">
+            <figcaption>Final route screen</figcaption>
           </figure>
           <a class="cta" href="http://bit.ly/busybus" target="_blank">See prototype</a>
         </div>
@@ -182,33 +191,42 @@
           <figure class="roles-icon">
             <img src="images/roles.svg" alt="roles icon">
           </figure>
-          <ul class="roles"><h2>Roles</h2>
-            <li><p>User research</p></li>
-            <li><p>Information architecture</p></li>
-            <li><p>Visual design</p></li>
-            <li><p>Usability testing</p></li>
-            <li><p>Mockup iteration</p></li>
-            <li><p>Frontend development</p></li>
-          </ul>
+          <div class="roles">
+            <ul>
+              <h2>Roles</h2>
+              <li><p>User research</p></li>
+              <li><p>Information architecture</p></li>
+              <li><p>Visual design</p></li>
+              <li><p>Usability testing</p></li>
+              <li><p>Mockup iteration</p></li>
+              <li><p>Frontend development</p></li>
+            </ul>
+          </div>
           <figure class="deliv-icon">
             <img src="images/deliverables.svg" alt="deliverables icon">
           </figure>
-          <ul class="deliverables"><h2>Deliverables</h2>
-            <li><p>User surveys</p></li>
-            <li><p>Competitive analysis</p></li>
-            <li><p>User stories</p></li>
-            <li><p>Paper prototype</p></li>
-            <li><p>High fidelity mockups</p></li>
-          </ul>
+          <div class="deliverables">
+            <ul>
+              <h2>Deliverables</h2>
+              <li><p>User surveys</p></li>
+              <li><p>Competitive analysis</p></li>
+              <li><p>User stories</p></li>
+              <li><p>Paper prototype</p></li>
+              <li><p>High fidelity mockups</p></li>
+            </ul>
+          </div>
           <figure class="tools-icon">
             <img src="images/tools.svg" alt="tools icon">
           </figure>
-          <ul class="tools"><h2>Tools</h2>
-            <li><p>Figma</p></li>
-            <li><p>Marvel</p></li>
-            <li><p>Google Sheets</p></li>
-            <li><p>Google Forms</p></li>
-          </ul>
+          <div class="tools">
+            <ul>
+              <h2>Tools</h2>
+              <li><p>Figma</p></li>
+              <li><p>Marvel</p></li>
+              <li><p>Google Sheets</p></li>
+              <li><p>Google Forms</p></li>
+            </ul>
+          </div>
         </div>
       </section>
 <!-- MORE PROJECTS       -->
@@ -220,25 +238,25 @@
               <img src="images/camelot-logo.svg" alt="Camelot logo">
             </figure>
             <p>Camelot offers a cloud storage solution for users who need to store and send large amounts of data in a secure and simple interface.</p>
-            <a class="cta" href="bbproject.html">See case study</a>
+            <a class="cta" href="camelot-project.html">See case study</a>
           </div>
           <div class="blocjams">
             <figure>
               <img src="images/bloc_jams_logo.png" alt="BlocJams logo">
             </figure>
             <p>BlocJams is a functional music player with displayed information and standard music controls.</p>
-            <a class="cta" href="bjproject.html">See case study</a>
+            <a class="cta" href="https://bl0cjams.netlify.com/" target="_blank">See prototype</a>
           </div>
         </div>
       </section>
 <!-- footer       -->
       <footer class="connect">
         <h2><a id="contact">Like what you see?</a></h2>
-        <h2>I'd love to hear from you!</h2>
+        <h2>Feel free to send me an <a href="mailto:caldmclaugh@gmail.com" target="_blank">email</a> or connect with me on <a href="https://www.linkedin.com/in/caleighmclaughlin/" target="_blank">LinkedIn</a>.</h2> <h2>I'd love to hear from you!</h2>
         <div class="social">
-          <a href="https://www.linkedin.com/in/caleighmclaughlin/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn icon">
-          <a href="https://github.com/caldmclaugh" target="_blank"><img src="images/github.svg" alt="Github icon">
-          <a href="mailto:caldmclaugh@gmail.com" target="_blank"><img src="images/email.svg" alt="email icon">
+          <a href="https://www.linkedin.com/in/caleighmclaughlin/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+          <a href="https://github.com/caldmclaugh" target="_blank"><img src="images/github.svg" alt="Github icon"></a>
+          <a href="mailto:caldmclaugh@gmail.com" target="_blank"><img src="images/email.svg" alt="email icon"></a>
         </div>
       </footer>
     </main>

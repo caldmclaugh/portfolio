@@ -25,7 +25,7 @@ body {
   display:flex;
   flex-direction:column;
   justify-content: space-around;
-  max-width: 66ch;
+  max-width: 66ex;
   padding: 5rem 2rem;
 }
 .description h2 {
@@ -155,7 +155,7 @@ ul > li {
   background-size: 100%;
   border-bottom-right-radius: 10rem;
   width: 100vw;
-  margin-top: -15rem; 
+  margin-top: -15rem;
   z-index: 1;
 }
 .hero .description {
@@ -214,6 +214,9 @@ ul > li {
   padding-bottom: 2.5rem;
 }
 /***CONNECT***/
+#contact {
+  font-weight: inherit;
+}
 .connect {
   background-color: #056BBD;
   border-top-left-radius: 10rem;
@@ -222,7 +225,15 @@ ul > li {
 }
 .connect h2 {
   color: #fff;
+  margin: 0 auto;
+  max-width: 33ex;
   text-align: center;
+}
+.connect a {
+  color: #fff;
+}
+.connect a:hover {
+  font-weight:bolder;
 }
 .social {
   display: flex;
@@ -234,6 +245,7 @@ ul > li {
   padding: 1rem;
   width: 6rem;
 }
+
 /***MEDIA QUERIES***/
 /***TABLET***/
 @media (min-width: 45rem) {
@@ -273,7 +285,6 @@ ul > li {
   .description {
     margin-right: 2.5rem;
     max-height: 50rem;
-    min-width: 60ch;
   }
   .description figure {
     max-width: 90%;
@@ -344,7 +355,7 @@ ul > li {
     margin: 10rem auto 5rem;
   }
   .description {
-    max-width: 100ch;
+    max-width: 100ex;
     min-width: 25rem;
     padding: 5rem;
   }
@@ -380,4 +391,3 @@ ul > li {
   .social img:hover {
     width:7rem;
   }
-}
