@@ -1261,7 +1261,8 @@ div.busybus > h2 {
     transition: .3s ease-in-out;
     width: 7rem;
   }
-/* DESKTOP */
+}
+  /* DESKTOP */
 @media screen and (min-width: 70rem) {
   .container {
     width: 100%;
@@ -1711,3 +1712,4 @@ div.busybus > h2 {
     font-weight: 600;
     padding: 2.5rem;
   }
+}
