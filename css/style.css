@@ -339,6 +339,7 @@ ul > li {
     transition: .3s ease-in-out;
     width: 7rem;
   }
+}  
 /***DESKTOP***/
 @media (min-width: 70rem) {
   h1 {
@@ -391,3 +392,4 @@ ul > li {
   .blocjams img {
     max-width: 100%;
   }
+}

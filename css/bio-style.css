@@ -256,7 +256,6 @@ p {
     transition: .3s ease-in-out;
     width: 7rem;
   }
-  width:7rem;
 }
 /* DESKTOP */
 @media screen and (min-width: 70rem) {
@@ -269,16 +268,17 @@ p {
     width:max-content;
   }
 /* hero */
-    .hero h1 {
-      text-align: left;
-    }
-    .block {
-      grid-area: block;
-      margin-top: -5rem;
-    }
-    .conclusion {
-      grid-area: conclusion;
-    }
-    .connect h2 {
-      font-size: 2rem;
-    }
+  .hero h1 {
+    text-align: left;
+  }
+  .block {
+    grid-area: block;
+    margin-top: -5rem;
+  }
+  .conclusion {
+    grid-area: conclusion;
+  }
+  .connect h2 {
+    font-size: 2rem;
+  }
+}
