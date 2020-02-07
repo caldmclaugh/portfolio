@@ -260,6 +260,11 @@ ul {
   max-width: 35rem;
   padding: 2rem;
 }
+.list-stories h4 {
+  font-weight: bold;
+  padding-top: 2.5rem;
+  width: 100%;
+}
               /***paper prototype***/
 .paper {
   padding: 5rem 1rem;
@@ -550,6 +555,10 @@ h1.more {
   .connect h2 {
     font-size: 2rem;
   }
+  .social img:hover {
+    transition: .3s ease-in-out;
+    width: 7rem;
+  }
 /* DESKTOP */
 @media screen and (min-width: 70rem) {
 /***************HERO**************/
@@ -671,7 +680,4 @@ h1.more {
     font-size: 2.4rem;
     font-weight: 600;
     padding: 2.5rem;
-  }
-  .social img:hover {
-    width:7rem;
   }

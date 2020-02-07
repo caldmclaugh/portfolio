@@ -268,10 +268,15 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  padding: 2rem;
 }
 .swot h2 {
   margin-top: 2.5rem;
   width: 100%;
+}
+.swot h4 {
+  font-weight: bold;
+  padding-top: 2.5rem;
 }
 .dropbox {
   background-color: #fff;
@@ -310,6 +315,9 @@ ul {
 .thomas h3, .danny h3 {
   font-size: 1.6rem;
   text-align: center;
+}
+.thomas h4, .danny h4 {
+  padding-top: 2.5rem;
 }
 .persona-img ul {
   padding-left: 1rem;
@@ -360,6 +368,10 @@ div.persona-img > figure > ul > li {
 .new-user {
   padding-bottom:2rem;
   width: 27rem;
+}
+.list-stories h4 {
+  font-weight: bold;
+  text-align: center;
 }
 .returning-user {
   width: 27rem;
@@ -1245,6 +1257,10 @@ div.busybus > h2 {
   .social {
     max-width: 33%;
   }
+  .social img:hover {
+    transition: .3s ease-in-out;
+    width: 7rem;
+  }
 /* DESKTOP */
 @media screen and (min-width: 70rem) {
   .container {
@@ -1694,7 +1710,4 @@ div.busybus > h2 {
     font-size: 2.4rem;
     font-weight: 600;
     padding: 2.5rem;
-  }
-  .social img:hover {
-    width:7rem;
   }

@@ -252,7 +252,12 @@ p {
     margin-top: -5rem;
     padding: 10rem 5rem;
 }
-
+.social img:hover {
+    transition: .3s ease-in-out;
+    width: 7rem;
+  }
+  width:7rem;
+}
 /* DESKTOP */
 @media screen and (min-width: 70rem) {
   /* typography */
@@ -276,7 +281,4 @@ p {
     }
     .connect h2 {
       font-size: 2rem;
-    }
-    .social img:hover {
-      width:7rem;
     }
