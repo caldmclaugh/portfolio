@@ -229,6 +229,8 @@ ul > li {
 }
 .connect h2 {
   color: #fff;
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-weight: normal;
   margin: 0 auto;
   max-width: 33ex;
   text-align: center;

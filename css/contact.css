@@ -31,6 +31,7 @@ body {
   font-weight: 600;
   margin: 0 auto;
   padding: 1rem 5rem;
+  text-align: center;
   text-decoration: none;
   width: max-content;
   z-index: 2;
@@ -168,6 +169,8 @@ input, textarea {
 }
 .connect h2 {
   color: #fff;
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-weight: normal;
   margin: 0 auto;
   max-width: 33ex;
   text-align: center;
@@ -264,7 +267,7 @@ input, textarea {
     text-align: left;
   }
   .cta {
-    margin: 0;
+    margin: 0 auto;
   }
 
 }
