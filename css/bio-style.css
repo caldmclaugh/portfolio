@@ -23,6 +23,11 @@ h2 {
   font-weight: 600;
   max-width: 66ex;
 }
+h3 {
+  color: #fff;
+  font-family: "Cabin", "Open Sans",sans-serif;
+  text-align: center;
+}
 p {
   font-family: "Cabin", "Open Sans", sans-serif;
   font-size: 1.6rem;
@@ -127,9 +132,26 @@ p {
   padding: 5rem 2rem 3rem;
   position: relative;
 }
+.cta {
+  background-color: #056BBD;
+  border-radius: 5rem;
+  color: #fff;
+  display:block;
+  font-family: "Montserrat","Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  width: max-content;
+  z-index: 2;
+}
+a.cta:hover {
+  background-color: #11A64A;
+}
 /***connect***/
 #contact {
-  font-weight: inherit;
+  color: #fff;
 }
 .connect {
   background-color: #056BBD;
@@ -137,7 +159,7 @@ p {
   padding: 10% 20% 1rem;
   text-align: center;
 }
-.connect h2 {
+.connect h3 {
   color: #fff;
   font-size: 1.6rem;
   margin: 0 auto;
@@ -148,7 +170,7 @@ p {
   color: #fff;
 }
 .connect a:hover {
-  font-weight:bolder;
+    color: #11A64A;
 }
 .social {
   display: flex;
@@ -252,7 +274,10 @@ p {
     margin-top: -5rem;
     padding: 10rem 5rem;
 }
-.social img:hover {
+  .connect h3 {
+    font-size: 2rem;
+  }
+  .social img:hover {
     transition: .3s ease-in-out;
     width: 7rem;
   }

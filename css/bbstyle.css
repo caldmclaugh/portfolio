@@ -413,7 +413,9 @@ h1.more {
 }
 .connect h2 {
   color: #fff;
+  font-family: "Cabin", "Open Sans", sans-serif;
   font-size: 1.6rem;
+  font-weight: normal;
   margin: 0 auto;
   max-width: 33ex;
   text-align: center;
@@ -422,7 +424,7 @@ h1.more {
   color: #fff;
 }
 .connect a:hover {
-  font-weight:bolder;
+  color: #11a64a;
 }
 .social {
   display: flex;
@@ -559,7 +561,7 @@ h1.more {
     transition: .3s ease-in-out;
     width: 7rem;
   }
-}  
+}
 /* DESKTOP */
 @media screen and (min-width: 70rem) {
 /***************HERO**************/

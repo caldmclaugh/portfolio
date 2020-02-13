@@ -19,6 +19,10 @@ body {
   color: #11a64a;
   text-decoration: underline;
 }
+section a {
+  color: #000;
+  text-decoration: none;
+}
 .description {
   background-color: #fff;
   border-radius: 5rem;
@@ -215,7 +219,7 @@ ul > li {
 }
 /***CONNECT***/
 #contact {
-  font-weight: inherit;
+  color: #fff;
 }
 .connect {
   background-color: #056BBD;
@@ -233,7 +237,7 @@ ul > li {
   color: #fff;
 }
 .connect a:hover {
-  font-weight:bolder;
+  color: #11a64a;
 }
 .social {
   display: flex;
@@ -339,7 +343,7 @@ ul > li {
     transition: .3s ease-in-out;
     width: 7rem;
   }
-}  
+}
 /***DESKTOP***/
 @media (min-width: 70rem) {
   h1 {
