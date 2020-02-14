@@ -85,7 +85,7 @@ ul > li {
  .hamburger-nav {
   align-items: center;
   background-color: #fff;
-  border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
+  border-bottom: .1rem solid rgb(243, 204, 45, 1);
   display: flex;
   justify-content: space-between;
   height: 7rem;
@@ -110,12 +110,10 @@ ul > li {
   margin-right: 1rem;
   z-index: 5;
 }
-
 .nav-menu {
   background-color: #fff;
   bottom: 0;
   height: 100%;
-  opacity: 0.95;
   position: fixed;
   right: 0;
   top: 7rem;
@@ -161,6 +159,9 @@ ul > li {
   width: 100vw;
   margin-top: -15rem;
   z-index: 1;
+}
+.hero .description, .hero-img {
+  animation-duration: 5s;
 }
 .hero .description {
   background-color: transparent;
@@ -213,7 +214,7 @@ ul > li {
   margin: 5rem auto;
 }
 .blocjams img {
-  margin: auto 1rem;
+  margin: 0 auto;
   max-width: 95%;
   padding-bottom: 2.5rem;
 }

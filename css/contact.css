@@ -9,7 +9,6 @@ html {
   font-size: 10px;
 }
 body {
-  /*background: linear-gradient(#E2EFFA 50%, #FFF7D5  50%); */
   background: #FFF7D5;
   line-height: 1.75;
 }
@@ -42,7 +41,7 @@ button.cta:hover {
 /***typography***/
 h1 {
   font-family: "Ubuntu", "Open Sans", sans-serif;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   text-align: center;
 }
 h2 {
@@ -64,7 +63,7 @@ nav {
  .hamburger-nav {
   align-items: center;
   background-color: #fff;
-  border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
+  border-bottom: .1rem solid rgb(243, 204, 45, 1);
   display: flex;
   justify-content: space-between;
   height: 7rem;
@@ -94,7 +93,6 @@ nav {
   background-color: #fff;
   bottom: 0;
   height: 100%;
-  opacity: 0.95;
   position: fixed;
   right: 0;
   top: 7rem;
@@ -126,14 +124,13 @@ nav {
 .form {
   background-color: #fff;
   border-bottom-right-radius: 10rem;
+
   padding-top: 1rem;
 }
 form {
   background-color: #fff;
-  border-radius: 5rem;
-  margin: 25rem auto 5rem;
+  margin: 19rem auto 5rem;
   padding-bottom: 5rem;
-  /* padding-top: 25rem; */
   width: max-content;
 }
 input {
@@ -151,11 +148,8 @@ input, textarea {
   display: block;
   font-family: "Cabin", "Open Sans", sans-serif;
   font-size: 1.6rem;
-  margin: 5rem;
+  margin: 5rem auto;
   padding-left: 1rem;
-  /* height: 3rem; */
-  /* display: block; */
-  /* margin: 0 auto; */
 }
 /***CONNECT***/
 #contact {
@@ -246,7 +240,6 @@ input, textarea {
     position: absolute;
     right: 4.85rem;
     top: 5.25rem;
-    /* margin-left: 4.9rem; */
     width: 5.5rem;
     z-index: 500;
   }
@@ -260,6 +253,9 @@ input, textarea {
 }
 /***DESKTOP***/
 @media (min-width: 70rem) {
+  h1 {
+    font-size: 3.6rem;
+  }
   h2 {
     font-family: "Montserrat", "Open Sans",sans-serif;
     font-size: 2.4rem;

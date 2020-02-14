@@ -42,10 +42,10 @@ p {
  .hamburger-nav {
   align-items: center;
   background-color: #fff;
-  border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
+  border-bottom: .1rem solid rgb(243, 204, 45, 1);
   display: flex;
   justify-content: space-between;
-  height: 6rem;
+  height: 7rem;
   opacity: .95;
   position: fixed;
   width: 100%;
@@ -72,7 +72,6 @@ p {
   background-color: #fff;
   bottom: 0;
   height: 100%;
-  opacity: 0.95;
   position: fixed;
   right: 0;
   top: 7rem;
@@ -287,7 +286,7 @@ a.cta:hover {
   /* typography */
   h1 {
     font-family: "Ubuntu", "Open Sans", sans-serif;
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     font-weight: bold;
     text-align: left;
     width:max-content;
