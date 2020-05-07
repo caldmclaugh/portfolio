@@ -349,13 +349,13 @@ ul {
 .more {
   padding-bottom: 3rem;
 }
-.more h1 {
-  font-family: "Ubuntu", "Open Sans", sans-serif;
-  font-size: 2.4rem;
-}
-div.blocjams figure {
+.furward figure {
   height: 7.5rem;
-  margin: 2.5rem auto;
+  width: 28rem;
+  margin-top: 5rem;
+}
+.furward img {
+  max-width: 100%;
 }
 .camelot {
   align-items: center;
@@ -364,15 +364,16 @@ div.blocjams figure {
   min-width: 50ex;
 }
 .camelot img {
-  margin: auto 1rem;
+  margin: 2.5rem auto 1rem;
   max-width: 95%;
   padding-bottom: 2.5rem;
   padding-top: 2.5rem;
 }
-.blocjams {
+.furward {
   align-items: center;
+  display: flex;
 }
-.blocjams, .camelot {
+.furward, .camelot {
   background-color: #fff;
   border-radius: 5rem;
   display: flex;
@@ -381,14 +382,14 @@ div.blocjams figure {
   max-width: 32rem;
   padding: 0 1.5rem;
 }
-.blocjams p, .camelot p {
-  font-size: 1.6rem;
-  margin: -2rem 1rem;
-  padding-bottom: 0;
-  padding-top: 2.5rem;
-  text-align: center;
+.camelot p {
+  margin-bottom: -2.5rem;
+  margin-top: -1.5rem;
 }
-h1.more {
+.furward p {
+  margin-bottom: -2.5rem;
+}
+.more h1 {
   font-family: "Ubuntu", "Open Sans", sans-serif;
   font-size: 2.4rem;
   font-weight:bold;
@@ -543,15 +544,15 @@ h1.more {
   .see-more {
     min-width: 20rem;
   }
-  .blocjams, .camelot {
+  /* .blocjams, .camelot {
     max-width: 35rem;
-  }
-  .camelot {
+  } */
+  /* .camelot {
     padding: 1rem 2rem;
   }
   .blocjams {
     padding: 1.5rem;
-  }
+  } */
 /* CONTACT */
   .connect h2 {
     font-size: 2rem;
@@ -665,22 +666,18 @@ h1.more {
   }
   .camelot img {
     max-width: 75%;
-    padding-top: 5rem;
   }
-  .camelot {
-    margin-top: 0;
+  .camelot p {
+    margin-bottom: -3.8rem;
+  }
+  .furward p {
+    margin-bottom: .5rem;
+  }
+  .furward, .camelot {
     max-width: 40rem;
   }
-  .blocjams {
-    margin: 0 0 2rem;
-    max-width: 40rem;
-  }
-  .blocjams p {
-    margin-bottom: 2rem;
-  }
-  .blocjams p, .camelot p {
+  .furward p, .camelot p {
     font-size: 2.4rem;
     font-weight: 600;
-    padding: 2.5rem;
   }
 }

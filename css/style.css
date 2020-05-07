@@ -43,7 +43,7 @@ section a {
   font-family: "Montserrat","Open Sans", sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
@@ -153,11 +153,11 @@ ul > li {
   background-image: url("/images/coronado.png");
   background-position: bottom;
   background-repeat: no-repeat;
-  height:50vh;
   background-size: 100%;
   border-bottom-right-radius: 10rem;
-  width: 100vw;
+  height:50vh;
   margin-top: -15rem;
+  width: 100vw;
   z-index: 1;
 }
 .hero .description, .hero-img {
@@ -168,55 +168,70 @@ ul > li {
   margin: 0 auto;
   z-index: 2;
 }
-/***CAMELOT***/
- .camelot {
+/***FURWARD***/
+.furward {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 5rem auto;
+  margin: -1.5rem auto 5rem;
 }
-.camelot img {
-  margin: auto 1rem;
-  max-width: 95%;
-  padding-bottom: 2.5rem;
+.furward .description {
+  margin: 0 auto;
 }
-.description figure {
-  display: flex;
+.furward-img {
+  max-width: 35rem;
+}
+.furward h2 {
+  padding-top: 0rem;
+}
+.furward img {
   margin: 0 auto;
   max-width: 100%;
+  padding-bottom: 2.5rem;
 }
-/***BUSYBUS***/
-.busybus {
+/***CAMELOT***/
+ .camelot {
+  align-items: center;
   background-color: #fff;
   border-radius:10rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 7.5rem;
 }
-.busybus .description {
+.camelot-img {
+  width:35rem;
+}
+.camelot img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.camelot .description {
   background-color: transparent;
-  margin: 0;
+}
+.description figure {
+  display: flex;
+  max-width: 100%;
+}
+/***BUSYBUS***/
+.busybus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.busybus-img {
+  max-width: 100%;
 }
 .busybus img {
-  max-width:95%;
+  /* max-height: 42rem; */
+  max-width: 24rem;
+  padding-bottom: 5rem;
   padding-top: 5rem;
 }
 .busybus  h1 {
   text-align: center;
-}
-/***BLOCJAMS***/
-.blocjams {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 5rem auto;
-}
-.blocjams img {
-  margin: 0 auto;
-  max-width: 95%;
-  padding-bottom: 2.5rem;
 }
 /***CONNECT***/
 #contact {
@@ -252,7 +267,6 @@ ul > li {
   padding: 1rem;
   width: 6rem;
 }
-
 /***MEDIA QUERIES***/
 /***TABLET***/
 @media (min-width: 45rem) {
@@ -284,13 +298,12 @@ ul > li {
     padding: 5rem;
   }
   nav a {
-      text-decoration: none;
-    }
+    text-decoration: none;
+  }
   nav a img {
-      width: auto;
-    }
+    width: auto;
+  }
   .description {
-    margin-right: 2.5rem;
     max-height: 50rem;
   }
   .description figure {
@@ -305,39 +318,67 @@ ul > li {
     width: 50vw;
   }
   .hero .description {
-    margin: 0 auto;
+    margin: 5rem auto 0;
     max-height: 40rem;
   }
-  .camelot {
-    background-color: #e2effa;
+  .furward {
     flex-direction: row-reverse;
-    margin: 5rem auto;
-    padding-bottom: 20rem;
+    justify-content: space-around;
+  }
+  .furward-img {
+    display: flex;
+    justify-content: center;
+    width: 38.4rem;
+  }
+  /* start here */
+  .furward-img img {
+    max-width: 45vw;
+    padding-bottom: 0;
+  }
+  .furward-logo img {
+    max-width: 100%;
+  }
+  .furward .description {
+    margin-top: 5rem;
+  }
+  .camelot {
+    /* background-color: #e2effa; */
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 0 auto 5rem;
+    /* padding-bottom: 20rem; */
+  }
+  .camelot-img {
+    display: flex;
+    justify-content: center;
+    width: 38.4rem;
   }
   .camelot img {
     padding-bottom: 0;
   }
-  .camelot-img img {
-    max-width: 50vw;
-  }
+  /* .camelot-img img {
+    max-width: 42vw;
+  } */
   .busybus {
     align-items: center;
     flex-direction: row-reverse;
-    margin-top: -20rem;
+    justify-content: space-around;
+    /* margin-top: -20rem; */
   }
   .busybus .description {
-    max-height: 37.5rem;
+    /* max-height: 37.5rem; */
+  }
+  .busybus-img {
+    display: flex;
+    justify-content: center;
+    width: 38.4rem;
   }
   .busybus img {
+    /* max-height: 70rem;
+    min-height: 65rem; */
     padding-bottom: 5rem;
-    padding-left: 5rem;
-  }
-  .blocjams {
-    flex-direction: row-reverse;
-  }
-  .blocjams img {
-    max-width: 50vw;
-    padding-bottom: 0;
+
+    /* padding-left: 5rem; */
   }
   .connect h2 {
     font-size: 2rem;
@@ -351,16 +392,16 @@ ul > li {
 @media (min-width: 70rem) {
   h1 {
     font-size: 3.6rem;
-    text-align: left;
+    /* text-align: left; */
   }
   h2 {
     font-family: "Montserrat", "Open Sans",sans-serif;
     font-size: 2.4rem;
     font-weight: 600;
-    text-align: left;
+    /* text-align: left; */
   }
   .cta {
-    margin: 0;
+    margin: 0 auto;
   }
   .hero .description {
     margin: 10rem auto 5rem;
@@ -370,33 +411,56 @@ ul > li {
     min-width: 25rem;
     padding: 5rem;
   }
+  .description figure {
+    margin: 0 auto;
+  }
+  .project-text {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+  }
+  .furward-img {
+    max-width: 70rem;
+    /* min-width: 65rem; */
+  }
   .camelot {
     align-items: center;
-    margin: 5rem auto;
+    padding-bottom: 5rem;
+    /* margin: 5rem auto; */
   }
-  .camelot-img figure img {
+  .camelot-img {
+      width: 50vw;
+  }
+  .camelot-img img {
+    max-width: 45vw;
+    /* min-width: 65rem; */
+  }
+  .camelot-logo {
+    margin: 0;
+  }
+  /* .camelot-img figure img {
     margin: 0 auto;
     max-width: 100%;
-  }
+  } */
   .busybus {
-    justify-content: center;
+    /* justify-content: center; */
+  }
+  .busybus-img {
+    /* max-height: 35rem; */
+    /* min-width: 65rem; */
   }
   .busybus .description {
-    background-color: transparent;
-    margin-right:3rem;
+    /* background-color: transparent; */
+    /* margin-right:3rem; */
    }
   .busybus h1 {
-    text-align: left;
+    /* text-align: left; */
   }
-  .busybus img {
-    max-width: 100%;
-    padding: 5rem 17rem 5rem 20rem;
-  }
-  .blocjams {
-    align-items: center;
-    margin: 5rem 0;
-  }
-  .blocjams img {
-    max-width: 100%;
+  .busybus-img img {
+    /* max-height: 55rem; */
+    max-width: 25rem;
+    /* max-width: 40vw; */
+    /* max-width: 100%; */
+    /* padding: 5rem 17rem 5rem 20rem; */
   }
 }

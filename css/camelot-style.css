@@ -35,9 +35,10 @@ a.cta:hover {
 img {
   width: 100%;
 }
-section.prob-sol > figure, section.conclusion > figure, section.more > div > figure {
+section.prob-sol > figure, section.conclusion > figure, {
   width: 25% ;
 }
+/* section.more > div > figure  */
 /* back to top */
 .top-link {
   align-items: center;
@@ -743,30 +744,34 @@ div.persona-img > figure > ul > li {
 .more h1{
   font-size: 2.4rem;
 }
-div.blocjams figure {
+.furward figure {
   height: 7.5rem;
-  margin: 2.5rem auto;
+  width: 28rem;
+  margin-top: 5rem;
 }
-div.busybus > h2 {
+.busybus h2 {
   font-size: 2.4rem;
   height: 7.5rem;
-  margin-top: 2.5rem;
-  padding-top: 2rem;
+  margin-top: 5rem;
 }
 .busybus > p {
-  padding-top: 2.5rem;
+    font-size: 1.6rem;
+    margin: 0;
+}
+.furward p  {
+  margin: 0 0 -2.8rem 0;
 }
 .busybus {
   align-items: center;
   display: flex;
-  max-width: 70ch;
-  min-width: 50ch;
+  max-width: 70ex;
+  min-width: 50ex;
 }
-.blocjams {
+.furward {
   align-items: center;
   display: flex;
 }
-.blocjams, .busybus {
+.furward, .busybus {
   background-color: #fff;
   border-radius: 5rem;
   display: flex;
@@ -774,10 +779,6 @@ div.busybus > h2 {
   margin: 2rem;
   max-width: 32rem;
   padding: 0 1.5rem;
-}
-.blocjams > p, .busybus > p {
-  font-size: 1.6rem;
-  margin: -2rem 1rem;
 }
 .more h1 {
   font-family: "Ubuntu", "Open Sans", sans-serif;
@@ -788,11 +789,12 @@ div.busybus > h2 {
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
 }
 /***CONNECT***/
 #contact {
+  color: #fff;
   font-weight: inherit;
 }
 .connect {
@@ -913,9 +915,9 @@ div.busybus > h2 {
     margin: 0 auto;
     max-width: 50vw;
   }
-  .gdrive {
+  /* .gdrive {
     margin-right: 1rem;
-  }
+  } */
   .strengths, .weaknesses {
     height: 16.6rem;
   }
@@ -1234,22 +1236,6 @@ div.busybus > h2 {
     justify-content: center;
     margin: 5rem auto;
     min-width: 20rem;
-  }
-  .blocjams, .busybus {
-    max-width: 35rem;
-  }
-  div.blocjams > figure {
-    height: 7.5rem;
-  }
-  div.busybus > h2 {
-    align-items: center;
-    display: flex;
-    font-size: 2.4rem;
-    height: 7.5rem;
-    margin: 2.5rem auto;
-  }
-  .blocjams > p, .busybus > p {
-    padding: 2.5rem;
   }
 /* CONTACT */
   .connect h2 {
@@ -1683,13 +1669,10 @@ div.busybus > h2 {
   .more {
     padding-top: 1rem;
   }
-  .more > h1 {
+  .more h1 {
     font-size: 3.6rem;
   }
-  .blocjams {
-    max-width: 40rem;
-  }
-  .busybus {
+  .furward, .busybus {
     max-width: 40rem;
   }
   .see-more {
@@ -1698,19 +1681,21 @@ div.busybus > h2 {
     justify-content: center;
     max-width: 90vw;
   }
-  div.blocjams > figure {
+  div.furward figure {
     height: 7.5rem;
   }
   div.busybus > h2 {
-    align-items: center;
     display: flex;
     font-size: 3.6rem;
     height: 7.5rem;
-    margin: 2.5rem auto;
+    margin: 5rem auto 0;
   }
-  .blocjams > p, .busybus > p {
+  .furward p, .busybus p {
     font-size: 2.4rem;
     font-weight: 600;
     padding: 2.5rem;
+  }
+  .busybus p {
+    margin-bottom: -2.8rem;
   }
 }
