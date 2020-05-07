@@ -35,7 +35,7 @@ a.cta:hover {
 img {
   width: 100%;
 }
-section.prob-sol > figure, section.conclusion > figure, {
+section.prob-sol > figure, section.conclusion > figure {
   width: 25% ;
 }
 /* section.more > div > figure  */
