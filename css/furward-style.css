@@ -22,7 +22,7 @@ body {
   font-family: "Montserrat","Open Sans", sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  margin: 5rem auto;
+  margin: 2.5rem auto 5rem;
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
@@ -198,7 +198,7 @@ ul {
   padding: 1rem 1rem 0;
 }
 .furward-mockup {
-  margin: -8rem -1rem 2rem;
+  margin: 2.5rem 0 0 -2rem;
   padding: 0;
 }
 /**********************************************PROBLEM/SOLUTION******/
@@ -654,38 +654,40 @@ div.persona-img > figure > ul > li {
 .more h1{
   font-size: 2.4rem;
 }
+.chordhealth figure {
+  padding: 5rem 0 2rem;
+}
+.chordhealth img {
+  width: 75%;
+}
+.chordhealth p {
+  padding: 0;
+}
 .camelot {
   align-items: center;
-  display: flex;
   max-width: 66ex;
   min-width: 50ex;
 }
 .camelot img {
   margin: auto 1rem;
   max-width: 75%;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
-div.busybus > h2 {
+.busybus h2 {
   font-size: 2.4rem;
   height: 7.5rem;
   margin-top: 2.5rem;
   padding-top: 2rem;
 }
-.busybus > p {
-  padding-top: 2.5rem;
+.busybus p {
+  margin: -0.5rem auto 1.2rem;
 }
 .busybus {
   align-items: center;
-  display: flex;
   max-width: 70ch;
   min-width: 50ch;
 }
-.camelot {
-  align-items: center;
-  display: flex;
-}
-.camelot, .busybus {
+.camelot, .busybus, .chordhealth {
   background-color: #fff;
   border-radius: 5rem;
   display: flex;
@@ -693,10 +695,6 @@ div.busybus > h2 {
   margin: 2rem;
   max-width: 32rem;
   padding: 0 1.5rem;
-}
-.camelot > p, .busybus > p {
-  font-size: 1.6rem;
-  margin: -2rem 1rem;
 }
 .more h1 {
   font-family: "Ubuntu", "Open Sans", sans-serif;
@@ -810,7 +808,7 @@ div.busybus > h2 {
   .furward-mockup {
     margin: -10rem auto 0;
     max-width:50rem;
-    padding-bottom: 0;
+    padding: 12.5rem 0 0;
   }
 /* problem/solution */
   .prob-sol {
@@ -993,17 +991,13 @@ div.busybus > h2 {
     padding-top: 5rem;
   }
   .see-more {
-    display: flex;
-    justify-content: center;
-    margin: 5rem auto;
     min-width: 20rem;
   }
   .camelot p {
-    padding-bottom: 1.1rem;
+    padding-bottom: 0;
   }
   .busybus p {
     padding-bottom: 1.5rem;
-    padding-top: 5rem;
   }
 /* CONTACT */
   .connect h2 {
@@ -1198,7 +1192,7 @@ div.busybus > h2 {
     text-align: center;
   }
   .icon-sol {
-    padding-top: 5.5rem;
+    padding-top: 2.5rem;
   }
 /************DISCOVERY*****************/
   .text-disc {
@@ -1367,42 +1361,5 @@ div.busybus > h2 {
 /*********MORE PROJECTS********/
   .more {
     padding-top: 1rem;
-  }
-  .more > h1 {
-    font-size: 3.6rem;
-  }
-  .camelot {
-    max-width: 40rem;
-  }
-  .busybus {
-    max-width: 40rem;
-  }
-  .see-more {
-    display: flex;
-    justify-content: center;
-    margin: 5rem auto;
-    max-width: 90vw;
-  }
-  div.camelot figure {
-    height: 7.5rem;
-    margin: 2rem auto 2.5rem;
-  }
-  div.busybus h2 {
-    align-items: center;
-    display: flex;
-    font-size: 3.6rem;
-    height: 7.5rem;
-    margin: 2.5rem auto;
-  }
-  .camelot p, .busybus p {
-    font-size: 2.4rem;
-    font-weight: 600;
-    padding: 2.5rem;
-  }
-  .camelot p {
-    margin-bottom: -5rem;
-  }
-  .busybus p {
-    margin-bottom: -1.3rem;
   }
 }

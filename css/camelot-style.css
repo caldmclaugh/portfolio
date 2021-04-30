@@ -22,7 +22,7 @@ body {
   font-family: "Montserrat","Open Sans", sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  margin: 5rem auto;
+  margin: 2.5rem auto 5rem;
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
@@ -38,7 +38,6 @@ img {
 section.prob-sol > figure, section.conclusion > figure {
   width: 25% ;
 }
-/* section.more > div > figure  */
 /* back to top */
 .top-link {
   align-items: center;
@@ -189,8 +188,13 @@ ul {
   width: 100%;
   z-index: -5;
 }
-.camelot-logo, .camelot-landing, .text-hero {
+.camelot-landing, .text-hero {
   padding: 1rem 0;
+}
+.camelot-logo {
+  margin: 0 auto;
+  padding-top: 5rem;
+  max-width: 65vw;
 }
 /**********************************************PROBLEM/SOLUTION******/
 .prob-sol {
@@ -461,9 +465,8 @@ div.persona-img > figure > ul > li {
 }
                /***style guide***/
 .img-style {
-  display: flex;
-  margin-left:1rem;
-  margin-right:1rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 .img-style-media {
   display: none;
@@ -483,7 +486,7 @@ div.persona-img > figure > ul > li {
 .text-prototypes {
   margin: 0 1rem;
 }
-.mobile {
+.mobile, .desktop {
   font-size: 2rem;
   margin-bottom: 2.5rem;
 }
@@ -590,10 +593,6 @@ div.persona-img > figure > ul > li {
 }
 .change1, .change2, .change3 {
   display: flex;
-}
-.desktop {
-  font-size: 1.6rem;
-  margin: 5rem 0 2.5rem 0;
 }
 .first-desktop {
   padding: 0 3rem 2.5rem;
@@ -744,22 +743,36 @@ div.persona-img > figure > ul > li {
 .more h1{
   font-size: 2.4rem;
 }
-.furward figure {
-  height: 7.5rem;
-  width: 28rem;
-  margin-top: 5rem;
+.chordhealth figure {
+  padding: 5rem 0 2.5rem;
+}
+.chordhealth img, .furward img {
+  /* margin: auto 1rem; */
+  max-width: 75%;
+}
+.furward img {
+  padding-top: 5rem;
+}
+.chordhealth p {
+  margin-top: -.5rem;
+  padding: 0;
+}
+.furward p {
+  padding-bottom: 0;
 }
 .busybus h2 {
   font-size: 2.4rem;
   height: 7.5rem;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
 }
-.busybus > p {
+.busybus p {
     font-size: 1.6rem;
-    margin: 0;
+    margin: -.5rem auto 1rem;
+    padding-bottom: 1.5rem;
 }
 .furward p  {
-  margin: 0 0 -2.8rem 0;
+  margin-top: 0;
 }
 .busybus {
   align-items: center;
@@ -771,7 +784,7 @@ div.persona-img > figure > ul > li {
   align-items: center;
   display: flex;
 }
-.furward, .busybus {
+.chordhealth, .furward, .busybus {
   background-color: #fff;
   border-radius: 5rem;
   display: flex;
@@ -895,12 +908,15 @@ div.persona-img > figure > ul > li {
 /* problem/solution */
   .prob-sol {
     flex-direction: row;
-    margin: auto;
+    margin: 0 auto;
+  }
+  .icon-sol {
+    padding-top: 5.5rem;
   }
 /* DISCOVERY */
 /* user research */
   .user-research {
-    margin: auto;
+    margin: 0 auto;
   }
   .chart {
     max-width:50%;
@@ -915,9 +931,6 @@ div.persona-img > figure > ul > li {
     margin: 0 auto;
     max-width: 50vw;
   }
-  /* .gdrive {
-    margin-right: 1rem;
-  } */
   .strengths, .weaknesses {
     height: 16.6rem;
   }
@@ -975,6 +988,9 @@ div.persona-img > figure > ul > li {
   }
   .sketch-dash {
     padding-right: 1rem;
+  }
+  .sketch-dash figcaption {
+    margin-top: -1.6rem;
   }
 /* mockups */
   .text-mockups {
@@ -1079,8 +1095,7 @@ div.persona-img > figure > ul > li {
       margin-top: 0rem;
   }
   .desktop {
-    margin-bottom: 2.5rem;
-    margin-top: 0;
+    margin: 5rem 0 2.5rem;
   }
   .changes-desktop {
     align-items: baseline;
@@ -1228,13 +1243,10 @@ div.persona-img > figure > ul > li {
     margin: auto;
   }
 /* SEE MORE PROJECTS */
-  .more {
-    padding-top: 5rem;
-  }
   .see-more {
     display: flex;
     justify-content: center;
-    margin: 5rem auto;
+    margin: 0 auto;
     min-width: 20rem;
   }
 /* CONTACT */
@@ -1326,6 +1338,9 @@ div.persona-img > figure > ul > li {
     flex-wrap: nowrap;
     margin: 0 auto;
     max-width: 60vw;
+  }
+  .gdrive, .dropbox {
+    margin: 0 1rem 0;
   }
 /* user personas */
   .personas {
@@ -1664,38 +1679,5 @@ div.persona-img > figure > ul > li {
   .tools-icon {
     grid-area: tools-icon;
     margin: 0 auto;
-  }
-/*********MORE PROJECTS********/
-  .more {
-    padding-top: 1rem;
-  }
-  .more h1 {
-    font-size: 3.6rem;
-  }
-  .furward, .busybus {
-    max-width: 40rem;
-  }
-  .see-more {
-    display: flex;
-    margin: 5rem auto;
-    justify-content: center;
-    max-width: 90vw;
-  }
-  div.furward figure {
-    height: 7.5rem;
-  }
-  div.busybus > h2 {
-    display: flex;
-    font-size: 3.6rem;
-    height: 7.5rem;
-    margin: 5rem auto 0;
-  }
-  .furward p, .busybus p {
-    font-size: 2.4rem;
-    font-weight: 600;
-    padding: 2.5rem;
-  }
-  .busybus p {
-    margin-bottom: -2.8rem;
   }
 }

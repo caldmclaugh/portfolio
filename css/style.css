@@ -9,7 +9,7 @@ html {
   font-size: 10px;
 }
 body {
-  background: linear-gradient(#E2EFFA 50%, #FFF7D5  50%);
+  background: linear-gradient(#E2EFFA 50%, #FFF7D5 50%);
   line-height: 1.75;
 }
 .container {
@@ -43,7 +43,7 @@ section a {
   font-family: "Montserrat","Open Sans", sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
@@ -168,19 +168,51 @@ ul > li {
   margin: 0 auto;
   z-index: 2;
 }
-/***FURWARD***/
-.furward {
+/***CHORD HEALTH***/
+.chordhealth {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -1.5rem auto 5rem;
+  margin: 5rem auto;
+}
+.chordhealth .description {
+  margin: 0 auto;
+}
+.chordhealth-img {
+  max-width: 24rem;
+  padding-bottom: 5rem;
+}
+.chordhealth-logo {
+  padding-bottom: 2.5rem;
+}
+.chordhealth h2 {
+  padding-top: 0rem;
+}
+.chordhealth img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+/***FURWARD***/
+.furward {
+  align-items: center;
+  background-color: #fff;
+  border-radius:10rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: -10rem;
 }
 .furward .description {
   margin: 0 auto;
 }
 .furward-img {
+  margin-left: -1rem;
   max-width: 35rem;
+  padding-top: 5rem;
+}
+.furward-logo {
+  padding-bottom: 2.5rem;
 }
 .furward h2 {
   padding-top: 0rem;
@@ -188,27 +220,24 @@ ul > li {
 .furward img {
   margin: 0 auto;
   max-width: 100%;
-  padding-bottom: 2.5rem;
 }
+
 /***CAMELOT***/
  .camelot {
   align-items: center;
-  background-color: #fff;
-  border-radius:10rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 7.5rem;
+  margin: -1.5rem auto 5rem;
 }
 .camelot-img {
+  padding-bottom: 5rem;
   width:35rem;
 }
 .camelot img {
   margin: 0 auto;
   max-width: 100%;
-}
-.camelot .description {
-  background-color: transparent;
 }
 .description figure {
   display: flex;
@@ -216,18 +245,19 @@ ul > li {
 }
 /***BUSYBUS***/
 .busybus {
+  background-color: #fff;
+  border-radius:10rem 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: -10rem;
+  padding-bottom: 10rem;
 }
 .busybus-img {
   max-width: 100%;
 }
 .busybus img {
-  /* max-height: 42rem; */
   max-width: 24rem;
-  padding-bottom: 5rem;
   padding-top: 5rem;
 }
 .busybus  h1 {
@@ -306,8 +336,8 @@ ul > li {
   .description {
     max-height: 50rem;
   }
-  .description figure {
-    max-width: 90%;
+      .cta {
+    margin-bottom: 0;
   }
   .hero {
     display: flex;
@@ -324,6 +354,22 @@ ul > li {
   .hero .cta {
     margin-bottom: 10rem;
   }
+  .chordhealth {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .chordhealth-img {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    max-width: 24rem;
+  }
+  .chordhealth-img img {
+    padding-bottom: 0;
+  }
+  .chordhealth-logo img {
+    max-width: 100%;
+  }
   .furward {
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -333,7 +379,6 @@ ul > li {
     justify-content: center;
     width: 38.4rem;
   }
-  /* start here */
   .furward-img img {
     max-width: 45vw;
     padding-bottom: 0;
@@ -341,35 +386,23 @@ ul > li {
   .furward-logo img {
     max-width: 100%;
   }
-  .furward .description {
-    margin-top: 5rem;
-  }
   .camelot {
-    /* background-color: #e2effa; */
     flex-direction: row-reverse;
     justify-content: space-around;
     margin: 0 auto 5rem;
-    /* padding-bottom: 20rem; */
   }
   .camelot-img {
     display: flex;
     justify-content: center;
     width: 38.4rem;
   }
-  .camelot img {
+  .camelot-img {
     padding-bottom: 0;
   }
-  /* .camelot-img img {
-    max-width: 42vw;
-  } */
   .busybus {
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-around;
-    /* margin-top: -20rem; */
-  }
-  .busybus .description {
-    /* max-height: 37.5rem; */
   }
   .busybus-img {
     display: flex;
@@ -377,11 +410,7 @@ ul > li {
     width: 38.4rem;
   }
   .busybus img {
-    /* max-height: 70rem;
-    min-height: 65rem; */
     padding-bottom: 5rem;
-
-    /* padding-left: 5rem; */
   }
   .connect h2 {
     font-size: 2rem;
@@ -395,13 +424,11 @@ ul > li {
 @media (min-width: 70rem) {
   h1 {
     font-size: 3.6rem;
-    /* text-align: left; */
   }
   h2 {
     font-family: "Montserrat", "Open Sans",sans-serif;
     font-size: 2.4rem;
     font-weight: 600;
-    /* text-align: left; */
   }
   .cta {
     margin: 0 auto;
@@ -422,48 +449,26 @@ ul > li {
     justify-content: center;
     width: 40%;
   }
+  .chordhealth-img {
+    max-width: 25rem;
+  }
   .furward-img {
     max-width: 70rem;
-    /* min-width: 65rem; */
   }
   .camelot {
     align-items: center;
     padding-bottom: 5rem;
-    /* margin: 5rem auto; */
   }
   .camelot-img {
       width: 50vw;
   }
   .camelot-img img {
     max-width: 45vw;
-    /* min-width: 65rem; */
   }
   .camelot-logo {
     margin: 0;
   }
-  /* .camelot-img figure img {
-    margin: 0 auto;
-    max-width: 100%;
-  } */
-  .busybus {
-    /* justify-content: center; */
-  }
-  .busybus-img {
-    /* max-height: 35rem; */
-    /* min-width: 65rem; */
-  }
-  .busybus .description {
-    /* background-color: transparent; */
-    /* margin-right:3rem; */
-   }
-  .busybus h1 {
-    /* text-align: left; */
-  }
   .busybus-img img {
-    /* max-height: 55rem; */
     max-width: 25rem;
-    /* max-width: 40vw; */
-    /* max-width: 100%; */
-    /* padding: 5rem 17rem 5rem 20rem; */
   }
 }

@@ -124,13 +124,12 @@ nav {
 .form {
   background-color: #fff;
   border-bottom-right-radius: 10rem;
-
+  padding: 1rem 0 1rem;
   padding-top: 1rem;
 }
 form {
   background-color: #fff;
   margin: 19rem auto 5rem;
-  padding-bottom: 5rem;
   width: max-content;
 }
 input {
@@ -158,6 +157,7 @@ input, textarea {
 .connect {
   background-color: #056BBD;
   border-top-left-radius: 10rem;
+  margin-top: 5rem;
   padding: 10% 20% 1rem;
   text-align: center;
 }
@@ -265,5 +265,4 @@ input, textarea {
   .cta {
     margin: 0 auto;
   }
-
 }

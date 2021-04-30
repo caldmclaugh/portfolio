@@ -22,7 +22,7 @@ body {
   font-family: "Montserrat","Open Sans", sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  margin: 5rem auto;
+  margin: 2.5rem auto 5rem;
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
@@ -32,6 +32,9 @@ a.cta:hover {
   background-color: #11a64a;
 }
 /***********************************************typography***/
+img {
+  width: 100%;
+}
 h1 {
   font-family: "Ubuntu", "Open Sans", sans-serif;
   font-size: 3.2rem;
@@ -57,7 +60,7 @@ p, li, h4, figcaption {
 p {
   margin: 0 auto;
   max-width: 66ex;
-  padding-bottom: 2rem;
+  padding: 0 1.5rem 2rem;
 }
 span, figcaption {
   font-weight: bold;
@@ -197,7 +200,7 @@ ul {
   padding-bottom: 2.5rem;
   text-transform: uppercase;
 }
-.user-researex {
+.user-research {
   padding: 1rem;
 }
 .chart {
@@ -305,7 +308,7 @@ ul {
   box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
   display: block;
   margin: 0 auto 3rem;
-  max-width: 75%;
+  max-width: 75vw;
 }
 .mockups figure {
     margin-bottom:5rem;
@@ -346,34 +349,37 @@ ul {
   text-align: center;
 }
 /*********MORE PROJECTS********/
+.see-more {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
 .more {
   padding-bottom: 3rem;
 }
-.furward figure {
-  height: 7.5rem;
-  width: 28rem;
-  margin-top: 5rem;
+.more h1{
+  font-size: 2.4rem;
 }
-.furward img {
-  max-width: 100%;
+.chordhealth img {
+  width: 75%;
 }
-.camelot {
+.chordhealth p, .furward p {
+  padding: 0 1rem;
+}
+.camelot, .furward {
   align-items: center;
-  display: flex;
   max-width: 66ex;
   min-width: 50ex;
 }
-.camelot img {
-  margin: 2.5rem auto 1rem;
-  max-width: 95%;
-  padding-bottom: 2.5rem;
-  padding-top: 2.5rem;
+.chordhealth img, .furward img, .camelot img {
+  margin: auto 1rem;
+  max-width: 75%;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
 }
-.furward {
-  align-items: center;
-  display: flex;
-}
-.furward, .camelot {
+.chordhealth, .furward, .camelot {
   background-color: #fff;
   border-radius: 5rem;
   display: flex;
@@ -382,12 +388,9 @@ ul {
   max-width: 32rem;
   padding: 0 1.5rem;
 }
-.camelot p {
-  margin-bottom: -2.5rem;
-  margin-top: -1.5rem;
-}
-.furward p {
-  margin-bottom: -2.5rem;
+.camelot p, {
+  font-size: 1.6rem;
+  margin: -2rem 1rem;
 }
 .more h1 {
   font-family: "Ubuntu", "Open Sans", sans-serif;
@@ -395,11 +398,7 @@ ul {
   font-weight:bold;
 }
 .see-more {
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
-  margin: 0 auto;
-  text-align: center;
+  min-width: 20rem;
 }
 /***CONNECT***/
 #contact {
@@ -454,13 +453,6 @@ ul {
     font-size: 2rem;
   }
 /******************NAV********************/
-  .cm-logo {
-    align-items:center;
-    display: flex;
-    padding-left: 1rem;
-    width:auto;
-    z-index: 5;
-  }
   .navbar {
     align-items: center;
     background-color: #fff;
@@ -492,14 +484,17 @@ ul {
   nav a {
     text-decoration: none;
   }
-  nav a img {
-    width: auto;
-  }
 /* hero */
+  .hero {
+    padding-top: 10rem;
+  }
   .hero h2 {
     font-size: 2.4rem;
     margin: 0 auto;
     max-width: 40ex;
+  }
+  .hero img {
+    max-width: 30vw;
   }
 /* problem/solution */
   .prob-sol {
@@ -537,22 +532,21 @@ ul {
   .paper-img {
     display: flex;
   }
+/* VISUAL DESIGN */
+/* mockups */
+.mockups img, .final img {
+  max-width: 40vw;
+}
 /* SEE MORE PROJECTS */
-  .more {
-    padding-bottom: 5rem;
-  }
   .see-more {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     min-width: 20rem;
   }
-  /* .blocjams, .camelot {
-    max-width: 35rem;
-  } */
-  /* .camelot {
-    padding: 1rem 2rem;
+  .camelot p {
+    padding: 0 2rem;
   }
-  .blocjams {
-    padding: 1.5rem;
-  } */
 /* CONTACT */
   .connect h2 {
     font-size: 2rem;
@@ -570,6 +564,10 @@ ul {
   }
   .hero h2 {
     margin: 4rem auto;
+  }
+  .hero figure {
+    margin: 0 auto;
+    max-width: 20vw;
   }
 /******PROBLEM/SOLUTION******/
   .prob-sol {
@@ -619,6 +617,10 @@ ul {
     padding: 4rem 0 5rem;
     text-align: left;
   }
+  .mockups img, .final img {
+    margin: 0 auto;
+    max-width: 25vw;
+  }
 /********CONCLUSION**********/
   .conclusion {
     margin-bottom: 5rem;
@@ -655,29 +657,5 @@ ul {
   .tools-icon {
     grid-area: tools-icon;
     margin: 0 auto;
-  }
-/*********MORE PROJECTS********/
-  .more {
-    margin-bottom: 2.5rem;
-  }
-  .more  h1 {
-    font-size: 3.6rem;
-    padding-bottom: 8rem;
-  }
-  .camelot img {
-    max-width: 75%;
-  }
-  .camelot p {
-    margin-bottom: -3.8rem;
-  }
-  .furward p {
-    margin-bottom: .5rem;
-  }
-  .furward, .camelot {
-    max-width: 40rem;
-  }
-  .furward p, .camelot p {
-    font-size: 2.4rem;
-    font-weight: 600;
   }
 }
